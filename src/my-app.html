@@ -67,7 +67,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         @apply --layout-center-center;
         height: calc(100vh - 64px);
         padding: 0 16px;
-        background-image: url('//app-layout-assets.appspot.com/assets/landing-page/glass_explorer_food_2.png');
+        background-image: url('/images/home/glass_explorer_food_2.png');
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
@@ -95,10 +95,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         route="{{route}}"
         url-space-regex="^[[rootPath]]">
     </app-location>
+    
 
     <app-route
         route="{{route}}"
-        pattern="[[rootPath]]:page"
+        pattern="/:page"
         data="{{routeData}}"
         tail="{{subroute}}">
     </app-route>
@@ -140,12 +141,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <aside>
           <h3>Parceiros</h3>
           <div style="display: flex; justify-content: center; align-items: center">
-            <img src="images/logos/beja.png"/>
-            <img src="images/logos/cuba.png"/>
+            <img src="images/logos/Beja.png"/>
+            <img src="images/logos/Cuba.png"/>
             <img src="images/logos/elvas.png"/>
-            <img src="images/logos/evora.png"/>
-            <img src="images/logos/portel.png"/>
-            <img src="images/logos/vidigueira.png"/>
+            <img src="images/logos/Evora.png"/>
+            <img src="images/logos/Portel.png"/>
+            <img src="images/logos/Vidigueira.png"/>
           </div>
         </aside>
         <footer style="padding:1em 1em; background-color: black; display: flex; justify-content: space-between;">
