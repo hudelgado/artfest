@@ -1,7 +1,7 @@
 {
-  "name": "polymer-starter-kit",
+  "name": "artfest-patrimonios",
   "authors": [
-    "The Polymer Authors"
+    "Hugo Delgado"
   ],
   "license": "https://polymer.github.io/LICENSE.txt",
   "dependencies": {
