@@ -18,6 +18,11 @@
   },
   "builds": [
     {
+      "name": "producao",
+      "preset": "es5-bundled",
+      "basePath": "/artfest/"
+    },
+    {
       "preset": "es5-bundled"
     },
     {
