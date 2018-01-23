@@ -1,0 +1,109 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="artfest-home">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 10px;
+      }
+
+      section {
+        padding: 88px 16px;
+      }
+
+      .container {
+        @apply --layout-horizontal;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .container>* {
+        @apply --layout-flex;
+      }
+
+      .container img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .container h3 {
+        font-size: 32px;
+        font-weight: 300;
+        margin: 24px 0;
+      }
+
+      .container p {
+        line-height: 1.5;
+      }
+      .container .content-container {
+        margin-left: 1em !important;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          @apply --layout-vertical;
+        }
+      }
+    </style>
+
+
+
+      <section id="filmes">
+        <div class="container">
+          <div>
+            <img src="images/filmes/muralhas_que_unem/filmagens/Image-6.png">
+          </div>
+          <div class="content-container">
+            <h3>Filmes</h3>
+            <p>Produção de conteúdos audovisuais de cinema e vídeo e é composto por 6 filmes/documentários realizados e editados por Luís Godinho, Jornalista eborense da SIC.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="exposicoes">
+        <div class="container">
+          <div>
+            <img src="images/tmp/exhibition.jpg">
+          </div>
+          <div class="content-container">
+            <h3>Exposições</h3>
+            <p>Exposição de Fotografia sobre o Alentejo, que pretende colocar em evidência a ligação entre o Património Material e Imaterial do Alto, Baixo, Litoral e Alentejo Central.</p>
+              <p>Percorrerá as 4 sub-regiões do Alentejo desde o processo criativo ao produto final.</p>
+              <p>Trata-se de uma exposição única que circulará por 6 cidades e contará com uma quantidade de imagens a rondar as 30.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="espectaculos">
+        <div class="container">
+          <div>
+            <img src="images/tmp/soap-bubbles.jpg">
+          </div>
+          <div class="content-container">
+            <h3>Espectáculos</h3>
+            <p>Produção e apresentação de 34 espectáculos de algumas das artes performativas mais identitárias do Alentejo com apresentações semanais ao vivo (fins de semana).</p>
+          </div>
+        </div>
+      </section>
+  </template>
+
+  <script>
+    class ArtfestHome extends Polymer.Element {
+      static get is() { return 'artfest-home'; }
+    }
+
+    window.customElements.define(ArtfestHome.is, ArtfestHome);
+  </script>
+</dom-module>

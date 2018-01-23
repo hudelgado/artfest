@@ -1,0 +1,202 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../bower_components/app-route/app-location.html">
+<link rel="import" href="../bower_components/app-route/app-route.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/iron-selector/iron-selector.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="my-icons.html">
+
+<link rel="lazy-import" href="artfest-home.html">
+<link rel="lazy-import" href="artfest-view404.html">
+
+<dom-module id="my-app">
+  <template>
+    <style>
+      :host {
+        --app-primary-color: #4285f4;
+        --app-secondary-color: black;
+
+        display: block;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: inherit;
+        color: inherit;
+      }
+
+      .toolbar {
+        @apply --layout-horizontal;
+        @apply --layout-end-justified;
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+      .toolbar img {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .tabs {
+        height: 100%;
+        @apply --layout-horizontal;
+      }
+
+      .tabs>a {
+        @apply --layout-vertical;
+        @apply --layout-center-center;
+        margin: 12px 16px 12px;
+        border-bottom: 1px solid #222;
+      }
+
+      header {
+        @apply --layout-vertical;
+        @apply --layout-center-center;
+        height: calc(100vh - 64px);
+        padding: 0 16px;
+        background-image: url('//app-layout-assets.appspot.com/assets/landing-page/glass_explorer_food_2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+      }
+
+      header>h2 {
+        font-size: 56px;
+        font-weight: 300;
+        margin: 0;
+      }
+
+      header>p {
+        font-size: 32px;
+      }
+      @media (max-width: 600px) {
+        header img {
+          width: 192px;
+          height: 192px;
+        }
+      }
+    </style>
+
+    <app-location
+        route="{{route}}"
+        url-space-regex="^[[rootPath]]">
+    </app-location>
+
+    <app-route
+        route="{{route}}"
+        pattern="[[rootPath]]:page"
+        data="{{routeData}}"
+        tail="{{subroute}}">
+    </app-route>
+
+      <!-- Main content -->
+      <app-header-layout>
+
+        <app-header reveals effects="waterfall" slot="header">
+          
+          <app-toolbar class="toolbar">
+            <a href="[[rootPath]]">
+              <img src="images/manifest/icon-72x72.png" style="width: 72px;"></img>
+            </a>
+            <div class="tabs">
+              <a href="[[rootPath]]home#filmes">Filmes</a>
+              <a href="[[rootPath]]home#exposicoes">Exposições</a>
+              <a href="[[rootPath]]home#espectaculos">Espectáculos</a>
+            </div>
+          </app-toolbar>
+  
+        </app-header>
+  
+        <header>
+          <img src="images/manifest/icon-512x512.png"></img>
+          <p>O património cultural do Alentejo através das expressões artísticas locais</p>
+        </header>
+
+        <iron-pages
+            selected="[[page]]"
+            attr-for-selected="name"
+            fallback-selection="view404"
+            role="main">
+          <artfest-home name="home"></artfest-home>
+          <artfest-view404 name="view404"></artfest-view404>
+        </iron-pages>
+        <aside style="width: 100%; padding:1em 0;">
+          <img src="images/cofin/barra_cofin_FEDER.png" style="max-width:100%;"></img>
+        </aside>
+        <aside>
+          <h3>Parceiros</h3>
+          <div style="display: flex; justify-content: center; align-items: center">
+            <img src="images/logos/beja.png"/>
+            <img src="images/logos/cuba.png"/>
+            <img src="images/logos/elvas.png"/>
+            <img src="images/logos/evora.png"/>
+            <img src="images/logos/portel.png"/>
+            <img src="images/logos/vidigueira.png"/>
+          </div>
+        </aside>
+        <footer style="padding:1em 1em; background-color: black; display: flex; justify-content: space-between;">
+          <div style="color: white; margin: 0 1em">Todos os direitos reservados <a href="http://associarte.pt">Associarte</a></div>
+          <div style="color: white; margin: 0 1em">Site desenvolvido por Hugo Delgado</div>
+        </footer>
+      </app-header-layout>
+  </template>
+
+  <script>
+    class MyApp extends Polymer.Element {
+      static get is() { return 'my-app'; }
+
+      static get properties() {
+        return {
+          page: {
+            type: String,
+            reflectToAttribute: true,
+            observer: '_pageChanged',
+          },
+          routeData: Object,
+          subroute: String,
+          rootPath: String
+        };
+      }
+
+      static get observers() {
+        return [
+          '_routePageChanged(routeData.page)',
+        ];
+      }
+
+      _routePageChanged(page) {
+        this.page = page || 'home';
+      }
+
+      _pageChanged(page) {
+        // Load page import on demand. Show 404 page if fails
+        var resolvedPageUrl = this.resolveUrl('artfest-' + page + '.html');
+        Polymer.importHref(
+            resolvedPageUrl,
+            null,
+            this._showPage404.bind(this),
+            true);
+      }
+
+      _showPage404() {
+        this.page = 'view404';
+      }
+    }
+
+    window.customElements.define(MyApp.is, MyApp);
+  </script>
+</dom-module>
