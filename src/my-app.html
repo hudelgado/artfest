@@ -39,6 +39,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: inherit;
       }
 
+      app-header {
+        background-color: white;
+        padding-bottom: 0.5em;
+      }
+
       .toolbar {
         @apply --layout-horizontal;
         @apply --layout-end-justified;
@@ -62,7 +67,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         border-bottom: 1px solid #222;
       }
 
-      header {
+      section#header {
         @apply --layout-vertical;
         @apply --layout-center-center;
         height: calc(100vh - 64px);
@@ -74,17 +79,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-align: center;
       }
 
-      header>h2 {
+      section#header > h2 {
         font-size: 56px;
         font-weight: 300;
         margin: 0;
       }
 
-      header>p {
+      section#header > p {
         font-size: 32px;
       }
       @media (max-width: 600px) {
-        header img {
+        section#header img {
           width: 192px;
           height: 192px;
         }
@@ -122,10 +127,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   
         </app-header>
   
-        <header>
+        <section id="header">
           <img src="images/manifest/icon-512x512.png"></img>
           <p>O património cultural do Alentejo através das expressões artísticas locais</p>
-        </header>
+        </section>
 
         <iron-pages
             selected="[[page]]"
