@@ -1,6 +1,6 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/my-app.html",
+  "shell": "src/artfest-app.html",
   "fragments": [
     "src/artfest-home.html",
     "src/artfest-view404.html"
