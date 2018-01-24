@@ -132,10 +132,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <h2>Espectáculos</h2>
       <template is="dom-repeat" items="{{cities.0.shows}}">
         <div style="display:flex; justify-content: space-between;">
-          <div style="width: 5%;margin-bottom: 2%;display:flex; justify-content: center; align-items: center;flex-direction: column;">
+          <div style="width: 10%;min-width:120px;margin-bottom: 2%;display:flex; justify-content: center; align-items: center;flex-direction: column;">
             <div>[[__getDay(item.date)]]</div>
             <div>[[__getMonth(item.date)]]</div>
             <div>[[__getHour(item.date)]]h</div>
+            <div><iron-icon icon="my-icons:location-on"></iron-icon>Armazém8</div>
           </div>
           <div style="width: 32%;margin-bottom: 2%;">
             <img src="[[item.images.featured]]" style="width: 100%;"/>
