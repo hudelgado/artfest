@@ -131,12 +131,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </template>
       <h2>Espectáculos</h2>
       <template is="dom-repeat" items="{{cities.0.shows}}">
-        <div style="display: flex;  margin: auto;">
-          <div style="margin: 0 2em;">[[item.date]]</div>
-          <div style="width: 250px; height: 187px; margin: 0 4em;">
+        <div style="display:flex; justify-content: space-between;">
+          <div style="width: 5%;margin-bottom: 2%;display:flex; justify-content: center; align-items: center;flex-direction: column;">
+            <div>[[__getDay(item.date)]]</div>
+            <div>[[__getMonth(item.date)]]</div>
+            <div>[[__getHour(item.date)]]h</div>
+          </div>
+          <div style="width: 32%;margin-bottom: 2%;">
             <img src="[[item.images.featured]]" style="width: 100%;"/>
           </div>
-          <div>[[item.artist]]<span style="display: block; margin-left: 1em; flex:1">[[item.genre]]</span></div>
+          <div style="width: 52%;margin-bottom: 2%;">[[item.artist]]<span style="display: block; margin-left: 1em;">[[item.genre]]</span></div>
         </div>
       </template>
     </section>
@@ -178,45 +182,45 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 }
               }],
               shows: [{
-                date: '2018-03-03',
+                date: '2018-3-3 22:00:00',
                 artist: 'Ricardo Martins',
                 genre: 'Guitarra Portuguesa',
                 images: {
                   featured: 'images/grupos/ricardo_martins.jpg'
                 }
               }, {
-                date: '2018-03-10',
+                date: '2018-03-10 22:00:00',
                 artist: 'Manuel Dias',
-                genre: 'Marionetas',
+                genre: 'Marionetas e Robertos',
                 images: {
                   featured: 'images/grupos/trule_manuel_dias.jpg'
                 }
               }, {
-                date: '2018-03-15',
+                date: '2018-03-15 22:00:00',
                 artist: 'Zanguizarra',
-                genre: 'Música Tradicional e Baile',
+                genre: 'Música tradicional e baile popular',
                 images: {
                   featured: 'images/grupos/zanguizarra.jpg'
                 }
               }, {
-                date: '2018-03-24',
+                date: '2018-03-24 22:00:00',
                 artist: '5º de Sopros',
                 genre: 'Música Tradicional em Jazz',
                 images: {
                   featured: ''
                 }
               }, {
-                date: '2018-03-30',
+                date: '2018-03-30 22:00:00',
                 artist: 'O Luar da Namorosa',
-                genre: 'Música Alentejana',
+                genre: 'Música tradicional do Alentejo e cante',
                 images: {
                   featured: 'images/grupos/luar_da_namorosa.jpg'
                 }
               }, {
                 place: 'Évora',
-                date: '2018-03-31',
+                date: '2018-03-31 22:00:00',
                 artist: 'Fado Lélé',
-                genre: 'Fado com sonoridades do mundo',
+                genre: 'As canções que existem no fado pelos ukuleles do mundo',
                 images: {
                   featured: 'images/grupos/fado_lele.jpg'
                 }
@@ -240,6 +244,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             }]
           }
         }
+      }
+      __parseTime(date) {
+        var parsedDate = new Date(date);
+        return parsedDate.toTimeString().split(' ');
+      }
+      __parseDate(date) {
+        var parsedDate = new Date(date);
+        return parsedDate.toDateString().split(' ');
+      }
+      __getDay(date) {
+        var dateParts = this.__parseDate(date);
+        return dateParts[2];
+      }
+      __getMonth(date) {
+        var dateParts = this.__parseDate(date);
+        return dateParts[1];
+      }
+      __getYear(date) {
+        var dateParts = this.__parseDate(date);
+        return dateParts[3];
+      }
+      __getHour(date) {
+        var timeParts = this.__parseTime(date);
+        return timeParts[0].split(':')[0];
       }
     }
 
