@@ -9,6 +9,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tab.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="artfest-home">
@@ -47,6 +49,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .container p {
         line-height: 1.5;
       }
+
       .container .content-container {
         margin-left: 1em !important;
       }
@@ -57,51 +60,187 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
       }
     </style>
+    <style is="custom-style">
+      paper-tabs {
+        --paper-tabs-selection-bar-color: red;
+      }
+
+      paper-tab {
+        color: #212121;
+      }
+
+      paper-tab.iron-selected {
+        font-weight: bold;
+      }
+    </style>
 
 
-
-      <section id="filmes">
-        <div class="container">
-          <div>
-            <img src="images/filmes/muralhas_que_unem/filmagens/Image-6.png">
-          </div>
-          <div class="content-container">
-            <h3>Filmes</h3>
-            <p>Produção de conteúdos audovisuais de cinema e vídeo e é composto por 6 filmes/documentários realizados e editados por Luís Godinho.</p>
-          </div>
+    <section id="filmes">
+      <div class="container">
+        <div>
+          <img src="images/filmes/marfim/estreia/3.png">
         </div>
-      </section>
-
-      <section id="exposicoes">
-        <div class="container">
-          <div>
-            <img src="images/tmp/exhibition.jpg">
-          </div>
-          <div class="content-container">
-            <h3>Exposições</h3>
-            <p>Exposição de Fotografia sobre o Alentejo, que pretende colocar em evidência a ligação entre o Património Material e Imaterial do Alto, Baixo, Litoral e Alentejo Central.</p>
-              <p>Percorrerá as 4 sub-regiões do Alentejo desde o processo criativo ao produto final.</p>
-              <p>Trata-se de uma exposição única que circulará por 6 cidades e contará com uma quantidade de imagens a rondar as 30.</p>
-          </div>
+        <div class="content-container">
+          <h3>Filmes</h3>
+          <p>Produção de conteúdos audovisuais de cinema e vídeo e é composto por 6 filmes/documentários realizados e
+            editados por Luís Godinho.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="espectaculos">
-        <div class="container">
-          <div>
-            <img src="images/tmp/soap-bubbles.jpg">
-          </div>
-          <div class="content-container">
-            <h3>Espectáculos</h3>
-            <p>Produção e apresentação de 34 espectáculos de algumas das artes performativas mais identitárias do Alentejo com apresentações semanais ao vivo.</p>
-          </div>
+    <section id="exposicoes">
+      <div class="container">
+        <div>
+          <img src="images/tmp/exhibition.jpg">
         </div>
-      </section>
+        <div class="content-container">
+          <h3>Exposições</h3>
+          <p>Exposição de Fotografia sobre o Alentejo, que pretende colocar em evidência a ligação entre o Património
+            Material e Imaterial do Alto, Baixo, Litoral e Alentejo Central.</p>
+          <p>Percorrerá as 4 sub-regiões do Alentejo desde o processo criativo ao produto final.</p>
+          <p>Trata-se de uma exposição única que circulará por 6 cidades e contará com uma quantidade de imagens a rondar
+            as 30.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="espectaculos">
+      <div class="container">
+        <div>
+          <img src="images/tmp/soap-bubbles.jpg">
+        </div>
+        <div class="content-container">
+          <h3>Espectáculos</h3>
+          <p>Produção e apresentação de 34 espectáculos de algumas das artes performativas mais identitárias do Alentejo
+            com apresentações semanais ao vivo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <paper-tabs selected="0" scrollable fit-container>
+        <template is="dom-repeat" items="{{cities}}" as="city">
+          <paper-tab disabled="[[city.disabled]]">[[city.name]]</paper-tab>
+        </template>
+      </paper-tabs>
+      <h2>Filmes</h2>
+      <template is="dom-repeat" items="{{cities.0.movies}}">
+        <div style="width: 260px;">
+          <img src="[[item.images.featured.url]]" style="width: 100%;" />
+        </div>
+      </template>
+      <h2>Espectáculos</h2>
+      <template is="dom-repeat" items="{{cities.0.shows}}">
+        <div style="display: flex;  margin: auto;">
+          <div style="margin: 0 2em;">[[item.date]]</div>
+          <div style="width: 250px; height: 187px; margin: 0 4em;">
+            <img src="[[item.images.featured]]" style="width: 100%;"/>
+          </div>
+          <div>[[item.artist]]<span style="display: block; margin-left: 1em; flex:1">[[item.genre]]</span></div>
+        </div>
+      </template>
+    </section>
   </template>
 
   <script>
     class ArtfestHome extends Polymer.Element {
       static get is() { return 'artfest-home'; }
+      static get properties() {
+        return {
+          cities: {
+            type: Array,
+            value: [{
+              name: 'Évora',
+              movies: [{
+                name: 'Marfim',
+                subtitle: 'Évora património da humanidade',
+                description: 'Filme para assinalar os 30 anos da classificação de Évora como Património da Humanidade. Um conhecido artista local, António Bexiga, com a sua viola campaniça, percorre a cidade e mostra-nos os seus recantos numa viagem acompanhada por outros artistas nascidos na cidade (como o bailarino Luís Marrafa ou o marionetista Manuel Dias) ou por gente do mundo das artes que, chegada de fora, tem o seu primeiro encontro com a cidade.',
+                trailer: 'https://vimeo.com/240681059',
+                movie: '',
+                images: {
+                  featured: {
+                    url: 'images/filmes/marfim/cartaz.jpg'
+                  },
+                  estreia: [{
+                    url: 'images/filmes/marfim/estreia/1.png'
+                  }, {
+                    url: 'images/filmes/marfim/estreia/2.png'
+                  }, {
+                    url: 'images/filmes/marfim/estreia/3.png'
+                  }],
+                  filmagens: [{
+                    url: 'images/filmes/marfim/filmagens/1.png'
+                  }, {
+                    url: 'images/filmes/marfim/filmagens/2.png'
+                  }, {
+                    url: 'images/filmes/marfim/filmagens/3.png'
+                  }]
+                }
+              }],
+              shows: [{
+                date: '2018-03-03',
+                artist: 'Ricardo Martins',
+                genre: 'Guitarra Portuguesa',
+                images: {
+                  featured: 'images/grupos/ricardo_martins.jpg'
+                }
+              }, {
+                date: '2018-03-10',
+                artist: 'Manuel Dias',
+                genre: 'Marionetas',
+                images: {
+                  featured: 'images/grupos/trule_manuel_dias.jpg'
+                }
+              }, {
+                date: '2018-03-15',
+                artist: 'Zanguizarra',
+                genre: 'Música Tradicional e Baile',
+                images: {
+                  featured: 'images/grupos/zanguizarra.jpg'
+                }
+              }, {
+                date: '2018-03-24',
+                artist: '5º de Sopros',
+                genre: 'Música Tradicional em Jazz',
+                images: {
+                  featured: ''
+                }
+              }, {
+                date: '2018-03-30',
+                artist: 'O Luar da Namorosa',
+                genre: 'Música Alentejana',
+                images: {
+                  featured: 'images/grupos/luar_da_namorosa.jpg'
+                }
+              }, {
+                place: 'Évora',
+                date: '2018-03-31',
+                artist: 'Fado Lélé',
+                genre: 'Fado com sonoridades do mundo',
+                images: {
+                  featured: 'images/grupos/fado_lele.jpg'
+                }
+              }],
+              disabled: false
+            }, {
+              name: 'Beja',
+              disabled: true
+            }, {
+              name: 'Elvas',
+              disabled: true
+            }, {
+              name: 'Vidigueira',
+              disabled: true
+            }, {
+              name: 'Cuba',
+              disabled: true
+            }, {
+              name: 'Portel',
+              disabled: true
+            }]
+          }
+        }
+      }
     }
 
     window.customElements.define(ArtfestHome.is, ArtfestHome);

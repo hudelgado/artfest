@@ -88,6 +88,36 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       section#header > p {
         font-size: 32px;
       }
+
+      aside {
+        width: 100%;
+        padding:1em 0;
+      }
+
+      aside img#barraCofin {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      aside div.logosContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      footer {
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+        padding: 1em 1em;
+      }
+
+      footer .footerEntry {
+        color: white;
+        margin: 0 1em;
+      }
+
       @media (max-width: 600px) {
         section#header img {
           width: 192px;
@@ -140,12 +170,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <artfest-home name="home"></artfest-home>
           <artfest-view404 name="view404"></artfest-view404>
         </iron-pages>
-        <aside style="width: 100%; padding:1em 0;">
-          <img src="images/cofin/barra_cofin_FEDER.png" style="max-width:100%;"></img>
+        <aside>
+          <img id="barraCofin" src="images/cofin/barra_cofin_FEDER.png"></img>
         </aside>
         <aside>
           <h3>Parceiros</h3>
-          <div style="display: flex; justify-content: center; align-items: center">
+          <div class="logosContainer">
             <img src="images/logos/Beja.png"/>
             <img src="images/logos/Cuba.png"/>
             <img src="images/logos/elvas.png"/>
@@ -154,9 +184,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <img src="images/logos/Vidigueira.png"/>
           </div>
         </aside>
-        <footer style="padding:1em 1em; background-color: black; display: flex; justify-content: space-between;">
-          <div style="color: white; margin: 0 1em">Todos os direitos reservados <a href="http://associarte.pt">Associarte</a></div>
-          <div style="color: white; margin: 0 1em">Site desenvolvido por Hugo Delgado</div>
+        <footer>
+          <div class="footerEntry">Todos os direitos reservados <a href="http://associarte.pt">Associarte</a></div>
+          <div class="footerEntry">Site desenvolvido por Hugo Delgado</div>
         </footer>
       </app-header-layout>
   </template>
