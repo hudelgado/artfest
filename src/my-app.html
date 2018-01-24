@@ -90,8 +90,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       aside {
-        width: 100%;
-        padding:1em 0;
+        width: 98%;
+        margin: 0 1em;
       }
 
       aside img#barraCofin {
@@ -101,9 +101,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       aside div.logosContainer {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
+      }
+
+      .logosContainer img {
+        width: 150px;
       }
 
       footer {
@@ -171,10 +175,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <artfest-view404 name="view404"></artfest-view404>
         </iron-pages>
         <aside>
-          <img id="barraCofin" src="images/cofin/barra_cofin_FEDER.png"></img>
+          <h3>Cofinanciado por:</h3>
+          <div>
+            <img src="images/cofin/alentejo_2020.png"/>
+            <img src="images/cofin/portugal_2020.png"/>
+            <img src="images/cofin/ue_feder.png"/>
+          </div>
         </aside>
         <aside>
-          <h3>Parceiros</h3>
+          <h3>Parceiros:</h3>
           <div class="logosContainer">
             <img src="images/logos/Beja.png"/>
             <img src="images/logos/Cuba.png"/>
@@ -182,6 +191,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <img src="images/logos/Evora.png"/>
             <img src="images/logos/Portel.png"/>
             <img src="images/logos/Vidigueira.png"/>
+            <img src="images/logos/aca.png"/>
+            <img src="images/logos/armazem8.png"/>
           </div>
         </aside>
         <footer>
