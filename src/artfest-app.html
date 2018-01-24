@@ -23,7 +23,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="lazy-import" href="artfest-home.html">
 <link rel="lazy-import" href="artfest-view404.html">
 
-<dom-module id="my-app">
+<dom-module id="artfest-app">
   <template>
     <style>
       :host {
@@ -203,8 +203,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </template>
 
   <script>
-    class MyApp extends Polymer.Element {
-      static get is() { return 'my-app'; }
+    class ArtfestApp extends Polymer.Element {
+      static get is() { return 'artfest-app'; }
 
       static get properties() {
         return {
@@ -244,6 +244,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     }
 
-    window.customElements.define(MyApp.is, MyApp);
+    window.customElements.define(ArtfestApp.is, ArtfestApp);
   </script>
 </dom-module>
