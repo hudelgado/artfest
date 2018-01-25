@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["bower_components/webcomponentsjs/webcomponents-loader.js","f13bbbbf647b7922575a7894367ddaaf"],["images/favicon.ico","baf0208fec354ad1a480b88566d2d23f"],["index.html","a790e14e122b45d790ed991dbd2aadc0"],["manifest.json","2292acae974819e6932b9b88e0215168"],["src/artfest-app.html","fc524bf263651506004f1ca06983b009"],["src/artfest-home.html","78ea406be0048542aca3a0e094e494b7"],["src/artfest-view404.html","6dfdd2c8f8b69aefc2acdccbe5204d9a"]];
+var precacheConfig = [["bower_components/webcomponentsjs/webcomponents-loader.js","f13bbbbf647b7922575a7894367ddaaf"],["images/favicon.ico","baf0208fec354ad1a480b88566d2d23f"],["index.html","a790e14e122b45d790ed991dbd2aadc0"],["manifest.json","2292acae974819e6932b9b88e0215168"],["src/artfest-app.html","da67204107c594cc4a8d3700fb1b3919"],["src/artfest-home.html","3ecadd0fa8dcddd2af149a5769fc667a"],["src/artfest-view404.html","6dfdd2c8f8b69aefc2acdccbe5204d9a"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
