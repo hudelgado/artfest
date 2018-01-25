@@ -9,6 +9,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/app-route/app-route.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="artfest-detalhes">
@@ -20,14 +22,70 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
     </style>
-  <div>Detalhes filme</div>
+    <app-route
+      route="[[route]]"
+      pattern="/:category/:item"
+      data="{{routeData}}"></app-route>
+      <paper-icon-button on-click="__goToHome" icon="my-icons:arrow-back" style="float: left;"></paper-icon-button>
+      <h1>[[entry.name]]</h1>
+      <div style="display: flex; flex-wrap: wrap; width: 100%; align-items: center; justify-content: center;">
+        <iframe style="flex: 1" src="[[entry.trailer]]" height="300px" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div style="display: flex; flex-wrap: wrap;">
+        <img src="[[entry.images.featured]]" />
+        <div style="margin-left: 1em;">
+          <template is="dom-repeat" items="[[entry.description]]" as="description">
+              <p>[[description]]</p>
+          </template>
+        </div>
+      </div>
+      <div>
+        <h2>Filmagens</h2>
+        <div>
+          <template is="dom-repeat" items="[[entry.images.filmagens]]">
+            <img src="[[item]]" style="flex: 1; width: 350px;"/>
+          </template>
+        </div>
+      </div>
+      <div>
+        <h2>Estreia</h2>
+        <div>
+          <template is="dom-repeat" items="[[entry.images.estreia]]">
+            <img src="[[item]]" style="flex: 1; width: 350px;"/>
+          </template>
+        </div>
+      </div>
   </template>
 
   <script>
     class ArtfestDetalhes extends Polymer.Element {
       static get is() { return 'artfest-detalhes'; }
       static get properties() {
-        return {}
+        return {
+          routeData: Object,
+          subroute: String,
+          movies: {
+            type: Array
+          },
+          shows: {
+            type: Array
+          },
+          entry: {
+            type: Object,
+            computed: '_computeEntry(movies, routeData.item)'
+          }
+        }
+      }
+      _computeEntry(movies, itemName) {
+        if (!movies || !itemName) {
+          return;
+        }
+        var result = movies.filter(function(item) {return item.name.toLowerCase() == itemName.toLowerCase()});
+        return result.length > 0 ? result[0] : null;
+      }
+
+      __goToHome() {
+        window.location.pathname = '';
       }
     }
 

@@ -172,8 +172,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </div>
           </paper-card>
         </template> -->
-        <paper-card class="movie">
-          <div class="card-content">
+        <paper-card class="movie" id="marfim">
+          <div class="card-content" style="cursor: pointer;" on-click="_openMovieDetails">
             <div class="movie-image">
               <img src="images/filmes/marfim/cartaz.jpg" />
             </div>
@@ -290,153 +290,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       static get is() { return 'artfest-home'; }
       static get properties() {
         return {
-          movies: {
-            type: Array,
-            value: [{
-              name: 'Marfim',
-              title: 'Évora Património da Humanidade',
-              description: [
-                'Filme que assinala os 30 anos da classificação de Évora como Património da Humanidade.',
-                'Memórias e artistas numa cidade que surpreende a cada esquina.',
-                'Morada de muitas civilizações e reinados.'
-              ],
-              images: {
-                featured: 'images/filmes/marfim/cartaz.jpg'
-              }
-            }, {
-              name: 'Terra do Pão',
-              title: '',
-              description: [
-                'O ponto de partida é a Dieta Mediterrânica, classificada Património Imaterial da UNESCO e um dos seus elementos centrais, o pão.',
-                'O documentário evoca o ciclo do pão, explica a história do alimento e toda a carga simbólica (até litúrgica) a ele associada.'
-              ],
-              images: {
-                featured: 'http://via.placeholder.com/300x600?text=Terra+do+Pão'
-              }
-            }, {
-              name: 'Cante Alentejano',
-              title: '',
-              description: [
-                'O Cante tradicional do Alentejo – igualmente classificado pela UNESCO – contem história, tradição, alegria ou lamento.',
-                'Fala de lugares, coloca questões, relata a vida e o viver de um povo que canta “o que lhe vai na alma”.',
-                'Modas que passam de geração em geração, tornando longínqua a sua origem.'
-              ],
-              images: {
-                featured: 'http://via.placeholder.com/300x600?text=Cante+Alentejano'
-              }
-            }, {
-              name: 'Muralhas que Unem',
-              title: 'Elvas',
-              description: [
-                'As fortificações abaluartadas de Elvas, que se encontram inscritas na lista do Património Mundial da UNESCO, perderam a sua função militar e são hoje ponto de encontro entre culturas dos dois lados da raia.',
-                'Este património serve de pano de fundo para o encontro de gente dos dois lados de uma fronteira que não separa, mas une, dois povos que hoje caminham lado a lado.',
-                'Morada de muitas civilizações e reinados.'
-              ],
-              images: {
-                featured: 'http://via.placeholder.com/300x600?text=Muralhas+que+Unem'
-              }
-            }, {
-              name: 'Saias',
-              title: 'Danças e Cante',
-              description: [
-                'Modas coreográficas do Alto Alentejo, as saias cantam-se ao despique durante as fainas agrícolas (apanha da azeitona, p. ex.) ou cantam-se e dançam-se em dias festivos como o de São João ou nas Festas do Povo, de Campo Maior (recentemente candidatas a Património Cultural Imaterial da UNESCO).'
-              ],
-              images: {
-                featured: 'http://via.placeholder.com/300x600?text=Saias'
-              }
-            }, {
-              name: 'Minas com História',
-              title: 'Évora Património da Humanidade',
-              description: [
-                'A Faixa Piritosa Ibérica constitui uma vasta área geográfica do sul da Península, com cerca de 250 quilómetros de comprimento, entre Alcácer do Sal, a Noroeste, e Sevilha (Espanha), a Sudoeste.',
-                'Este filme centra-se essencialmente no património histórico, paisagístico e humano de duas das principais minas desta faixa – Lousal (Grândola) e São Domingos (Mértola).'
-              ],
-              images: {
-                featured: 'http://via.placeholder.com/300x600?text=Minas+Com+História'
-              }
-            }]
-          },
           shows: {
-            type: Array,
-            value: [{
-              scheduele: {
-                evora: {
-                  date: '2018-03-3 22:00:00',
-                  place: 'Armazém8'
-                }
-              },
-              date: '2018-3-3 22:00:00',
-              artist: 'Ricardo Martins',
-              genre: 'Guitarra Portuguesa',
-              images: {
-                featured: 'images/grupos/ricardo_martins.jpg'
-              }
-            }, {
-              scheduele: {
-                evora: {
-                  date: '2018-03-10 22:00:00',
-                  place: 'Armazém8'
-                }
-              },
-              date: '2018-03-10 22:00:00',
-              artist: 'Manuel Dias',
-              genre: 'Marionetas e Robertos',
-              images: {
-                featured: 'images/grupos/trule_manuel_dias.jpg'
-              }
-            }, {
-              scheduele: {
-                evora: {
-                  date: '2018-03-15 22:00:00',
-                  place: 'Armazém8'
-                }
-              },
-              date: '2018-03-15 22:00:00',
-              artist: 'Zanguizarra',
-              genre: 'Música tradicional e baile popular',
-              images: {
-                featured: 'images/grupos/zanguizarra.jpg'
-              }
-            }, {
-              scheduele: {
-                evora: {
-                  date: '2018-03-24 22:00:00',
-                  place: 'Armazém8'
-                }
-              },
-              date: '2018-03-24 22:00:00',
-              artist: 'Nanã Sousa Dias Quinteto',
-              genre: 'Música Tradicional em Jazz',
-              images: {
-                featured: 'images/grupos/Nana.jpg'
-              }
-            }, {
-              scheduele: {
-                evora: {
-                  date: '2018-03-30 22:00:00',
-                  place: 'Armazém8'
-                }
-              },
-              date: '2018-03-30 22:00:00',
-              artist: 'O Luar da Namorosa',
-              genre: 'Música tradicional do Alentejo e cante',
-              images: {
-                featured: 'images/grupos/luar_da_namorosa.jpg'
-              }
-            }, {
-              scheduele: {
-                evora: {
-                  date: '2018-03-31 22:00:00',
-                  place: 'Armazém8'
-                }
-              },
-              date: '2018-03-31 22:00:00',
-              artist: 'Fado Lélé',
-              genre: 'As canções que existem no fado pelos ukuleles do mundo',
-              images: {
-                featured: 'images/grupos/fado_lele.jpg'
-              }
-            }]
+            type: Array
+          },
+          movies: {
+            type: Array
           }
         }
       }
@@ -479,6 +337,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       __getHour(date) {
         var timeParts = this.__parseTime(date);
         return timeParts[0].split(':')[0];
+      }
+
+      _openMovieDetails(evt) {
+        var movieName = evt.target.parentElement.parentElement.parentElement.id;
+        window.location.pathname = `/detalhes/filme/${movieName}`;
       }
     }
 
