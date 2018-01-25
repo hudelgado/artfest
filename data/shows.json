@@ -1,0 +1,79 @@
+[{
+    "scheduele": {
+      "evora": {
+        "date": "2018-03-3 22:00:00",
+        "place": "Armazém8"
+      }
+    },
+    "date": "2018-3-3 22:00:00",
+    "artist": "Ricardo Martins",
+    "genre": "Guitarra Portuguesa",
+    "images": {
+      "featured": "images/grupos/ricardo_martins.jpg"
+    }
+  }, {
+    "scheduele": {
+      "evora": {
+        "date": "2018-03-10 22:00:00",
+        "place": "Armazém8"
+      }
+    },
+    "date": "2018-03-10 22:00:00",
+    "artist": "Manuel Dias",
+    "genre": "Marionetas e Robertos",
+    "images": {
+      "featured": "images/grupos/trule_manuel_dias.jpg"
+    }
+  }, {
+    "scheduele": {
+      "evora": {
+        "date": "2018-03-15 22:00:00",
+        "place": "Armazém8"
+      }
+    },
+    "date": "2018-03-15 22:00:00",
+    "artist": "Zanguizarra",
+    "genre": "Música tradicional e baile popular",
+    "images": {
+      "featured": "images/grupos/zanguizarra.jpg"
+    }
+  }, {
+    "scheduele": {
+      "evora": {
+        "date": "2018-03-24 22:00:00",
+        "place": "Armazém8"
+      }
+    },
+    "date": "2018-03-24 22:00:00",
+    "artist": "Nanã Sousa Dias Quinteto",
+    "genre": "Música Tradicional em Jazz",
+    "images": {
+      "featured": "images/grupos/Nana.jpg"
+    }
+  }, {
+    "scheduele": {
+      "evora": {
+        "date": "2018-03-30 22:00:00",
+        "place": "Armazém8"
+      }
+    },
+    "date": "2018-03-30 22:00:00",
+    "artist": "O Luar da Namorosa",
+    "genre": "Música tradicional do Alentejo e cante",
+    "images": {
+      "featured": "images/grupos/luar_da_namorosa.jpg"
+    }
+  }, {
+    "scheduele": {
+      "evora": {
+        "date": "2018-03-31 22:00:00",
+        "place": "Armazém8"
+      }
+    },
+    "date": "2018-03-31 22:00:00",
+    "artist": "Fado Lélé",
+    "genre": "As canções que existem no fado pelos ukuleles do mundo",
+    "images": {
+      "featured": "images/grupos/fado_lele.jpg"
+    }
+  }]
