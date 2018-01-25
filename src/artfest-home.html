@@ -341,7 +341,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       _openMovieDetails(evt) {
         var movieName = evt.target.parentElement.parentElement.parentElement.id;
-        window.location.pathname = `/detalhes/filme/${movieName}`;
+        window.location.hash = `/detalhes/filme/${movieName}`;
+        Polymer.AppLayout.scroll({ top: 600, behavior: 'silent' });
       }
     }
 

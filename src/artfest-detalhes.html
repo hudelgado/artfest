@@ -85,7 +85,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       __goToHome() {
-        window.location.pathname = '';
+        Polymer.AppLayout.scroll({ top: 0, behavior: 'silent' });
+        window.location.hash = '/home/';
       }
     }
 
