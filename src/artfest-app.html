@@ -21,6 +21,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="my-icons.html">
 
 <link rel="lazy-import" href="artfest-home.html">
+<link rel="lazy-import" href="artfest-detalhes.html">
 <link rel="lazy-import" href="artfest-view404.html">
 
 <dom-module id="artfest-app">
@@ -138,7 +139,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <app-route
         route="{{route}}"
-        pattern=":page"
+        pattern="/:page"
         data="{{routeData}}"
         tail="{{subroute}}">
     </app-route>
@@ -160,7 +161,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </app-toolbar>
   
         </app-header> -->
-  
         <section id="header">
           <img src="images/manifest/icon-512x512.png"></img>
           <p>O património cultural do Alentejo através das expressões artísticas locais</p>
@@ -172,6 +172,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             fallback-selection="view404"
             role="main">
           <artfest-home name="home"></artfest-home>
+          <artfest-detalhes name="detalhes"></artfest-detalhes>
           <artfest-view404 name="view404"></artfest-view404>
         </iron-pages>
         <aside>

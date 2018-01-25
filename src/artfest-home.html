@@ -14,6 +14,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/paper-styles/typography.html">
+<link rel="import" href="../bower_components/iron-collapse/iron-collapse.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="artfest-home">
@@ -271,6 +272,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <div class="show-header">[[item.artist]]</div>
             <div>[[item.genre]]</div>
           </div>
+          <ul>
+            <li>Évora<br/>
+              <span><iron-icon icon="my-icons:location-on"></iron-icon>Armazém 8</span>
+              <span style="margin-left: 1em;"><iron-icon icon="my-icons:date-range"></iron-icon>[[_getShowSchedueleDate(item)]]</span>
+              <span style="margin-left: 1em;"><iron-icon icon="my-icons:access-time"></iron-icon>[[_getShowSchedueleTime(item)]]</span>
+            </li>
+          </ul>
         </paper-card>
         </template>
       </div>
@@ -432,8 +440,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           }
         }
       }
+      _getShowSchedueleDate(show) {
+        return this.__getDay(show.scheduele.evora.date) + ' ' + 
+          this.__getMonth(show.scheduele.evora.date);
+      }
+      _getShowSchedueleTime(show) {
+        return this.__getHour(show.scheduele.evora.date) + 'h';
+      }
+      _toggle(evt) {
+        var moreInfo = evt.target.nextElementSibling
+        var iconButton = Polymer.dom(event).localTarget;
+        iconButton.icon = moreInfo.opened ? 'my-icons:keyboard-arrow-up': 'my-icons:keyboard-arrow-down';
+        moreInfo.toggle();
+      }
       __getMovieDescription(description, index) {
-        debugger;
         return description;
       }
       __parseTime(date) {
