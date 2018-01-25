@@ -11,6 +11,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
 <link rel="import" href="../bower_components/paper-tabs/paper-tab.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-styles/typography.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="artfest-home">
@@ -54,6 +57,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin-left: 1em !important;
       }
 
+      .callout {
+        display: flex;
+      }
+
+      paper-card {
+        flex: 1;
+        margin: 1em;
+        --paper-card-header-color: #fff;
+      }
+
       @media (max-width: 600px) {
         .container {
           @apply --layout-vertical;
@@ -73,77 +86,194 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         font-weight: bold;
       }
     </style>
+    <style is="custom-style">
+      .movie-image,
+      .ashow-image {
+        float: right;
+      }
 
+      .movie-header,
+      .ashow-header {
+        @apply --paper-font-headline;
+      }
 
-    <section id="filmes">
-      <div class="container">
-        <div>
-          <img src="images/filmes/marfim/estreia/3.png">
+      paper-icon-button.movie-icon,
+      paper-icon-button.show-icon {
+        --iron-icon-fill-color: white;
+        --iron-icon-stroke-color: var(--paper-grey-600);
+      }
+    </style>
+    </custom-style>
+
+    <div class="callout">
+      <paper-card heading="Filmes" image="images/home/filmes.jpg" alt="Filmes">
+        <div class="card-content" style="height: 150px;">
+          <h3>SÉRIE DOCUMENTAL SOBRE O ALENTEJO</h3>
+          <p>Esta série documental contempla a realização de 6 filmes a apresentar em auditórios ou salas de todos os municípios
+            envolvidos nesta parceria. Com realização de Luís Godinho.</p>
         </div>
-        <div class="content-container">
-          <h3>Filmes</h3>
-          <p>Produção de conteúdos audovisuais de cinema e vídeo e é composto por 6 filmes/documentários realizados e
-            editados por Luís Godinho.</p>
+      </paper-card>
+      <paper-card heading="Exposições" image="images/home/exposicoes.jpg" alt="Exposições">
+        <div class="card-content">
+          <p>Uma proposta que engloba a realização de uma exposição de Fotografia sobre o Alentejo, que pretende colocar em
+            evidência a ligação entre o Património Material e Imaterial do Alto, Baixo, Litoral e Alentejo Central. Trata-se
+            de uma exposição única que circulará por 6 cidades adaptada às galerias municipais existentes, a espaços expositivos
+            próprios em unidades hoteleiras e ao espaço urbano onde serão afixadas em mobiliário urbano pré-existente ou
+            em telas colocadas no exterior.</p>
+          <p>A mostra conta com uma publicação que compilará uma seleção das imagens expostas mais ilustrativas.</p>
+          <p>Estas ações contam com o envolvimento dos fotógrafos Rui Diogo Castela, Carlos Gasparinho e Telmo Rocha.</p>
         </div>
-      </div>
+      </paper-card>
+      <paper-card heading="Espetáculos" image="images/home/espectaculos.jpg" alt="Espetáculos">
+        <div class="card-content">
+          Exposição de Fotografia sobre o Alentejo, que pretende colocar em evidência a ligação entre o Património Material e
+          Imaterial do Alto, Baixo, Litoral e Alentejo Central.
+        </div>
+      </paper-card>
+    </div>
+
+    <section>
+      <paper-card>
+        <div class="card-content">
+          <div class="movie-header">ARTFEST
+            <span class="font-weight: bold;">PATRIMÓNIOS</span>
+          </div>
+          <p>É a designação genérica do projeto de animação cultural promovido pela Associ’arte - Associação de Comunicação
+            e Artes e conta com as parcerias de vários municípios: Évora, Elvas, Beja, Cuba, Vidigueira e Portel. A decorrer
+            até 2019, o projeto é Cofinanciado pelo Alentejo 2020, Portugal 2020, União Europeia – Fundo Europeu de Desenvolvimento
+            Regional.</p>
+          <p>Trata-se de um conjunto de iniciativas que evidenciam algumas das características distintivas da Região Alentejo
+            como o vasto património imaterial, características naturais e geográficas, gastronomia, vinho, música, danças,
+            teatro de bonecos e o cante.</p>
+          <p>Inclui uma programação cultural regional, abrangente e articulada que divulga e promove as suas singularidades
+            junto dos seus habitantes e de quem nos visita.</p>
+          <p>ArtFest
+            <span class="font-weight: bold">PATRIMÓNIOS</span> inclui trinta e seis espetáculos, seis filmes promocionais e seis exposições fotográficas
+            a decorrer em cada um dos municípios parceiros.</p>
+        </div>
+      </paper-card>
     </section>
 
-    <section id="exposicoes">
-      <div class="container">
-        <div>
-          <img src="images/tmp/exhibition.jpg">
-        </div>
-        <div class="content-container">
-          <h3>Exposições</h3>
-          <p>Exposição de Fotografia sobre o Alentejo, que pretende colocar em evidência a ligação entre o Património
-            Material e Imaterial do Alto, Baixo, Litoral e Alentejo Central.</p>
-          <p>Percorrerá as 4 sub-regiões do Alentejo desde o processo criativo ao produto final.</p>
-          <p>Trata-se de uma exposição única que circulará por 6 cidades e contará com uma quantidade de imagens a rondar
-            as 30.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="espectaculos">
-      <div class="container">
-        <div>
-          <img src="images/tmp/soap-bubbles.jpg">
-        </div>
-        <div class="content-container">
-          <h3>Espectáculos</h3>
-          <p>Produção e apresentação de 34 espectáculos de algumas das artes performativas mais identitárias do Alentejo
-            com apresentações semanais ao vivo.</p>
-        </div>
+    <section>
+      <h2>Filmes</h2>
+      <div style="display: flex; flex-wrap: wrap;">
+        <!-- <template is="dom-repeat" items="[[movies]]">
+          <paper-card class="movie" id="index">
+            <div class="card-content">
+              <div class="movie-image">
+                <img src="[[item.images.featured]]" />
+              </div>
+              <div class="movie-header">[[item.name]]</div>
+              <div>[[item.title]]</div>
+              <div style="width: 200px; padding-right: 300px;">
+                [[__getMovieDescription(item.description, index)]]
+              </div>
+            </div>
+          </paper-card>
+        </template> -->
+        <paper-card class="movie">
+          <div class="card-content">
+            <div class="movie-image">
+              <img src="images/filmes/marfim/cartaz.jpg" />
+            </div>
+            <div class="movie-header">Marfim</div>
+            <div>Évora Património da Humanidade</div>
+            <div style="width: 200px; padding-right: 300px;">
+              <p>Filme que assinala os 30 anos da classificação de Évora como Património da Humanidade.</p>
+              <p>Memórias e artistas numa cidade que surpreende a cada esquina.</p>
+              <p>Morada de muitas civilizações e reinados.</p>
+            </div>
+          </div>
+        </paper-card>
+        <paper-card class="movie">
+          <div class="card-content">
+            <div class="movie-image">
+              <img src="http://via.placeholder.com/300x600?text=Terra+do+Pão" />
+            </div>
+            <div class="movie-header">Terra do Pão</div>
+            <div style="width: 200px; padding-right: 300px;">
+              <p>O ponto de partida é a Dieta Mediterrânica, classificada Património Imaterial da UNESCO e um dos seus elementos
+                centrais, o pão.</p>
+              <p>O documentário evoca o ciclo do pão, explica a história do alimento e toda a carga simbólica (até litúrgica)
+                a ele associada.</p>
+            </div>
+          </div>
+        </paper-card>
+        <paper-card class="movie">
+          <div class="card-content">
+            <div class="movie-image">
+              <img src="http://via.placeholder.com/300x600?text=Cante+Alentejano" />
+            </div>
+            <div class="movie-header">Cante Alentejano</div>
+            <div style="width: 200px; padding-right: 300px;">
+              <p>O Cante tradicional do Alentejo – igualmente classificado pela UNESCO – contem história, tradição, alegria
+                ou lamento.</p>
+              <p>Fala de lugares, coloca questões, relata a vida e o viver de um povo que canta “o que lhe vai na alma”.</p>
+              <p>Modas que passam de geração em geração, tornando longínqua a sua origem.</p>
+            </div>
+          </div>
+        </paper-card>
+        <paper-card class="movie">
+          <div class="card-content">
+            <div class="movie-image">
+              <img src="http://via.placeholder.com/300x600?text=Muralhas+que+Unem" />
+            </div>
+            <div class="movie-header">Muralhas que Unem</div>
+            <div>Elvas</div>
+            <div style="width: 200px; padding-right: 300px;">
+              <p>As fortificações abaluartadas de Elvas, que se encontram inscritas na lista do Património Mundial da UNESCO,
+                perderam a sua função militar e são hoje ponto de encontro entre culturas dos dois lados da raia.</p>
+              <p>Este património serve de pano de fundo para o encontro de gente dos dois lados de uma fronteira que não separa,
+                mas une, dois povos que hoje caminham lado a lado.</p>
+            </div>
+          </div>
+        </paper-card>
+        <paper-card class="movie">
+          <div class="card-content">
+            <div class="movie-image">
+              <img src="http://via.placeholder.com/300x600?text=Saias" />
+            </div>
+            <div class="movie-header">Saias</div>
+            <div>Danças e Cante</div>
+            <div style="width: 200px; padding-right: 300px;">
+              <p>Modas coreográficas do Alto Alentejo, as saias cantam-se ao despique durante as fainas agrícolas (apanha da
+                azeitona, p. ex.) ou cantam-se e dançam-se em dias festivos como o de São João ou nas Festas do Povo, de
+                Campo Maior (recentemente candidatas a Património Cultural Imaterial da UNESCO).</p>
+            </div>
+          </div>
+        </paper-card>
+        <paper-card class="movie">
+          <div class="card-content">
+            <div class="movie-image">
+              <img src="http://via.placeholder.com/300x600?text=Minas+Com+História" />
+            </div>
+            <div class="movie-header">Minas Com História</div>
+            <div style="width: 200px; padding-right: 300px;">
+              <p>A Faixa Piritosa Ibérica constitui uma vasta área geográfica do sul da Península, com cerca de 250 quilómetros
+                de comprimento, entre Alcácer do Sal, a Noroeste, e Sevilha (Espanha), a Sudoeste.</p>
+              <p>Este filme centra-se essencialmente no património histórico, paisagístico e humano de duas das principais minas
+                desta faixa – Lousal (Grândola) e São Domingos (Mértola).</p>
+            </div>
+          </div>
+        </paper-card>
       </div>
     </section>
 
     <section>
-      <paper-tabs selected="0" scrollable fit-container>
-        <template is="dom-repeat" items="{{cities}}" as="city">
-          <paper-tab disabled="[[city.disabled]]">[[city.name]]</paper-tab>
+      <h2>Espetáculos</h2>
+      <div style="display: flex; flex-wrap: wrap;">
+        <template is="dom-repeat" items="[[shows]]">
+        <paper-card class="show">
+          <div class="card-content">
+            <div class="show-image">
+              <img src="[[item.images.featured]]" />
+            </div>
+            <div class="show-header">[[item.artist]]</div>
+            <div>[[item.genre]]</div>
+          </div>
+        </paper-card>
         </template>
-      </paper-tabs>
-      <h2>Filmes</h2>
-      <template is="dom-repeat" items="{{cities.0.movies}}">
-        <div style="width: 260px;">
-          <img src="[[item.images.featured.url]]" style="width: 100%;" />
-        </div>
-      </template>
-      <h2>Espectáculos</h2>
-      <template is="dom-repeat" items="{{cities.0.shows}}">
-        <div style="display:flex; justify-content: space-between;">
-          <div style="width: 10%;min-width:120px;margin-bottom: 2%;display:flex; justify-content: center; align-items: center;flex-direction: column;">
-            <div>[[__getDay(item.date)]]</div>
-            <div>[[__getMonth(item.date)]]</div>
-            <div>[[__getHour(item.date)]]h</div>
-            <div><iron-icon icon="my-icons:location-on"></iron-icon>Armazém8</div>
-          </div>
-          <div style="width: 32%;margin-bottom: 2%;">
-            <img src="[[item.images.featured]]" style="width: 100%;"/>
-          </div>
-          <div style="width: 52%;margin-bottom: 2%;">[[item.artist]]<span style="display: block; margin-left: 1em;">[[item.genre]]</span></div>
-        </div>
-      </template>
+      </div>
     </section>
   </template>
 
@@ -152,99 +282,159 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       static get is() { return 'artfest-home'; }
       static get properties() {
         return {
-          cities: {
+          movies: {
             type: Array,
             value: [{
-              name: 'Évora',
-              movies: [{
-                name: 'Marfim',
-                subtitle: 'Évora património da humanidade',
-                description: 'Filme para assinalar os 30 anos da classificação de Évora como Património da Humanidade. Um conhecido artista local, António Bexiga, com a sua viola campaniça, percorre a cidade e mostra-nos os seus recantos numa viagem acompanhada por outros artistas nascidos na cidade (como o bailarino Luís Marrafa ou o marionetista Manuel Dias) ou por gente do mundo das artes que, chegada de fora, tem o seu primeiro encontro com a cidade.',
-                trailer: 'https://vimeo.com/240681059',
-                movie: '',
-                images: {
-                  featured: {
-                    url: 'images/filmes/marfim/cartaz.jpg'
-                  },
-                  estreia: [{
-                    url: 'images/filmes/marfim/estreia/1.png'
-                  }, {
-                    url: 'images/filmes/marfim/estreia/2.png'
-                  }, {
-                    url: 'images/filmes/marfim/estreia/3.png'
-                  }],
-                  filmagens: [{
-                    url: 'images/filmes/marfim/filmagens/1.png'
-                  }, {
-                    url: 'images/filmes/marfim/filmagens/2.png'
-                  }, {
-                    url: 'images/filmes/marfim/filmagens/3.png'
-                  }]
-                }
-              }],
-              shows: [{
-                date: '2018-3-3 22:00:00',
-                artist: 'Ricardo Martins',
-                genre: 'Guitarra Portuguesa',
-                images: {
-                  featured: 'images/grupos/ricardo_martins.jpg'
-                }
-              }, {
-                date: '2018-03-10 22:00:00',
-                artist: 'Manuel Dias',
-                genre: 'Marionetas e Robertos',
-                images: {
-                  featured: 'images/grupos/trule_manuel_dias.jpg'
-                }
-              }, {
-                date: '2018-03-15 22:00:00',
-                artist: 'Zanguizarra',
-                genre: 'Música tradicional e baile popular',
-                images: {
-                  featured: 'images/grupos/zanguizarra.jpg'
-                }
-              }, {
-                date: '2018-03-24 22:00:00',
-                artist: 'Nanã Sousa Dias Quinteto',
-                genre: 'Música Tradicional em Jazz',
-                images: {
-                  featured: 'images/grupos/nana.jpg'
-                }
-              }, {
-                date: '2018-03-30 22:00:00',
-                artist: 'O Luar da Namorosa',
-                genre: 'Música tradicional do Alentejo e cante',
-                images: {
-                  featured: 'images/grupos/luar_da_namorosa.jpg'
-                }
-              }, {
-                place: 'Évora',
-                date: '2018-03-31 22:00:00',
-                artist: 'Fado Lélé',
-                genre: 'As canções que existem no fado pelos ukuleles do mundo',
-                images: {
-                  featured: 'images/grupos/fado_lele.jpg'
-                }
-              }],
-              disabled: false
+              name: 'Marfim',
+              title: 'Évora Património da Humanidade',
+              description: [
+                'Filme que assinala os 30 anos da classificação de Évora como Património da Humanidade.',
+                'Memórias e artistas numa cidade que surpreende a cada esquina.',
+                'Morada de muitas civilizações e reinados.'
+              ],
+              images: {
+                featured: 'images/filmes/marfim/cartaz.jpg'
+              }
             }, {
-              name: 'Beja',
-              disabled: true
+              name: 'Terra do Pão',
+              title: '',
+              description: [
+                'O ponto de partida é a Dieta Mediterrânica, classificada Património Imaterial da UNESCO e um dos seus elementos centrais, o pão.',
+                'O documentário evoca o ciclo do pão, explica a história do alimento e toda a carga simbólica (até litúrgica) a ele associada.'
+              ],
+              images: {
+                featured: 'http://via.placeholder.com/300x600?text=Terra+do+Pão'
+              }
             }, {
-              name: 'Elvas',
-              disabled: true
+              name: 'Cante Alentejano',
+              title: '',
+              description: [
+                'O Cante tradicional do Alentejo – igualmente classificado pela UNESCO – contem história, tradição, alegria ou lamento.',
+                'Fala de lugares, coloca questões, relata a vida e o viver de um povo que canta “o que lhe vai na alma”.',
+                'Modas que passam de geração em geração, tornando longínqua a sua origem.'
+              ],
+              images: {
+                featured: 'http://via.placeholder.com/300x600?text=Cante+Alentejano'
+              }
             }, {
-              name: 'Vidigueira',
-              disabled: true
+              name: 'Muralhas que Unem',
+              title: 'Elvas',
+              description: [
+                'As fortificações abaluartadas de Elvas, que se encontram inscritas na lista do Património Mundial da UNESCO, perderam a sua função militar e são hoje ponto de encontro entre culturas dos dois lados da raia.',
+                'Este património serve de pano de fundo para o encontro de gente dos dois lados de uma fronteira que não separa, mas une, dois povos que hoje caminham lado a lado.',
+                'Morada de muitas civilizações e reinados.'
+              ],
+              images: {
+                featured: 'http://via.placeholder.com/300x600?text=Muralhas+que+Unem'
+              }
             }, {
-              name: 'Cuba',
-              disabled: true
+              name: 'Saias',
+              title: 'Danças e Cante',
+              description: [
+                'Modas coreográficas do Alto Alentejo, as saias cantam-se ao despique durante as fainas agrícolas (apanha da azeitona, p. ex.) ou cantam-se e dançam-se em dias festivos como o de São João ou nas Festas do Povo, de Campo Maior (recentemente candidatas a Património Cultural Imaterial da UNESCO).'
+              ],
+              images: {
+                featured: 'http://via.placeholder.com/300x600?text=Saias'
+              }
             }, {
-              name: 'Portel',
-              disabled: true
+              name: 'Minas com História',
+              title: 'Évora Património da Humanidade',
+              description: [
+                'A Faixa Piritosa Ibérica constitui uma vasta área geográfica do sul da Península, com cerca de 250 quilómetros de comprimento, entre Alcácer do Sal, a Noroeste, e Sevilha (Espanha), a Sudoeste.',
+                'Este filme centra-se essencialmente no património histórico, paisagístico e humano de duas das principais minas desta faixa – Lousal (Grândola) e São Domingos (Mértola).'
+              ],
+              images: {
+                featured: 'http://via.placeholder.com/300x600?text=Minas+Com+História'
+              }
+            }]
+          },
+          shows: {
+            type: Array,
+            value: [{
+              scheduele: {
+                evora: {
+                  date: '2018-03-3 22:00:00',
+                  place: 'Armazém8'
+                }
+              },
+              date: '2018-3-3 22:00:00',
+              artist: 'Ricardo Martins',
+              genre: 'Guitarra Portuguesa',
+              images: {
+                featured: 'images/grupos/ricardo_martins.jpg'
+              }
+            }, {
+              scheduele: {
+                evora: {
+                  date: '2018-03-10 22:00:00',
+                  place: 'Armazém8'
+                }
+              },
+              date: '2018-03-10 22:00:00',
+              artist: 'Manuel Dias',
+              genre: 'Marionetas e Robertos',
+              images: {
+                featured: 'images/grupos/trule_manuel_dias.jpg'
+              }
+            }, {
+              scheduele: {
+                evora: {
+                  date: '2018-03-15 22:00:00',
+                  place: 'Armazém8'
+                }
+              },
+              date: '2018-03-15 22:00:00',
+              artist: 'Zanguizarra',
+              genre: 'Música tradicional e baile popular',
+              images: {
+                featured: 'images/grupos/zanguizarra.jpg'
+              }
+            }, {
+              scheduele: {
+                evora: {
+                  date: '2018-03-24 22:00:00',
+                  place: 'Armazém8'
+                }
+              },
+              date: '2018-03-24 22:00:00',
+              artist: 'Nanã Sousa Dias Quinteto',
+              genre: 'Música Tradicional em Jazz',
+              images: {
+                featured: 'images/grupos/nana.jpg'
+              }
+            }, {
+              scheduele: {
+                evora: {
+                  date: '2018-03-30 22:00:00',
+                  place: 'Armazém8'
+                }
+              },
+              date: '2018-03-30 22:00:00',
+              artist: 'O Luar da Namorosa',
+              genre: 'Música tradicional do Alentejo e cante',
+              images: {
+                featured: 'images/grupos/luar_da_namorosa.jpg'
+              }
+            }, {
+              scheduele: {
+                evora: {
+                  date: '2018-03-31 22:00:00',
+                  place: 'Armazém8'
+                }
+              },
+              date: '2018-03-31 22:00:00',
+              artist: 'Fado Lélé',
+              genre: 'As canções que existem no fado pelos ukuleles do mundo',
+              images: {
+                featured: 'images/grupos/fado_lele.jpg'
+              }
             }]
           }
         }
+      }
+      __getMovieDescription(description, index) {
+        debugger;
+        return description;
       }
       __parseTime(date) {
         var parsedDate = new Date(date);
