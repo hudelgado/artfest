@@ -276,12 +276,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       static get is() { return 'artfest-home'; }
       static get properties() {
         return {
-          shows: {
-            type: Array
-          },
-          movies: {
-            type: Array
-          }
+          shows: Array,
+          movies: Array
         }
       }
       _getShowSchedueleDate(show) {
@@ -290,12 +286,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       _getShowSchedueleTime(show) {
         return this.__getHour(show.scheduele.evora.date) + 'h';
-      }
-      _toggle(evt) {
-        var moreInfo = evt.target.nextElementSibling
-        var iconButton = Polymer.dom(event).localTarget;
-        iconButton.icon = moreInfo.opened ? 'my-icons:keyboard-arrow-up': 'my-icons:keyboard-arrow-down';
-        moreInfo.toggle();
       }
       __getMovieDescription(description, index) {
         return description;
@@ -324,7 +314,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         var timeParts = this.__parseTime(date);
         return timeParts[0].split(':')[0];
       }
-
       _openMovieDetails(evt) {
         var movieName = evt.target.parentElement.parentElement.parentElement.id;
         window.location.hash = `/detalhes/filme/${movieName}`;

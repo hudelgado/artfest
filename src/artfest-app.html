@@ -147,14 +147,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       auto
       url="data/movies.json"
       handle-as="json"
-      last-response="movies"
+      last-response="{{movies}}"
       debounce-duration="300">
     </iron-ajax>
     <iron-ajax
       auto
       url="data/shows.json"
       handle-as="json"
-      last-response="shows"
+      last-response="{{shows}}"
       debounce-duration="300">
     </iron-ajax>
 
@@ -172,7 +172,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             fallback-selection="view404"
             role="main">
           <artfest-home name="home" movies={{movies}} shows={{shows}}></artfest-home>
-          <artfest-detalhes route="[[subroute]]" name="detalhes" movies={{movies}} shows={{shows}}></artfest-detalhes>
+          <artfest-detalhes name="detalhes" route="[[subroute]]" movies={{movies}} shows={{shows}}></artfest-detalhes>
           <artfest-view404 name="view404"></artfest-view404>
         </iron-pages>
         <aside>
@@ -217,12 +217,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           subroute: String,
           rootPath: String,
 
-          movies: {
-            type: Array
-          },
-          shows: {
-            type: Array
-          }
+          movies: Array,
+          shows: Array
         };
       }
 
@@ -232,18 +228,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         ];
       }
 
+      ready() {
+        super.ready();
+        this.removeAttribute('unresolved');
+      }
+
       _routePageChanged(page) {
         this.page = page || 'home';
       }
 
       _pageChanged(page) {
-        // Load page import on demand. Show 404 page if fails
-        var resolvedPageUrl = this.resolveUrl('artfest-' + page + '.html');
         Polymer.importHref(
-            resolvedPageUrl,
-            null,
-            this._showPage404.bind(this),
-            true);
+          this.resolveUrl('artfest-' + page + '.html'),
+          null,
+          this._showPage404.bind(this),
+          true
+        );
       }
 
       _showPage404() {
