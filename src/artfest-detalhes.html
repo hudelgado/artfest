@@ -20,37 +20,51 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: block;
         padding: 10px;
       }
-
+      .backToHome paper-icon-button {
+        float: left;
+        text-decoration: none;
+        color: black;
+      }
+      .movieTitle {
+        width: 100%;
+        text-align: center;
+      }
+      .videosContainer iframe {
+        max-width: 100%;
+      }
     </style>
     <app-route
       route="[[route]]"
       pattern="/:category/:item"
       data="{{routeData}}"></app-route>
-      <paper-icon-button on-click="__goToHome" icon="my-icons:arrow-back" style="float: left;"></paper-icon-button>
-      <h1>[[entry.name]]</h1>
-      <div style="display: flex; flex-wrap: wrap; width: 100%; align-items: center; justify-content: center;">
-        <iframe style="flex: 1" src="[[entry.trailer]]" height="300px" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
+      <a class="backToHome" href="[[rootPath]]#/" tabindex="-1">
+        <paper-icon-button icon="my-icons:arrow-back"></paper-icon-button>
+      </a>
+      <h1 class="movieTitle">[[movie.name]]</h1>
       <div style="display: flex; flex-wrap: wrap;">
-        <img src="[[entry.images.featured]]" />
+        <img src="[[movie.images.featured]]" hidden$="[[!movie.images.featured]]" />
         <div style="margin-left: 1em;">
-          <template is="dom-repeat" items="[[entry.description]]" as="description">
+          <template is="dom-repeat" items="[[movie.description]]" as="description">
               <p>[[description]]</p>
           </template>
         </div>
       </div>
-      <div>
+      <div class="videosContainer" hidden$="[[!movie.videos]]">
+        <h2>Videos</h2>
+        <iframe src="[[movie.videos.trailer]]" hidden$="[[!movie.videos.trailer]]"  width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div hidden$="[[!movie.images.filmagens]]">
         <h2>Filmagens</h2>
         <div>
-          <template is="dom-repeat" items="[[entry.images.filmagens]]">
+          <template is="dom-repeat" items="[[movie.images.filmagens]]">
             <img src="[[item]]" style="flex: 1; width: 350px;"/>
           </template>
         </div>
       </div>
-      <div>
+      <div hidden$="[[!movie.images.estreia]]">
         <h2>Estreia</h2>
         <div>
-          <template is="dom-repeat" items="[[entry.images.estreia]]">
+          <template is="dom-repeat" items="[[movie.images.estreia]]">
             <img src="[[item]]" style="flex: 1; width: 350px;"/>
           </template>
         </div>
@@ -67,26 +81,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           movies: {
             type: Array
           },
-          shows: {
-            type: Array
-          },
-          entry: {
+          movie: {
             type: Object,
-            computed: '_computeEntry(movies, routeData.item)'
+            computed: '_computeMovie(movies, routeData.item)'
           }
         }
       }
-      _computeEntry(movies, itemName) {
-        if (!movies || !itemName) {
+      _computeMovie(movies, itemSlug) {
+        if (!movies || !itemSlug) {
           return;
         }
-        var result = movies.filter(function(item) {return item.name.toLowerCase() == itemName.toLowerCase()});
+        var result = movies.filter(function(item) {
+          return item.slug.toLowerCase() == itemSlug.toLowerCase()
+        });
         return result.length > 0 ? result[0] : null;
-      }
-
-      __goToHome() {
-        Polymer.AppLayout.scroll({ top: 0, behavior: 'silent' });
-        window.location.hash = '/home/';
       }
     }
 
