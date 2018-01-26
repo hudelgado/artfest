@@ -26,7 +26,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       section {
-        padding: 88px 16px;
+        padding: 0 2em;
       }
 
       .container {
@@ -104,7 +104,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         --iron-icon-stroke-color: var(--paper-grey-600);
       }
     </style>
-    </custom-style>
 
     <div class="callout">
       <paper-card heading="Filmes" image="images/home/filmes.jpg" alt="Filmes">
@@ -158,91 +157,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <section>
       <h2>Filmes</h2>
       <div style="display: flex; flex-wrap: wrap;">
-        <paper-card class="movie" id="marfim">
-          <div class="card-content" style="cursor: pointer;" on-click="_openMovieDetails">
-            <div class="movie-image">
-              <img src="images/filmes/marfim/cartaz.jpg" />
-            </div>
-            <div class="movie-header">Marfim</div>
-            <div>Évora Património da Humanidade</div>
-            <div style="width: 200px; padding-right: 300px;">
-              <p>Filme que assinala os 30 anos da classificação de Évora como Património da Humanidade.</p>
-              <p>Memórias e artistas numa cidade que surpreende a cada esquina.</p>
-              <p>Morada de muitas civilizações e reinados.</p>
-            </div>
-          </div>
-        </paper-card>
-        <paper-card class="movie">
-          <div class="card-content">
-            <div class="movie-image">
-              <img src="http://via.placeholder.com/300x600?text=Terra+do+Pão" />
-            </div>
-            <div class="movie-header">Terra do Pão</div>
-            <div style="width: 200px; padding-right: 300px;">
-              <p>O ponto de partida é a Dieta Mediterrânica, classificada Património Imaterial da UNESCO e um dos seus elementos
-                centrais, o pão.</p>
-              <p>O documentário evoca o ciclo do pão, explica a história do alimento e toda a carga simbólica (até litúrgica)
-                a ele associada.</p>
-            </div>
-          </div>
-        </paper-card>
-        <paper-card class="movie">
-          <div class="card-content">
-            <div class="movie-image">
-              <img src="http://via.placeholder.com/300x600?text=Cante+Alentejano" />
-            </div>
-            <div class="movie-header">Cante Alentejano</div>
-            <div style="width: 200px; padding-right: 300px;">
-              <p>O Cante tradicional do Alentejo – igualmente classificado pela UNESCO – contem história, tradição, alegria
-                ou lamento.</p>
-              <p>Fala de lugares, coloca questões, relata a vida e o viver de um povo que canta “o que lhe vai na alma”.</p>
-              <p>Modas que passam de geração em geração, tornando longínqua a sua origem.</p>
-            </div>
-          </div>
-        </paper-card>
-        <paper-card class="movie">
-          <div class="card-content">
-            <div class="movie-image">
-              <img src="http://via.placeholder.com/300x600?text=Muralhas+que+Unem" />
-            </div>
-            <div class="movie-header">Muralhas que Unem</div>
-            <div>Elvas</div>
-            <div style="width: 200px; padding-right: 300px;">
-              <p>As fortificações abaluartadas de Elvas, que se encontram inscritas na lista do Património Mundial da UNESCO,
-                perderam a sua função militar e são hoje ponto de encontro entre culturas dos dois lados da raia.</p>
-              <p>Este património serve de pano de fundo para o encontro de gente dos dois lados de uma fronteira que não separa,
-                mas une, dois povos que hoje caminham lado a lado.</p>
-            </div>
-          </div>
-        </paper-card>
-        <paper-card class="movie">
-          <div class="card-content">
-            <div class="movie-image">
-              <img src="http://via.placeholder.com/300x600?text=Saias" />
-            </div>
-            <div class="movie-header">Saias</div>
-            <div>Danças e Cante</div>
-            <div style="width: 200px; padding-right: 300px;">
-              <p>Modas coreográficas do Alto Alentejo, as saias cantam-se ao despique durante as fainas agrícolas (apanha da
-                azeitona, p. ex.) ou cantam-se e dançam-se em dias festivos como o de São João ou nas Festas do Povo, de
-                Campo Maior (recentemente candidatas a Património Cultural Imaterial da UNESCO).</p>
-            </div>
-          </div>
-        </paper-card>
-        <paper-card class="movie">
-          <div class="card-content">
-            <div class="movie-image">
-              <img src="http://via.placeholder.com/300x600?text=Minas+Com+História" />
-            </div>
-            <div class="movie-header">Minas Com História</div>
-            <div style="width: 200px; padding-right: 300px;">
-              <p>A Faixa Piritosa Ibérica constitui uma vasta área geográfica do sul da Península, com cerca de 250 quilómetros
-                de comprimento, entre Alcácer do Sal, a Noroeste, e Sevilha (Espanha), a Sudoeste.</p>
-              <p>Este filme centra-se essencialmente no património histórico, paisagístico e humano de duas das principais minas
-                desta faixa – Lousal (Grândola) e São Domingos (Mértola).</p>
-            </div>
-          </div>
-        </paper-card>
+        <template is="dom-repeat" items="[[movies]]" as="movie">
+          <a href="[[rootPath]]#/detalhes/filme/[[movie.slug]]" style="text-decoration: none; color: black;">
+            <paper-card class="movie">
+              <div class="card-content">
+                <div class="movie-image">
+                  <img src="[[__getMovieImageUrl(movie)]]" hidden$="[[!movie.images.featured]]" />
+                  <img src="images/placeholders/300x600.png" hidden$="[[movie.images.featured]]">
+                    <h1 class="placeholderHeader" hidden$="[[movie.images.featured]]">[[movie.name]]</h1>
+                  </img>
+                </div>
+                <div class="movie-header">[[movie.name]]</div>
+                <div hidden$=[[!movie.title]]>[[movie.title]]</div>
+                <div style="width: 200px; padding-right: 300px;">
+                  <template is="dom-repeat" items="[[movie.description]]" as="description">
+                    <p>[[description]]</p>
+                  </template>
+                </div>
+              </div>
+            </paper-card>
+          </a>
+        </template>
       </div>
     </section>
 
@@ -259,7 +194,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <div>[[item.genre]]</div>
           </div>
           <ul>
-            <li>Évora<br/>
+            <li style="list-style:none;">Évora<br/>
               <span><iron-icon icon="my-icons:location-on"></iron-icon>Armazém 8</span>
               <span style="margin-left: 1em;"><iron-icon icon="my-icons:date-range"></iron-icon>[[_getShowSchedueleDate(item)]]</span>
               <span style="margin-left: 1em;"><iron-icon icon="my-icons:access-time"></iron-icon>[[_getShowSchedueleTime(item)]]</span>
@@ -314,10 +249,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         var timeParts = this.__parseTime(date);
         return timeParts[0].split(':')[0];
       }
-      _openMovieDetails(evt) {
-        var movieName = evt.target.parentElement.parentElement.parentElement.id;
-        window.location.hash = `/detalhes/filme/${movieName}`;
-        Polymer.AppLayout.scroll({ top: 600, behavior: 'silent' });
+      __getMovieImageUrl(movie) {
+        return movie && movie.images && movie.images.featured ? movie.images.featured: '';
       }
     }
 
