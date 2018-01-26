@@ -9,7 +9,8 @@
     "src/**/*",
     "images/**/*",
     "data/**/*",
-    "404.html"
+    "404.html",
+    ".netlify"
   ],
   "extraDependencies": [
     "manifest.json",
@@ -18,19 +19,9 @@
   "lint": {
     "rules": ["polymer-2"]
   },
-  "builds": [
-    {
+  "builds": [{
       "name": "producao",
       "preset": "es5-bundled"
-    },
-    {
-      "preset": "es5-bundled"
-    },
-    {
-      "preset": "es6-bundled"
-    },
-    {
-      "preset": "es6-unbundled"
     }
   ]
 }
