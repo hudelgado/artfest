@@ -23,98 +23,96 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       :host {
         display: block;
         padding: 10px;
-      }
-
-      section {
-        padding: 0 2em;
-      }
-
-      .container {
-        @apply --layout-horizontal;
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .container>* {
-        @apply --layout-flex;
-      }
-
-      .container img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-
-      .container h3 {
-        font-size: 32px;
-        font-weight: 300;
-        margin: 24px 0;
-      }
-
-      .container p {
-        line-height: 1.5;
-      }
-
-      .container .content-container {
-        margin-left: 1em !important;
-      }
-
-      .callout {
-        display: flex;
+        --movie-color: rgb(179, 4, 35);
+        --show-color: rgb(193, 100, 81);
+        --exposition-color: yellow;
       }
 
       paper-card {
+          --paper-card-header-text: {
+            color: white;
+            top: 0;
+            right: 0;
+          };
+      }
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .grid .item {
         flex: 1;
-        margin: 1em;
-        --paper-card-header-color: #fff;
+        margin: 10px;
+        text-decoration: none;
+      }
+      .grid-item {
+        min-width: 200px;
+      }
+      .item .entry-header {
+        text-align: center;
+      }
+      .item .entry-image {
+        position: relative;
+        text-align: center;
+      }
+      .item .entry-image img {
+        max-width: 300px;
+      }
+      .card-content {
+        padding: 0 1em;
       }
 
-      @media (max-width: 600px) {
-        .container {
+      article.grid-item ul {
+        margin-left:0;
+        list-style:none;
+        padding-left: 0;
+      }
+
+      article.grid-item ul span {
+        font-size: smaller;
+      }
+
+      .movie {
+        border-bottom: 2px solid var(--movie-color);
+      }
+      .show {
+        border-bottom: 2px solid var(--show-color);
+      }
+      .exposition {
+        border-bottom: 2px solid var(--exposition-color);
+      }
+
+      @media (max-width: 900px) {
+        .grid {
           @apply --layout-vertical;
         }
       }
-    </style>
-    <style is="custom-style">
-      paper-tabs {
-        --paper-tabs-selection-bar-color: red;
+      .grid-item {
+        display: flex;
+        flex-direction: row;
       }
-
-      paper-tab {
-        color: #212121;
+      .item .entry-header {
+        width: 100%;
       }
-
-      paper-tab.iron-selected {
-        font-weight: bold;
-      }
-    </style>
-    <style is="custom-style">
-      .movie-image,
-      .ashow-image {
-        float: right;
-      }
-
-      .movie-header,
-      .ashow-header {
-        @apply --paper-font-headline;
-      }
-
-      paper-icon-button.movie-icon,
-      paper-icon-button.show-icon {
-        --iron-icon-fill-color: white;
-        --iron-icon-stroke-color: var(--paper-grey-600);
+      @media (max-width: 600px) {
+        .grid-item {
+          flex-direction: column;
+        }
       }
     </style>
 
-    <div class="callout">
-      <paper-card heading="Filmes" image="images/home/filmes.jpg" alt="Filmes">
-        <div class="card-content" style="height: 150px;">
-          <h3>SÉRIE DOCUMENTAL SOBRE O ALENTEJO</h3>
+    <div class="callout grid">
+      <paper-card heading="Filmes" image="images/home/filmes.jpg" alt="Filmes" class="item">
+        <div class="card-content">
+          <h3>Série documental sobre o Alentejo</h3>
           <p>Esta série documental contempla a realização de 6 filmes a apresentar em auditórios ou salas de todos os municípios
             envolvidos nesta parceria. Com realização de Luís Godinho.</p>
+            <p>Os espectáculos a apresentar enquadram-se nas áreas artísticas do Fado, Cante, Marionetas e as Danças.</p>
         </div>
       </paper-card>
-      <paper-card heading="Exposições" image="images/home/exposicoes.jpg" alt="Exposições">
+      <paper-card heading="Exposições" image="images/home/exposicoes.jpg" alt="Exposições" class="item">
         <div class="card-content">
+          <h3>Exposição de fotografia sobre o Alentejo Itenerante.</h3>
           <p>Uma proposta que engloba a realização de uma exposição de Fotografia sobre o Alentejo, que pretende colocar em
             evidência a ligação entre o Património Material e Imaterial do Alto, Baixo, Litoral e Alentejo Central. Trata-se
             de uma exposição única que circulará por 6 cidades adaptada às galerias municipais existentes, a espaços expositivos
@@ -124,8 +122,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <p>Estas ações contam com o envolvimento dos fotógrafos Rui Diogo Castela, Carlos Gasparinho e Telmo Rocha.</p>
         </div>
       </paper-card>
-      <paper-card heading="Espetáculos" image="images/home/espectaculos.jpg" alt="Espetáculos">
+      <paper-card heading="Espetáculos" image="images/home/espectaculos.jpg" alt="Espetáculos" class="item">
         <div class="card-content">
+          <h3>Produção e apresentação de espectáculos</h3>
           <p>Produção e apresentação de 34 espectáculos de algumas das artes performativas mais identitárias do Alentejo com apresentações semanais ao vivo.</p>
           <p>Os espectáculos a apresentar enquadram-se nas áreas artísticas do Fado, Cante, Marionetas e as Danças.</p>
         </div>
@@ -133,11 +132,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </div>
 
     <section>
-      <paper-card>
+      <div class="card">
         <div class="card-content">
-          <div class="movie-header">ARTFEST
-            <span class="font-weight: bold;">PATRIMÓNIOS</span>
-          </div>
+          <h1 class="movie-header">ARTFEST <span style="font-weight: bold;">PATRIMÓNIOS</span></h1>
           <p>É a designação genérica do projeto de animação cultural promovido pela Associ’arte - Associação de Comunicação
             e Artes e conta com as parcerias de vários municípios: Évora, Elvas, Beja, Cuba, Vidigueira e Portel. A decorrer
             até 2019, o projeto é Cofinanciado pelo Alentejo 2020, Portugal 2020, União Europeia – Fundo Europeu de Desenvolvimento
@@ -151,58 +148,56 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <span class="font-weight: bold">PATRIMÓNIOS</span> inclui trinta e seis espetáculos, seis filmes promocionais e seis exposições fotográficas
             a decorrer em cada um dos municípios parceiros.</p>
         </div>
-      </paper-card>
-    </section>
-
-    <section>
-      <h2>Filmes</h2>
-      <div style="display: flex; flex-wrap: wrap;">
-        <template is="dom-repeat" items="[[movies]]" as="movie">
-          <a href="[[rootPath]]detalhes/filme/[[movie.slug]]" style="text-decoration: none; color: black;">
-            <paper-card class="movie">
-              <div class="card-content">
-                <div class="movie-image">
-                  <img src="[[__getMovieImageUrl(movie)]]" hidden$="[[!movie.images.featured]]" />
-                  <img src="images/placeholders/300x600.png" hidden$="[[movie.images.featured]]">
-                    <h1 class="placeholderHeader" hidden$="[[movie.images.featured]]">[[movie.name]]</h1>
-                  </img>
-                </div>
-                <div class="movie-header">[[movie.name]]</div>
-                <div hidden$=[[!movie.title]]>[[movie.title]]</div>
-                <div style="width: 200px; padding-right: 300px;">
-                  <template is="dom-repeat" items="[[movie.description]]" as="description">
-                    <p>[[description]]</p>
-                  </template>
-                </div>
-              </div>
-            </paper-card>
-          </a>
-        </template>
       </div>
     </section>
 
-    <section>
-      <h2>Espetáculos</h2>
-      <div style="display: flex; flex-wrap: wrap;">
-        <template is="dom-repeat" items="[[shows]]">
-        <paper-card class="show">
-          <div class="card-content">
-            <div class="show-image">
-              <img src="[[item.images.featured]]" />
+
+    <h1>Filmes</h1>
+    <section class="grid">
+      <template is="dom-repeat" items="[[movies]]" as="movie">
+        <a class="item card" href="[[rootPath]]detalhes/filme/[[movie.slug]]">
+          <article class="grid-item">
+            <div class="entry-image">
+              <img src="[[__getMovieImageUrl(movie)]]" hidden$="[[!movie.images.featured]]" />
             </div>
-            <div class="show-header">[[item.artist]]</div>
-            <div>[[item.genre]]</div>
-          </div>
-          <ul>
-            <li style="list-style:none;">Évora<br/>
-              <span><iron-icon icon="my-icons:location-on"></iron-icon>Armazém 8</span>
-              <span style="margin-left: 1em;"><iron-icon icon="my-icons:date-range"></iron-icon>[[_getShowSchedueleDate(item)]]</span>
-              <span style="margin-left: 1em;"><iron-icon icon="my-icons:access-time"></iron-icon>[[_getShowSchedueleTime(item)]]</span>
-            </li>
-          </ul>
-        </paper-card>
-        </template>
-      </div>
+            <div class="card-content">
+              <h1 class="entry-header">[[movie.name]]</h1>
+              <div hidden$=[[!movie.title]]>[[movie.title]]</div>
+              <div class="movieDescriptionContainer">
+                <template is="dom-repeat" items="[[movie.description]]" as="description">
+                  <p>[[description]]</p>
+                </template>
+              </div>
+            </div>
+          </article>
+        </a>
+      </template>
+    </section>
+
+    <h1>Espectáculos</h1>
+    <section class="grid">
+      <template is="dom-repeat" items="[[shows]]" as="show">
+        <a class="item card">
+          <article class="grid-item">
+            <div class="card-content">
+              <div class="entry-image">
+                <img src="[[show.images.featured]]" />
+              </div>
+            </div>
+            <div>
+              <h2 class="entry-header">[[show.artist]]</h2>
+              <div>[[show.genre]]</div>
+              <ul>
+                <li>Évora<br/>
+                  <span><iron-icon icon="my-icons:location-on"></iron-icon>Armazém 8</span>
+                  <span><iron-icon icon="my-icons:date-range"></iron-icon>[[_getShowSchedueleDate(show)]]</span>
+                  <span><iron-icon icon="my-icons:access-time"></iron-icon>[[_getShowSchedueleTime(show)]]</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </a>
+      </template>
     </section>
   </template>
 
@@ -216,7 +211,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
       }
       _getShowSchedueleDate(show) {
-        return this.__getDay(show.scheduele.evora.date) + ' ' + 
+        return this.__getDay(show.scheduele.evora.date) + ' ' +
           this.__getMonth(show.scheduele.evora.date);
       }
       _getShowSchedueleTime(show) {
