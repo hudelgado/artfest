@@ -9,7 +9,6 @@
     "src/**/*",
     "images/**/*",
     "data/**/*",
-    "404.html",
     ".netlify"
   ],
   "extraDependencies": [
