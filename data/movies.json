@@ -9,16 +9,16 @@
       "Morada de muitas civilizações e reinados."
     ],
     "images": {
-      "featured": "images/filmes/marfim/cartaz.jpg",
+      "featured": "data/images/filmes/marfim/cartaz.jpg",
       "filmagens": [
-        "images/filmes/marfim/filmagens/1.png",
-        "images/filmes/marfim/filmagens/2.png",
-        "images/filmes/marfim/filmagens/3.png"
+        "data/images/filmes/marfim/filmagens/1.png",
+        "data/images/filmes/marfim/filmagens/2.png",
+        "data/images/filmes/marfim/filmagens/3.png"
       ],
       "estreia": [
-        "images/filmes/marfim/estreia/1.png",
-        "images/filmes/marfim/estreia/2.png",
-        "images/filmes/marfim/estreia/3.png"
+        "data/images/filmes/marfim/estreia/1.png",
+        "data/images/filmes/marfim/estreia/2.png",
+        "data/images/filmes/marfim/estreia/3.png"
       ]
     },
     "videos": {
@@ -55,9 +55,9 @@
     ],
     "images": {
       "filmagens": [
-        "images/filmes/muralhas_que_unem/filmagens/1.png",
-        "images/filmes/muralhas_que_unem/filmagens/2.png",
-        "images/filmes/muralhas_que_unem/filmagens/3.png"
+        "data/images/filmes/muralhas_que_unem/filmagens/1.png",
+        "data/images/filmes/muralhas_que_unem/filmagens/2.png",
+        "data/images/filmes/muralhas_que_unem/filmagens/3.png"
       ]
     }
   },

@@ -9,7 +9,7 @@
     "artist": "Ricardo Martins",
     "genre": "Guitarra Portuguesa",
     "images": {
-      "featured": "images/grupos/ricardo_martins.jpg"
+      "featured": "data/images/grupos/ricardo_martins.jpg"
     }
   }, {
     "scheduele": {
@@ -22,7 +22,7 @@
     "artist": "Manuel Dias",
     "genre": "Marionetas e Robertos",
     "images": {
-      "featured": "images/grupos/trule_manuel_dias.jpg"
+      "featured": "data/images/grupos/trule_manuel_dias.jpg"
     }
   }, {
     "scheduele": {
@@ -35,7 +35,7 @@
     "artist": "Zanguizarra",
     "genre": "Música tradicional e baile popular",
     "images": {
-      "featured": "images/grupos/zanguizarra.jpg"
+      "featured": "data/images/grupos/zanguizarra.jpg"
     }
   }, {
     "scheduele": {
@@ -48,7 +48,7 @@
     "artist": "Nanã Sousa Dias Quinteto",
     "genre": "Música Tradicional em Jazz",
     "images": {
-      "featured": "images/grupos/Nana.jpg"
+      "featured": "data/images/grupos/Nana.jpg"
     }
   }, {
     "scheduele": {
@@ -61,7 +61,7 @@
     "artist": "O Luar da Namorosa",
     "genre": "Música tradicional do Alentejo e cante",
     "images": {
-      "featured": "images/grupos/luar_da_namorosa.jpg"
+      "featured": "data/images/grupos/luar_da_namorosa.jpg"
     }
   }, {
     "scheduele": {
@@ -74,6 +74,6 @@
     "artist": "Fado Lélé",
     "genre": "As canções que existem no fado pelos ukuleles do mundo",
     "images": {
-      "featured": "images/grupos/fado_lele.jpg"
+      "featured": "data/images/grupos/fado_lele.jpg"
     }
   }]
