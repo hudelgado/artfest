@@ -11,6 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/app-route/app-route.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="amp-viewer.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="artfest-detalhes">
@@ -40,35 +41,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <a class="backToHome" href="[[rootPath]]" tabindex="-1">
         <paper-icon-button icon="my-icons:arrow-back"></paper-icon-button>
       </a>
-      <h1 class="movieTitle">[[movie.name]]</h1>
-      <div style="display: flex; flex-wrap: wrap;">
-        <img src="[[movie.images.featured]]" hidden$="[[!movie.images.featured]]" />
-        <div style="margin-left: 1em;">
-          <template is="dom-repeat" items="[[movie.description]]" as="description">
-              <p>[[description]]</p>
-          </template>
-        </div>
-      </div>
-      <div class="videosContainer" hidden$="[[!movie.videos]]">
-        <h2>Videos</h2>
-        <iframe src="[[movie.videos.trailer]]" hidden$="[[!movie.videos.trailer]]"  width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-      <div hidden$="[[!movie.images.filmagens]]">
-        <h2>Filmagens</h2>
-        <div>
-          <template is="dom-repeat" items="[[movie.images.filmagens]]">
-            <img src="[[item]]" style="flex: 1; width: 350px;"/>
-          </template>
-        </div>
-      </div>
-      <div hidden$="[[!movie.images.estreia]]">
-        <h2>Estreia</h2>
-        <div>
-          <template is="dom-repeat" items="[[movie.images.estreia]]">
-            <img src="[[item]]" style="flex: 1; width: 350px;"/>
-          </template>
-        </div>
-      </div>
+      
+      <article >
+        <amp-viewer id="ampViewer" src="[[__getMovieDetailsFile(movie)]]"></amp-viewer>
+      </article>
   </template>
 
   <script>
@@ -95,6 +71,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           return item.slug.toLowerCase() == itemSlug.toLowerCase()
         });
         return result.length > 0 ? result[0] : null;
+      }
+      __getMovieDetailsFile(movie) {
+        return `data/filmes/${movie.slug}.html`;
       }
     }
 
