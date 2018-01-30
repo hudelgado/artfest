@@ -12,9 +12,9 @@
 
 module.exports = {
   staticFileGlobs: [
+    'manifest.json',
     'bower_components/webcomponentsjs/webcomponents-loader.js',
     'images/*',
-    'manifest.json',
   ],
   runtimeCaching: [
     {
@@ -25,6 +25,45 @@ module.exports = {
           name: 'webcomponentsjs-polyfills-cache',
         },
       },
+    },{
+      urlPattern: /https:\/\/cdn.ampproject.org\/.*\.js/,
+      handler: 'fastest',
+      options: {
+        cache: {
+          maxEntries: 100,
+          name: 'amp-scripts-cache'
+        }
+      }
     },
+    {
+      urlPattern: /.*\.(png|jpg|gif|svg)/i,
+      handler: 'fastest',
+      options: {
+        cache: {
+          maxEntries: 200,
+          name: 'data-images-cache'
+        }
+      }
+    },
+    {
+      urlPattern: /\/data\/filmes\/.*/,
+      handler: 'fastest',
+      options: {
+        cache: {
+          maxEntries: 100,
+          name: 'movies-articles-cache'
+        }
+      }
+    },
+    {
+      urlPattern: /\/data\/.*json/,
+      handler: 'fastest',
+      options: {
+        cache: {
+          maxEntries: 10,
+          name: 'data-json-cache'
+        }
+      }
+    }
   ],
 };
