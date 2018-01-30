@@ -3,6 +3,7 @@
   "shell": "src/artfest-app.html",
   "fragments": [
     "src/artfest-home.html",
+    "src/artfest-detalhes.html",
     "src/artfest-view404.html"
   ],
   "sources": [
@@ -20,7 +21,7 @@
   },
   "builds": [{
       "name": "producao",
-      "preset": "es5-bundled"
+      "preset": "es6-bundled"
     }
   ]
 }
