@@ -9,13 +9,14 @@
   "sources": [
     "src/**/*",
     "images/**/*",
-    "data/**/*",
-    ".netlify"
+    "data/**/*"
   ],
   "extraDependencies": [
     "manifest.json",
     "bower_components/webcomponentsjs/*.js",
-    "sitemap.txt"
+    "sitemap.txt",
+    ".netlify",
+    "_redirects"
   ],
   "lint": {
     "rules": ["polymer-2"]
