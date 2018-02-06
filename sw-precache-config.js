@@ -16,6 +16,10 @@ module.exports = {
     'bower_components/webcomponentsjs/webcomponents-loader.js',
     'images/*',
   ],
+  dynamicUrlToDependencies: {
+    '/': ['index.html']
+  },
+  navigateFallback: '/',
   runtimeCaching: [
     {
       urlPattern: /\/bower_components\/webcomponentsjs\/.*.js/,
