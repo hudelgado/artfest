@@ -4,3 +4,4 @@ node_modules/
 gh-pages/
 .netlify
 _redirects
+/google*.html
