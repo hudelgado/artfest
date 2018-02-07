@@ -47,28 +47,39 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       .grid-item {
         min-width: 200px;
+        display: flex;
+        flex-direction: row;
+      }
+      .card {
+        min-width: 300px;
       }
       .item .entry-header {
+        width: 100%;
         text-align: center;
       }
-      .item .entry-image {
-        position: relative;
-        text-align: center;
+      .item .card-image {
+        margin: auto;
       }
-      .item .entry-image img {
+      .item .card-image img {
         max-width: 300px;
       }
       .card-content {
         padding: 0 1em;
+        text-align: center;
       }
 
-      article.grid-item ul {
+      article {
+        display: flex;
+        flex-direction: column;
+      }
+
+      article ul {
         margin-left:0;
         list-style:none;
         padding-left: 0;
       }
 
-      article.grid-item ul span {
+      article ul span {
         font-size: smaller;
       }
 
@@ -86,16 +97,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         .grid {
           @apply --layout-vertical;
         }
+        article {
+          display: flex;
+          flex-direction: row;
+        }
       }
-      .grid-item {
-        display: flex;
-        flex-direction: row;
-      }
-      .item .entry-header {
-        width: 100%;
-      }
-      @media (max-width: 600px) {
-        .grid-item {
+      @media (max-width: 700px) {
+        article {
           flex-direction: column;
         }
       }
@@ -156,8 +164,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <section class="grid">
       <template is="dom-repeat" items="[[movies]]" as="movie">
         <a class="item card" href="[[rootPath]]detalhes/filme/[[movie.slug]]">
-          <article class="grid-item">
-            <div class="entry-image">
+          <article>
+            <div class="card-image">
               <img src="[[__getMovieImageUrl(movie)]]" hidden$="[[!movie.images.featured]]" />
             </div>
             <div class="card-content">
@@ -178,9 +186,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <section class="grid">
       <template is="dom-repeat" items="[[shows]]" as="show">
         <a class="item card">
-          <article class="grid-item">
+          <article>
             <div class="card-content">
-              <div class="entry-image">
+              <div class="card-image">
                 <img src="[[show.images.featured]]" />
               </div>
             </div>
