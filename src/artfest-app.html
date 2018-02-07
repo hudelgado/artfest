@@ -124,6 +124,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin: 0 1em;
       }
 
+      footer a:first-of-type {
+        margin-left: auto;
+      }
+
+      footer a img {
+        width :50px;
+        height: 50px;
+      }
+
       @media (max-width: 600px) {
         section#header img {
           width: 192px;
@@ -191,12 +200,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <img src="images/logos/Evora.png"/>
             <img src="images/logos/Portel.png"/>
             <img src="images/logos/Vidigueira.png"/>
-            <img src="images/logos/aca.png"/>
-            <img src="images/logos/armazem8.png"/>
           </div>
         </aside>
         <footer>
           <div class="footerEntry">Todos os direitos reservados <a href="http://associarte.pt">Associarte</a></div>
+          <a href="//associarte.pt" target="_blank">
+              <img class="footerEntry" src="images/logos/aca.png" />
+          </a>
+          <a href="//armazem8.associarte.pt" target="_blank">
+            <img class="footerEntry" src="images/logos/armazem8.png" />
+          </a>
         </footer>
       </app-header-layout>
   </template>
