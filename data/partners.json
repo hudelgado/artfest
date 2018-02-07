@@ -1,0 +1,25 @@
+[{
+    "name": "Beja",
+    "url": "http://www.cm-beja.pt/",
+    "logo": "images/logos/Beja.png"
+  }, {
+    "name": "Cuba",
+    "url": "https://www.cm-cuba.pt/",
+    "logo": "images/logos/Cuba.png"
+  }, {
+    "name": "Elvas",
+    "url": "http://www.cm-elvas.pt/",
+    "logo": "images/logos/elvas.png"
+  }, {
+    "name": "Evora",
+    "url": "http://www.cm-evora.pt/",
+    "logo": "images/logos/Evora.png"
+  }, {
+    "name": "Portel",
+    "url": "http://www.cm-portel.pt/",
+    "logo": "images/logos/Portel.png"
+  }, {
+    "name": "Vidigueira",
+    "url": "http://www.cm-vidigueira.pt/",
+    "logo": "images/logos/Vidigueira.png"
+  }]

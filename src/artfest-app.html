@@ -122,6 +122,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       footer .footerEntry {
         color: white;
         margin: 0 1em;
+        margin-top: 1.5em;
       }
 
       footer a:first-of-type {
@@ -165,6 +166,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       last-response="{{shows}}"
       debounce-duration="300">
     </iron-ajax>
+    <iron-ajax
+      auto
+      url="data/partners.json"
+      handle-as="json"
+      last-response="{{partners}}"
+      debounce-duration="300">
+    </iron-ajax>
 
       <!-- Main content -->
       <app-header-layout>
@@ -194,21 +202,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <aside>
           <h3>Parceiros:</h3>
           <div class="logosContainer">
-            <img src="images/logos/Beja.png"/>
-            <img src="images/logos/Cuba.png"/>
-            <img src="images/logos/elvas.png"/>
-            <img src="images/logos/Evora.png"/>
-            <img src="images/logos/Portel.png"/>
-            <img src="images/logos/Vidigueira.png"/>
+            <template is="dom-repeat" items="[[partners]]" as="partner">
+                <a href="[[partner.url]]" target="_blank">
+                  <img src="[[partner.logo]]"/>
+                </a>  
+            </template>
           </div>
         </aside>
         <footer>
           <div class="footerEntry">Todos os direitos reservados <a href="http://associarte.pt">Associarte</a></div>
           <a href="//associarte.pt" target="_blank">
-              <img class="footerEntry" src="images/logos/aca.png" />
+              <img src="images/logos/aca.png" />
           </a>
           <a href="//armazem8.associarte.pt" target="_blank">
-            <img class="footerEntry" src="images/logos/armazem8.png" />
+            <img src="images/logos/armazem8.png" />
           </a>
         </footer>
       </app-header-layout>
@@ -230,7 +237,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           rootPath: String,
 
           movies: Array,
-          shows: Array
+          shows: Array,
+          partners: Array
         };
       }
 
