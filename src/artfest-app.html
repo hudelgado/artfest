@@ -64,18 +64,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       footer {
         display: flex;
         background-color: black;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
         padding: 1em 1em;
+        color: white;
       }
 
       footer .footerEntry {
         color: white;
         margin: 0 1em;
         margin-top: 1.5em;
-      }
-
-      footer a:first-of-type {
-        margin-left: auto;
       }
 
       footer a img {
@@ -122,15 +120,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </aside>
       <footer>
-        <div class="footerEntry">Todos os direitos reservados
-          <a href="http://associarte.pt">Associarte</a>
-        </div>
         <a href="//associarte.pt" target="_blank">
           <img src="images/logos/aca.png" />
         </a>
-        <a href="//armazem8.associarte.pt" target="_blank">
-          <img src="images/logos/armazem8.png" />
-        </a>
+        <div class="footerEntry">Todos os direitos reservados</div>
       </footer>
     </app-header-layout>
   </template>
