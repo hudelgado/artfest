@@ -173,7 +173,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       _routePageChanged(page)
       {
+        this._updateScrollPosition();
         this.page = page || 'home';
+      }
+      _updateScrollPosition() {
+        let scrollTop = 0;
+        if (this.page === 'home') {
+          this._listScrollTop = window.pageYOffset;
+        } else {
+          scrollTop = this._listScrollTop || 0;
+        }
+        Polymer.AppLayout.scroll({ top: scrollTop, behavior: 'silent' });
       }
 
       _pageChanged(page)
