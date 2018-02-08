@@ -21,11 +21,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: block;
         padding: 10px;
       }
-      .backToHome paper-icon-button {
-        float: left;
-        text-decoration: none;
-        color: black;
-      }
       .movieTitle {
         width: 100%;
         text-align: center;
@@ -38,9 +33,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       route="[[route]]"
       pattern="/:category/:item"
       data="{{routeData}}"></app-route>
-      <a class="backToHome" href="[[rootPath]]" tabindex="-1">
-        <paper-icon-button icon="my-icons:arrow-back"></paper-icon-button>
-      </a>
       
       <article >
         <amp-viewer id="ampViewer" src="[[__getMovieDetailsFile(movie)]]"></amp-viewer>

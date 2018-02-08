@@ -9,19 +9,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
-<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
 <link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
 <link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
-<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
 <link rel="import" href="../bower_components/app-route/app-location.html">
 <link rel="import" href="../bower_components/app-route/app-route.html">
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
-<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="my-icons.html">
-
-<link rel="lazy-import" href="artfest-home.html">
+<!-- Eager Loading Home and Header elements -->
+<link rel="import" href="artfest-home.html">
+<link rel="import" href="artfest-header.html">
+<!-- Lazy Loading the other ones -->
 <link rel="lazy-import" href="artfest-detalhes.html">
 <link rel="lazy-import" href="artfest-view404.html">
 
@@ -29,9 +28,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style>
       :host {
-        --app-primary-color: #4285f4;
-        --app-secondary-color: black;
-
+        --app-primary-color: black;
+        --app-secondary-color: #4285f4;
         display: block;
       }
 
@@ -39,56 +37,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-decoration: none;
         font-size: inherit;
         color: inherit;
-      }
-
-      app-header {
-        background-color: white;
-        padding-bottom: 0.5em;
-      }
-
-      .toolbar {
-        @apply --layout-horizontal;
-        @apply --layout-end-justified;
-        background-color: rgba(255, 255, 255, 0.95);
-      }
-      .toolbar img {
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-
-      .tabs {
-        height: 100%;
-        @apply --layout-horizontal;
-      }
-
-      .tabs>a {
-        @apply --layout-vertical;
-        @apply --layout-center-center;
-        margin: 12px 16px 12px;
-        border-bottom: 1px solid #222;
-      }
-
-      section#header {
-        @apply --layout-vertical;
-        @apply --layout-center-center;
-        height: calc(100vh - 64px);
-        padding: 0 16px;
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        text-align: center;
-      }
-
-      section#header > h2 {
-        font-size: 56px;
-        font-weight: 300;
-        margin: 0;
-      }
-
-      section#header > p {
-        font-size: 32px;
       }
 
       aside {
@@ -112,6 +60,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         width: 150px;
       }
 
+
       footer {
         display: flex;
         background-color: black;
@@ -130,102 +79,69 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       footer a img {
-        width :50px;
+        width: 50px;
         height: 50px;
-      }
-
-      @media (max-width: 600px) {
-        section#header img {
-          width: 192px;
-          height: 192px;
-        }
       }
     </style>
 
-    <app-location
-      route="{{route}}"
-      url-space-regex="^[[rootPath]]">
+    <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
     </app-location>
-    <app-route
-      route="{{route}}"
-      pattern="/:page"
-      data="{{routeData}}"
-      tail="{{subroute}}">
+    <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{subroute}}">
     </app-route>
-    <iron-ajax
-      auto
-      url="data/movies.json"
-      handle-as="json"
-      last-response="{{movies}}"
-      debounce-duration="300">
+    <iron-ajax auto url="data/movies.json" handle-as="json" last-response="{{movies}}" debounce-duration="300">
     </iron-ajax>
-    <iron-ajax
-      auto
-      url="data/shows.json"
-      handle-as="json"
-      last-response="{{shows}}"
-      debounce-duration="300">
+    <iron-ajax auto url="data/shows.json" handle-as="json" last-response="{{shows}}" debounce-duration="300">
     </iron-ajax>
-    <iron-ajax
-      auto
-      url="data/partners.json"
-      handle-as="json"
-      last-response="{{partners}}"
-      debounce-duration="300">
+    <iron-ajax auto url="data/partners.json" handle-as="json" last-response="{{partners}}" debounce-duration="300">
     </iron-ajax>
 
-      <!-- Main content -->
-      <app-header-layout>
-
-        <section id="header">
-          <img src="images/manifest/icon-512x512.png"></img>
-          <p>O património cultural do Alentejo através das expressões artísticas locais</p>
-        </section>
-
-        <iron-pages
-            selected="[[page]]"
-            attr-for-selected="name"
-            fallback-selection="view404"
-            role="main">
-          <artfest-home name="home" movies={{movies}} shows={{shows}}></artfest-home>
-          <artfest-detalhes name="detalhes" route="[[subroute]]" movies={{movies}} shows={{shows}}></artfest-detalhes>
-          <artfest-view404 name="view404"></artfest-view404>
-        </iron-pages>
-        <aside>
-          <h3>Cofinanciado por:</h3>
-          <div>
-            <img src="images/cofin/alentejo_2020.png"/>
-            <img src="images/cofin/portugal_2020.png"/>
-            <img src="images/cofin/ue_feder.png"/>
-          </div>
-        </aside>
-        <aside>
-          <h3>Parceiros:</h3>
-          <div class="logosContainer">
-            <template is="dom-repeat" items="[[partners]]" as="partner">
-                <a href="[[partner.url]]" target="_blank">
-                  <img src="[[partner.logo]]"/>
-                </a>  
-            </template>
-          </div>
-        </aside>
-        <footer>
-          <div class="footerEntry">Todos os direitos reservados <a href="http://associarte.pt">Associarte</a></div>
-          <a href="//associarte.pt" target="_blank">
-              <img src="images/logos/aca.png" />
-          </a>
-          <a href="//armazem8.associarte.pt" target="_blank">
-            <img src="images/logos/armazem8.png" />
-          </a>
-        </footer>
-      </app-header-layout>
+    <!-- Main content -->
+    <app-header-layout>
+      <artfest-header></artfest-header>
+      <iron-pages selected="[[page]]" attr-for-selected="name" fallback-selection="view404" role="main">
+        <artfest-home name="home" movies={{movies}} shows={{shows}}></artfest-home>
+        <artfest-detalhes name="detalhes" route="[[subroute]]" movies={{movies}} shows={{shows}}></artfest-detalhes>
+        <artfest-view404 name="view404"></artfest-view404>
+      </iron-pages>
+      <aside>
+        <h3>Cofinanciado por:</h3>
+        <div>
+          <img src="images/cofin/alentejo_2020.png" />
+          <img src="images/cofin/portugal_2020.png" />
+          <img src="images/cofin/ue_feder.png" />
+        </div>
+      </aside>
+      <aside>
+        <h3>Parceiros:</h3>
+        <div class="logosContainer">
+          <template is="dom-repeat" items="[[partners]]" as="partner">
+            <a href="[[partner.url]]" target="_blank">
+              <img src="[[partner.logo]]" />
+            </a>
+          </template>
+        </div>
+      </aside>
+      <footer>
+        <div class="footerEntry">Todos os direitos reservados
+          <a href="http://associarte.pt">Associarte</a>
+        </div>
+        <a href="//associarte.pt" target="_blank">
+          <img src="images/logos/aca.png" />
+        </a>
+        <a href="//armazem8.associarte.pt" target="_blank">
+          <img src="images/logos/armazem8.png" />
+        </a>
+      </footer>
+    </app-header-layout>
   </template>
 
   <script>
-    class ArtfestApp extends Polymer.Element {
+    class ArtfestApp extends Polymer.Element
+    {
       static get is() { return 'artfest-app'; }
 
-      static get properties() {
+      static get properties()
+      {
         return {
           page: {
             type: String,
@@ -242,32 +158,45 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         };
       }
 
-      static get observers() {
+      static get observers()
+      {
         return [
-          '_routePageChanged(routeData.page)',
-        ];
+          '_routePageChanged(routeData.page)'
+        ]
       }
 
-      ready() {
+      ready()
+      {
         super.ready();
         this.removeAttribute('unresolved');
       }
 
-      _routePageChanged(page) {
+      _routePageChanged(page)
+      {
         this.page = page || 'home';
       }
 
-      _pageChanged(page) {
+      _pageChanged(page)
+      {
         Polymer.importHref(
           this.resolveUrl('artfest-' + page + '.html'),
           null,
           this._showPage404.bind(this),
           true
         );
+        this._hideBackButtonIfNeeded();
       }
-
-      _showPage404() {
+      _showPage404()
+      {
         this.page = 'view404';
+      }
+      _hideBackButtonIfNeeded()
+      {
+        var btn = this.shadowRoot.querySelector('app-header-layout')
+          .querySelector('artfest-header')
+          .shadowRoot.querySelector('app-header')
+          .querySelector('.back-btn');
+        btn.hidden = this.page == 'home';
       }
     }
 
