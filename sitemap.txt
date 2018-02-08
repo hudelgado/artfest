@@ -1,7 +1,7 @@
 https://www.artfestpatrimonios.pt/
-https://www.artfestpatrimonios.pt/detalhes/filmes/marfim
-https://www.artfestpatrimonios.pt/detalhes/filmes/terra-do-pao
-https://www.artfestpatrimonios.pt/detalhes/filmes/cante-alentejano
-https://www.artfestpatrimonios.pt/detalhes/filmes/muralhas-que-unem
-https://www.artfestpatrimonios.pt/detalhes/filmes/saias
-https://www.artfestpatrimonios.pt/detalhes/filmes/minas-com-historia
+https://www.artfestpatrimonios.pt/data/filmes/marfim.html
+https://www.artfestpatrimonios.pt/data/filmes/terra-do-pao.html
+https://www.artfestpatrimonios.pt/data/filmes/cante-alentejano.html
+https://www.artfestpatrimonios.pt/data/filmes/muralhas-que-unem.html
+https://www.artfestpatrimonios.pt/data/filmes/saias.html
+https://www.artfestpatrimonios.pt/data/filmes/minas-com-historia.html
