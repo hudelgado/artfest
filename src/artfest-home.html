@@ -22,10 +22,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <style include="shared-styles">
       :host {
         display: block;
-        padding: 10px;
+        
         --movie-color: rgb(179, 4, 35);
         --show-color: rgb(193, 100, 81);
-        --exposition-color: yellow;
+        --exposition-color: rgb(207,71,73);
+        --info-color: rgb(151,212,217);
       }
 
       paper-card {
@@ -97,6 +98,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         border-bottom: 2px solid var(--exposition-color);
       }
 
+      .festInfoContainer {
+        background-color: var(--info-color);
+        padding: 10em 5em;
+      }
+
       @media (max-width: 900px) {
         .grid {
           @apply --layout-vertical;
@@ -142,26 +148,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </paper-card>
     </div>
-
-    <section id="festInfo">
-      <div class="card">
-        <div class="card-content">
-          <h1 class="movie-header">ARTFEST <span style="font-weight: bold;">PATRIMÓNIOS</span></h1>
-          <p>É a designação genérica do projeto de animação cultural promovido pela Associ’arte - Associação de Comunicação
-            e Artes e conta com as parcerias de vários municípios: Évora, Elvas, Beja, Cuba, Vidigueira e Portel. A decorrer
-            até 2019, o projeto é Cofinanciado pelo Alentejo 2020, Portugal 2020, União Europeia – Fundo Europeu de Desenvolvimento
-            Regional.</p>
-          <p>Trata-se de um conjunto de iniciativas que evidenciam algumas das características distintivas da Região Alentejo
-            como o vasto património imaterial, características naturais e geográficas, gastronomia, vinho, música, danças,
-            teatro de bonecos e o cante.</p>
-          <p>Inclui uma programação cultural regional, abrangente e articulada que divulga e promove as suas singularidades
-            junto dos seus habitantes e de quem nos visita.</p>
-          <p>ArtFest
-            <span class="font-weight: bold">PATRIMÓNIOS</span> inclui trinta e seis espetáculos, seis filmes Documentais e duas exposições fotográficas.</p>
-        </div>
-      </div>
-    </section>
-
 
     <h1>Filmes</h1>
     <section class="grid">
@@ -209,6 +195,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </article>
         </a>
       </template>
+    </section>
+
+    <section id="festInfo">
+      <div class="festInfoContainer">
+        <div class="">
+          <h1><span style="font-weight: bold;">ArtFest</span> PATRIMÓNIOS</h1>
+          <p>É a designação genérica do projeto de animação cultural promovido pela Associ’arte - Associação de Comunicação
+            e Artes e conta com as parcerias de vários municípios: Évora, Elvas, Beja, Cuba, Vidigueira e Portel. A decorrer
+            até 2019, o projeto é Cofinanciado pelo Alentejo 2020, Portugal 2020, União Europeia – Fundo Europeu de Desenvolvimento
+            Regional.</p>
+          <p>Trata-se de um conjunto de iniciativas que evidenciam algumas das características distintivas da Região Alentejo
+            como o vasto património imaterial, características naturais e geográficas, gastronomia, vinho, música, danças,
+            teatro de bonecos e o cante.</p>
+          <p>Inclui uma programação cultural regional, abrangente e articulada que divulga e promove as suas singularidades
+            junto dos seus habitantes e de quem nos visita.</p>
+          <p>ArtFest
+            <span class="font-weight: bold">PATRIMÓNIOS</span> inclui trinta e seis espetáculos, seis filmes Documentais e duas exposições fotográficas.</p>
+        </div>
+      </div>
     </section>
   </template>
 
