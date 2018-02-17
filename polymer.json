@@ -22,8 +22,7 @@
     "rules": ["polymer-2"]
   },
   "builds": [{
-      "name": "producao",
-      "preset": "es6-bundled"
-    }
-  ]
+    "name": "producao",
+    "preset": "es5-bundled"
+  }]
 }
