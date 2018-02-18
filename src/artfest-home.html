@@ -9,13 +9,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
-<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
-<link rel="import" href="../bower_components/paper-tabs/paper-tab.html">
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
-<link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/paper-styles/typography.html">
-<link rel="import" href="../bower_components/iron-collapse/iron-collapse.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="artfest-movies-list.html">
+<link rel="import" href="artfest-shows-list.html">
 
 <dom-module id="artfest-home">
   <template>
@@ -27,6 +25,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         --show-color: rgb(193, 100, 81);
         --exposition-color: rgb(207,71,73);
         --info-color: rgb(151,212,217);
+        
       }
 
       paper-card {
@@ -55,72 +54,81 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .card {
         min-width: 300px;
       }
-      #festInfo .card {
-        margin: 10px;
-      }
       .item .entry-header {
         width: 100%;
         text-align: center;
       }
       .item .card-image {
-        margin: auto;
+        height: 100%;
+        width: 100%;
       }
       .item .card-image img {
-        max-width: 300px;
+        height: 100%;
+        width: 100%;
       }
       .card-content {
-        padding: 0 1em;
+        position: absotute;
         text-align: center;
       }
 
       article {
         display: flex;
         flex-direction: column;
+        position: relative;
       }
 
-      article ul {
-        margin-left:0;
-        list-style:none;
-        padding-left: 0;
-      }
-
-      article ul span {
-        font-size: smaller;
-      }
-
-      .movie {
-        border-bottom: 2px solid var(--movie-color);
-      }
-      .show {
-        border-bottom: 2px solid var(--show-color);
-      }
-      .exposition {
-        border-bottom: 2px solid var(--exposition-color);
+      article .meta-container {
+        padding: 1em;
+        border: 10px solid var(--app-primary-color);
+        background-color: var(--app-secondary-color);
+        color: white;
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
       }
 
       .festInfoContainer {
         background-color: var(--info-color);
         padding: 10em 5em;
+        position: relative;
       }
 
-      @media (max-width: 900px) {
+      .movie .card-content {
+        background-color: var(--app-first-color);
+      }
+
+      .exhibition {
+        border-bottom: 5px solid var(--app-color-exhibitions)
+      }
+      .show {
+        border-bottom: 5px solid var(--app-color-shows);
+      }
+      .movie {
+        border-bottom: 5px solid var(--app-color-movies);
+      }
+
+      artfest-shows-list {
+        margin-bottom: 1em;
+      }
+
+      @media (max-width: 700px) {
         .grid {
           @apply --layout-vertical;
         }
         article {
-          display: flex;
-          flex-direction: row;
+          height: 100vh;
         }
-      }
-      @media (max-width: 700px) {
-        article {
-          flex-direction: column;
+        .grid .item {
+          margin: 0;
+        }
+        .festInfoContainer {
+          padding: 2em 1em;
         }
       }
     </style>
 
     <div class="callout grid">
-      <paper-card heading="Filmes" image="images/home/filmes.jpg" alt="Filmes" class="item">
+      <paper-card heading="Filmes" image="images/home/filmes.jpg" alt="Filmes" class="item movie">
         <div class="card-content">
           <h3>Série documental sobre o Alentejo</h3>
           <p>Esta série documental contempla a realização de 6 filmes a apresentar em auditórios ou salas de todos os municípios
@@ -128,7 +136,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <p>Os espectáculos a apresentar enquadram-se nas áreas artísticas do Fado, Cante, Marionetas e as Danças.</p>
         </div>
       </paper-card>
-      <paper-card heading="Exposições" image="images/home/exposicoes.jpg" alt="Exposições" class="item">
+      <paper-card heading="Exposições" image="images/home/exposicoes.jpg" alt="Exposições" class="item exhibition">
         <div class="card-content">
           <h3>Exposição de fotografia sobre o Alentejo Itenerante.</h3>
           <p>Uma proposta que engloba a realização de uma exposição de Fotografia sobre o Alentejo, que pretende colocar em
@@ -140,7 +148,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <p>Estas ações contam com o envolvimento dos fotógrafos Rui Diogo Castela, Carlos Gasparinho e Telmo Rocha.</p>
         </div>
       </paper-card>
-      <paper-card heading="Espetáculos" image="images/home/espectaculos.jpg" alt="Espetáculos" class="item">
+      <paper-card heading="Espetáculos" image="images/home/espectaculos.jpg" alt="Espetáculos" class="item show">
         <div class="card-content">
           <h3>Produção e apresentação de espectáculos</h3>
           <p>Produção e apresentação de 34 espectáculos de algumas das artes performativas mais identitárias do Alentejo com apresentações semanais ao vivo.</p>
@@ -149,57 +157,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </paper-card>
     </div>
 
-    <h1>Filmes</h1>
-    <section class="grid">
-      <template is="dom-repeat" items="[[movies]]" as="movie">
-        <a class="item card" href="[[rootPath]]detalhes/filme/[[movie.slug]]">
-          <article>
-            <div class="card-image">
-              <img src="[[__getMovieImageUrl(movie)]]" hidden$="[[!movie.images.featured]]" />
-            </div>
-            <div class="card-content">
-              <h1 class="entry-header">[[movie.name]]</h1>
-              <div hidden$=[[!movie.title]]>[[movie.title]]</div>
-              <div class="movieDescriptionContainer">
-                <template is="dom-repeat" items="[[movie.description]]" as="description">
-                  <p>[[description]]</p>
-                </template>
-              </div>
-            </div>
-          </article>
-        </a>
-      </template>
-    </section>
-
-    <h1>Espectáculos</h1>
-    <section class="grid">
-      <template is="dom-repeat" items="[[shows]]" as="show">
-        <a class="item card">
-          <article>
-            <div class="card-content">
-              <div class="card-image">
-                <img src="[[show.images.featured]]" />
-              </div>
-            </div>
-            <div>
-              <h2 class="entry-header">[[show.artist]]</h2>
-              <div>[[show.genre]]</div>
-              <ul>
-                <li>Évora<br/>
-                  <span><iron-icon icon="my-icons:location-on"></iron-icon>Armazém 8</span>
-                  <span><iron-icon icon="my-icons:date-range"></iron-icon>[[_getShowSchedueleDate(show)]]</span>
-                  <span><iron-icon icon="my-icons:access-time"></iron-icon>[[_getShowSchedueleTime(show)]]</span>
-                </li>
-              </ul>
-            </div>
-          </article>
-        </a>
-      </template>
-    </section>
+    <artfest-movies-list movies="[[movies]]"></artfest-movies-list>
+    <artfest-shows-list shows="[[shows]]"></artfest-shows-list>
 
     <section id="festInfo">
       <div class="festInfoContainer">
-        <div class="">
+        <div>
           <h1><span style="font-weight: bold;">ArtFest</span> PATRIMÓNIOS</h1>
           <p>É a designação genérica do projeto de animação cultural promovido pela Associ’arte - Associação de Comunicação
             e Artes e conta com as parcerias de vários municípios: Évora, Elvas, Beja, Cuba, Vidigueira e Portel. A decorrer
@@ -211,7 +174,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <p>Inclui uma programação cultural regional, abrangente e articulada que divulga e promove as suas singularidades
             junto dos seus habitantes e de quem nos visita.</p>
           <p>ArtFest
-            <span class="font-weight: bold">PATRIMÓNIOS</span> inclui trinta e seis espetáculos, seis filmes Documentais e duas exposições fotográficas.</p>
+            <span style="font-weight: bold;">PATRIMÓNIOS</span> inclui trinta e seis espetáculos, seis filmes Documentais e duas exposições fotográficas.</p>
         </div>
       </div>
     </section>
@@ -225,43 +188,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           shows: Array,
           movies: Array
         }
-      }
-      _getShowSchedueleDate(show) {
-        return this.__getDay(show.scheduele.evora.date) + ' ' +
-          this.__getMonth(show.scheduele.evora.date);
-      }
-      _getShowSchedueleTime(show) {
-        return this.__getHour(show.scheduele.evora.date) + 'h';
-      }
-      __getMovieDescription(description, index) {
-        return description;
-      }
-      __parseTime(date) {
-        var parsedDate = new Date(date);
-        return parsedDate.toTimeString().split(' ');
-      }
-      __parseDate(date) {
-        var parsedDate = new Date(date);
-        return parsedDate.toDateString().split(' ');
-      }
-      __getDay(date) {
-        var dateParts = this.__parseDate(date);
-        return dateParts[2];
-      }
-      __getMonth(date) {
-        var dateParts = this.__parseDate(date);
-        return dateParts[1];
-      }
-      __getYear(date) {
-        var dateParts = this.__parseDate(date);
-        return dateParts[3];
-      }
-      __getHour(date) {
-        var timeParts = this.__parseTime(date);
-        return timeParts[0].split(':')[0];
-      }
-      __getMovieImageUrl(movie) {
-        return movie && movie.images && movie.images.featured ? movie.images.featured: '';
       }
     }
 

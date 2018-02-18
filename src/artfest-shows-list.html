@@ -1,0 +1,133 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="artfest-shows-list">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 1em;
+      }
+      .column {
+        padding: 0;
+      }
+      .card.column {
+        margin: 1em 1em;
+        min-width: 300px;
+        padding-bottom: 1em;
+      }
+      article ul {
+        list-style: none;
+      }
+      article ul span {
+        font-size: smaller;
+      }
+      .media-content {
+        overflow: hidden;
+      }
+      .show {
+        border-bottom: 5px solid var(--app-color-shows);
+      }
+      @media (max-width: 700px) {
+        :host {
+          padding: 0;
+        }
+        .card.column {
+          margin: 0.5em 0;
+        }
+      }
+    </style>
+
+    <h1 class="title is-1">Espectáculos</h1>
+    <section class="columns is-multiline is-mobile">
+      <template is="dom-repeat" items="[[shows]]" as="show">
+        <a class="card column show">
+          <article >
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="[[show.images.featured]]" alt="[[show.artist]]"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="[[show.images.featured]]" alt="[[show.artist]]">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">[[show.artist]]</p>
+                  <p class="subtitle is-6">[[show.genre]]</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>Évora<br/>
+                  <span><iron-icon icon="my-icons:location-on"></iron-icon>Armazém 8</span>
+                  <span><iron-icon icon="my-icons:date-range"></iron-icon>[[_getShowSchedueleDate(show)]]</span>
+                  <span><iron-icon icon="my-icons:access-time"></iron-icon>[[_getShowSchedueleTime(show)]]</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </a>
+      </template>
+    </section>
+  </template>
+
+  <script>
+    class ArtfestShowsList extends Polymer.Element {
+      static get is() { return 'artfest-shows-list'; }
+      static get properties() {
+        return {
+          shows: Array
+        }
+      }
+      _getShowSchedueleDate(show) {
+        return this.__getDay(show.scheduele.evora.date) + ' ' +
+          this.__getMonth(show.scheduele.evora.date);
+      }
+      _getShowSchedueleTime(show) {
+        return this.__getHour(show.scheduele.evora.date) + 'h';
+      }
+      __parseTime(date) {
+        var parsedDate = new Date(date);
+        return parsedDate.toTimeString().split(' ');
+      }
+      __parseDate(date) {
+        var parsedDate = new Date(date);
+        return parsedDate.toDateString().split(' ');
+      }
+      __getDay(date) {
+        var dateParts = this.__parseDate(date);
+        return dateParts[2];
+      }
+      __getMonth(date) {
+        var dateParts = this.__parseDate(date);
+        return dateParts[1];
+      }
+      __getYear(date) {
+        var dateParts = this.__parseDate(date);
+        return dateParts[3];
+      }
+      __getHour(date) {
+        var timeParts = this.__parseTime(date);
+        return timeParts[0].split(':')[0];
+      }
+    }
+
+    window.customElements.define(ArtfestShowsList.is, ArtfestShowsList);
+  </script>
+</dom-module>
