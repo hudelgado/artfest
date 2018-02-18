@@ -36,46 +36,64 @@
       <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
       <style amp-custom>
-        #articleTitle {
-          text-align: center;
-        }
-        .mainContainer {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        #description {
-        	margin: 0 1em;
-        }
-      </style>
+          :host {
+            display: block;
+          }
+          body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+          }
+          .main-title {
+            text-align: center;
+            flex: 1;
+            align-items: flex-end;
+          }
+          .content-wrap {
+            flex: 20;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+          }
+          .content-image {
+            flex: 0 0 400px;
+          }
+          .content-descriptor {
+            flex: 1;
+            min-width: 400px;
+            flex-direction: column;
+          }
+          .content-descriptor .description {
+            padding: 1em;
+          }
+          .content-video {
+            padding: 2em;
+          }
+        </style>
     </head>
     <body>
-      <h1 id="articleTitle">Muralhas que Unem</h1>
-      <div class="mainContainer">
-        <div id="description">
-            <p>As fortificações abaluartadas de Elvas, que se encontram inscritas na lista do Património Mundial da UNESCO, perderam a sua função militar e são hoje ponto de encontro entre culturas dos dois lados da raia.</p>
-            <p>Este património serve de pano de fundo para o encontro de gente dos dois lados de uma fronteira que não separa, mas une, dois povos que hoje caminham lado a lado.</p>
-            <p>Morada de muitas civilizações e reinados.</p>
+      <div class="main-title title is-1">Muralhas que Unem</div>
+      <div class="content-wrap">
+        <div class="content-descriptor">
+          <div class="description">
+              <p>As fortificações abaluartadas de Elvas, que se encontram inscritas na lista do Património Mundial da UNESCO, perderam a sua função militar e são hoje ponto de encontro entre culturas dos dois lados da raia.</p>
+              <p>Este património serve de pano de fundo para o encontro de gente dos dois lados de uma fronteira que não separa, mas une, dois povos que hoje caminham lado a lado.</p>
+              <p>Morada de muitas civilizações e reinados.</p>
+          </div>
         </div>
       </div>
-      <section>
-        <h2>Filmagens</h2>
-        <amp-carousel height="300"
-          layout="fixed-height"
-          type="carousel">
-          <amp-img src="https://www.artfestpatrimonios.pt/data/images/filmes/muralhas_que_unem/filmagens/1.png"
-            width="400"
-            height="300">
-          </amp-img>
-          <amp-img src="https://www.artfestpatrimonios.pt/data/images/filmes/muralhas_que_unem/filmagens/2.png"
-            width="400"
-            height="300">
-          </amp-img>
-          <amp-img src="https://www.artfestpatrimonios.pt/data/images/filmes/muralhas_que_unem/filmagens/3.png"
-            width="400"
-            height="300">
-          </amp-img>
-        </amp-carousel>
-      </section>
+      <div class="content-main">
+        <div>
+          <h2 class="title is-2">Filmagens</h2>
+          <amp-carousel height="300" layout="fixed-height" type="carousel">
+            <amp-img src="https://www.artfestpatrimonios.pt/data/images/filmes/muralhas_que_unem/filmagens/1.png" width="400" height="300">
+            </amp-img>
+            <amp-img src="https://www.artfestpatrimonios.pt/data/images/filmes/muralhas_que_unem/filmagens/2.png" width="400" height="300">
+            </amp-img>
+            <amp-img src="https://www.artfestpatrimonios.pt/data/images/filmes/muralhas_que_unem/filmagens/3.png" width="400" height="300">
+            </amp-img>
+          </amp-carousel>
+        </div>
+      </div>
   </body>
 </html>

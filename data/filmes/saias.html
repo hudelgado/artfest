@@ -31,25 +31,49 @@
       <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
       <style amp-custom>
-        #articleTitle {
-          text-align: center;
-        }
-        .mainContainer {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        #description {
-        	margin: 0 1em;
-        }
-      </style>
+          :host {
+            display: block;
+          }
+          body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+          }
+          .main-title {
+            text-align: center;
+            flex: 1;
+            align-items: flex-end;
+          }
+          .content-wrap {
+            flex: 20;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+          }
+          .content-image {
+            flex: 0 0 400px;
+          }
+          .content-descriptor {
+            flex: 1;
+            min-width: 400px;
+            flex-direction: column;
+          }
+          .content-descriptor .description {
+            padding: 1em;
+          }
+          .content-video {
+            padding: 2em;
+          }
+        </style>
     </head>
     <body>
-      <h1 id="articleTitle">Saias</h1>
-      <div class="mainContainer">          
-        <div id="description">
-          <p>Modas coreográficas do Alto Alentejo, as saias cantam-se ao despique durante as fainas agrícolas (apanha da azeitona, p. ex.) ou cantam-se e dançam-se em dias festivos como o de São João ou nas Festas do Povo, de Campo Maior (recentemente candidatas a Património Cultural Imaterial da UNESCO).</p>
+      <div class="main-title title is-1">Saias</div>
+      <div class="content-wrap">
+        <div class="content-descriptor">
+          <div class="description">
+              <p>Modas coreográficas do Alto Alentejo, as saias cantam-se ao despique durante as fainas agrícolas (apanha da azeitona, p. ex.) ou cantam-se e dançam-se em dias festivos como o de São João ou nas Festas do Povo, de Campo Maior (recentemente candidatas a Património Cultural Imaterial da UNESCO).</p>
+          </div>
         </div>
       </div>
-  </body>
+    </body>
 </html>

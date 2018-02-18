@@ -28,29 +28,50 @@
       <script async src="https://cdn.ampproject.org/v0.js"></script>
 
       <style amp-custom>
-        #articleTitle {
-          text-align: center;
-        }
-        .mainContainer {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        #description {
-        	margin: 0 1em;
-        }
-      </style>
+          :host {
+            display: block;
+          }
+          body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+          }
+          .main-title {
+            text-align: center;
+            flex: 1;
+            align-items: flex-end;
+          }
+          .content-wrap {
+            flex: 20;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+          }
+          .content-image {
+            flex: 0 0 400px;
+          }
+          .content-descriptor {
+            flex: 1;
+            min-width: 400px;
+            flex-direction: column;
+          }
+          .content-descriptor .description {
+            padding: 1em;
+          }
+          .content-video {
+            padding: 2em;
+          }
+        </style>
     </head>
     <body>
-      <h1 id="articleTitle">Minas com História</h1>
-      <div class="mainContainer">
-        <div id="description">
-          <p>A Faixa Piritosa Ibérica constitui uma vasta área geográfica do sul da Península, com cerca de 250 quilómetros de comprimento, entre Alcácer do Sal, a Noroeste, e Sevilha (Espanha), a Sudoeste.</p>
-          <p>Este filme centra-se essencialmente no património histórico, paisagístico e humano de duas das principais minas desta faixa – Lousal (Grândola) e São Domingos (Mértola).</p>
+      <div class="main-title title is-1">Minas com História</div>
+      <div class="content-wrap">
+        <div class="content-descriptor">
+          <div class="description">
+              <p>A Faixa Piritosa Ibérica constitui uma vasta área geográfica do sul da Península, com cerca de 250 quilómetros de comprimento, entre Alcácer do Sal, a Noroeste, e Sevilha (Espanha), a Sudoeste.</p>
+              <p>Este filme centra-se essencialmente no património histórico, paisagístico e humano de duas das principais minas desta faixa – Lousal (Grândola) e São Domingos (Mértola).</p>
+          </div>
         </div>
       </div>
-      <section></section>
-      <section></section>
-      <section></section>
   </body>
 </html>

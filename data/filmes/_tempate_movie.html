@@ -43,48 +43,71 @@
       <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
       <style amp-custom>
-        #articleTitle {
-          text-align: center;
+        :host {
+          display: block;
         }
-        .mainContainer {
+        body {
+          display: flex;
+          flex-direction: column;
+          width: 100vw;
+        }
+        .main-title {
+          text-align: center;
+          flex: 1;
+          align-items: flex-end;
+        }
+        .content-wrap {
+          flex: 20;
           display: flex;
           flex-wrap: wrap;
-          justify-content: center;
+          justify-content: space-around;
         }
-        #description {
-        	margin: 0 1em;
+        .content-image {
+          flex: 0 0 400px;
+        }
+        .content-descriptor {
+          flex: 1;
+          min-width: 400px;
+          flex-direction: column;
+        }
+        .content-descriptor .description {
+          padding: 1em;
+        }
+        .content-video {
+          padding: 2em;
         }
       </style>
     </head>
     <body>
-      <h1 id="articleTitle">{{name}}</h1>
-      <div class="mainContainer">          
-        <amp-img 
-          src="{{featured_image}}"
-          width="{{featured_image_width}}"
-          height="{{featured_image_height}}">
-        </amp-img>
-        <div id="description">{{description}}</div>
+      <div class="main-title title is-1">{{name}}</div>
+      <div class="content-wrap">
+        <div class="content-image">
+          <amp-img src="{{featured_image}}" width="8em" height="16em" layout="responsive"></amp-img>
+        </div>
+        <div class="content-descriptor">
+          <div class="description">{{description}}</div>
+          <div class="content-video">
+            <h2 class="title is-2">Videos</h2>
+            <amp-vimeo data-videoid="{{video.src}}" layout="responsive" width="16" height="9">
+            </amp-vimeo>
+          </div>
+        </div>
       </div>
-      <section>
-        <h2>Videos</h2>
-      </section>
-      <section>
-        <h2>Filmagens</h2>
-        <amp-carousel
-          height="300"
-          layout="fixed-height"
-          type="carousel">
-        </amp-carousel>
-      </section>
-      <section>
-        <h2>Estreia</h2>
-        <amp-carousel
-          height="300"
-          layout="fixed-height"
-          type="carousel">
-          </amp-img>
-        </amp-carousel>
-      </section>
+      <div class="content-main">
+        <div>
+          <h2 class="title is-2">Filmagens</h2>
+          <amp-carousel height="300" layout="fixed-height" type="carousel">
+            <amp-img src="{{item.image.src}}" width="400" height="300">
+            </amp-img>
+          </amp-carousel>
+        </div>
+        <div>
+          <h2 class="title is-2">Estreia</h2>
+          <amp-carousel height="300" layout="fixed-height" type="carousel">
+            <amp-img src="{{item.image.src}}" width="400" height="300">
+            </amp-img>
+          </amp-carousel>
+        </div>
+      </div>
   </body>
 </html>

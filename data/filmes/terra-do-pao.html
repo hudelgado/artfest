@@ -31,25 +31,49 @@
       <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
       <style amp-custom>
-        #articleTitle {
-          text-align: center;
+        :host {
+          display: block;
         }
-        .mainContainer {
+        body {
+          display: flex;
+          flex-direction: column;
+          width: 100vw;
+        }
+        .main-title {
+          text-align: center;
+          flex: 1;
+          align-items: flex-end;
+        }
+        .content-wrap {
+          flex: 20;
           display: flex;
           flex-wrap: wrap;
-          justify-content: center;
+          justify-content: space-around;
         }
-        #description {
-        	margin: 0 1em;
+        .content-image {
+          flex: 0 0 400px;
+        }
+        .content-descriptor {
+          flex: 1;
+          min-width: 400px;
+          flex-direction: column;
+        }
+        .content-descriptor .description {
+          padding: 1em;
+        }
+        .content-video {
+          padding: 2em;
         }
       </style>
     </head>
     <body>
-      <h1 id="articleTitle">Terra do Pão</h1>
-      <div class="mainContainer">          
-        <div id="description">
-          <p>O ponto de partida é a Dieta Mediterrânica, classificada Património Imaterial da UNESCO e um dos seus elementos centrais, o pão.</p>
-          <p>O documentário evoca o ciclo do pão, explica a história do alimento e toda a carga simbólica (até litúrgica) a ele associada.</p>
+      <div class="main-title title is-1">Terra do Pão</div>
+      <div class="content-wrap">
+        <div class="content-descriptor">
+          <div class="description">
+              <p>O ponto de partida é a Dieta Mediterrânica, classificada Património Imaterial da UNESCO e um dos seus elementos centrais, o pão.</p>
+              <p>O documentário evoca o ciclo do pão, explica a história do alimento e toda a carga simbólica (até litúrgica) a ele associada.</p>
+          </div>
         </div>
       </div>
   </body>
