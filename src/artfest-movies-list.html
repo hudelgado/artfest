@@ -62,9 +62,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <article>
                 <p class="title">[[movies.1.name]]</p>
                 <p class="subtitle">[[movies.1.title]]</p>
-                <figure class="image is-4by3">
-                  <img src="[[__getMovieImageUrl(movies.1)]]">
-                </figure>
                 <div class="content">[[movies.1.description]]</div>
               </article>
             </a>
@@ -101,6 +98,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
       }
       __getMovieImageUrl(movie) {
+        console.log(movie);
         return movie && movie.images && movie.images.featured ? movie.images.featured: '';
       }
       __getMovieDescription(description, index) {
