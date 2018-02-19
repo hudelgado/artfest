@@ -1,5 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
 <link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 
@@ -8,36 +9,79 @@
         <style>
             :host {
                 display: block;
-                padding-bottom: 70px;
+                padding-bottom: 400px;
             }
-            app-header {
-                @apply --layout-fixed-top;
+
+             app-header {
                 z-index: 1;
                 background-color: var(--app-primary-color);
+                color: white;
             }
+
             app-header a {
                 color: white;
             }
-            app-toolbar {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
+            app-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                color: #fff;
+                background-color: var(--app-primary-color);
+                --app-header-background-front-layer: {
+                    background-image: url(/images/manifest/icon-192x192.png);
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: center top;
+                };
             }
-            :host-context([page=home]) .back-btn {
-                display: none;
+            paper-icon-button {
+                --paper-icon-button-ink-color: white;
+            }
+            paper-fab {
+                position: absolute;
+                right: 16px;
+                top: 248px;
+                will-change: transform;
+                transition: 0.1s -webkit-transform;
+                transition: 0.1s transform;
+            }
+            app-toolbar.middle {
+                height: 120px;
+            }
+            app-toolbar.bottom {
+                height: 200px;
+            }
+            [main-title] {
+                margin-left: 64px;
+                font-size: 32px;
+                font-weight: 300;
+                text-align: center;
+                max-width: 10em;
+                margin: 0 auto;
+            }
+            [condensed-title] {
+                margin-left: 20px;
+                font-weight: 300;
             }
         </style>
-        <app-header id="header" reveals condenses shadow>
-            <app-toolbar sticky>
-                <a class="back-btn" href="[[rootPath]]" tabindex="-1">
-                    <paper-icon-button icon="my-icons:arrow-back" aria-label="Go back"></paper-icon-button>
-                </a>
-                <img src="/images/manifest/icon-96x96.png" />
+
+        <app-header effects="waterfall resize-title blend-background parallax-background" condenses reveals>
+            <app-toolbar>
+                <a class="back-btn" href="[[rootPath]]" tabindex="-1"><paper-icon-button icon="my-icons:arrow-back"></paper-icon-button></a>
+                <div condensed-title style="display: flex; flex-direction: row; align-items: center;">
+                    <img src="/images/manifest/icon-96x96.png" />
+                    <div></div>
+                </div>
+                <paper-icon-button icon="create"></paper-icon-button>
+                <paper-icon-button icon="more-vert"></paper-icon-button>
             </app-toolbar>
-        </app-header>
-    </template>
-
-
+            <app-toolbar class="middle"></app-toolbar>
+            <app-toolbar class="bottom">
+                <div main-title>O património cultural do Alentejo através das expressões artísticas locais</div>
+            </app-toolbar>
+            </app-header>
+        </template>
     <script>
         class ArtfestHeader extends Polymer.Element {
             static get is() {
