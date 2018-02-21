@@ -52,7 +52,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <h1 class="title is-1">Espectáculos</h1>
     <section class="columns is-multiline is-mobile">
       <template is="dom-repeat" items="[[shows]]" as="show">
-        <a class="card column show">
+        <a href="[[rootPath]]detalhes/grupo/[[show.slug]]" class="card column show">
           <article >
             <div class="card-image">
               <figure class="image is-16x9">

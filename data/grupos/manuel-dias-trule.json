@@ -1,0 +1,24 @@
+{
+        "slug": "manuel-dias-trule",
+        "name": "Manuel Dias Trulé",
+        "genre": "Marionetas e Robertos",
+        "bio": [
+                "Manuel Fernando da Costa Dias nasceu em 1949. Pintou, esculpiu, no teatro cenografou acabando por se dedicar por inteiro à criação e realização de espetáculos de marionetas como marionetista solista.",
+                "Em Évora iniciou o projeto profissional TRULÉ – Investigação de Formas Animadas.",
+                "No teatro Manuel Costa Dias colaborou como cenógrafo em várias companhias de teatro: Centro Cultural de Évora (25 cenografias), CENDREV, Cena, Bonifrates, TEUC, Bonecreiros, Cornucópia, Jangada Teatro e Imaginário.",
+                "Em 1982 foi-lhe atribuído o prémio para o melhor espaço cénico, pela Associação Portuguesa de Críticos.",
+                "Manuel Costa Dias, para o projeto TRULÉ, estreou-se com um espetáculo na técnica de Robertos na Bienal Internacional das Marionetas de Évora em 1987.",
+                "Nos últimos 20 anos, participou em mais de 87 Festivais Internacionais. Aos espetáculos Variações de Marionetas em Redor da Música, Amores e Humores da Bonecada, Robertos e outras Marionetas e As minhas MAIS… Marionetas foram atribuídos 17 prémios em Festivais Internacionais.",
+                "ASSOCI’ARTE atribuiu o prémio José Melo a Manuel Costa Dias cujo lema é “Coragem de Ficar”.",
+                "Na 1ª edição de ÉVORAINOVA foi homenageado com o galardão Valorização Cultural e foi-lhe atribuída a medalha de Mérito Municipal – Classe Prata pela Câmara Municipal de Évora."
+        ],
+        "url": "http://www.trule.pt/",
+        "images": {
+                "featured": "data/images/grupos/trule_manuel_dias.jpg"
+        },
+        "scheduele": [{
+                "date": "2018-03-10 22:00:00",
+                "place": "Armazém8",
+                "local": "Évora"
+        }]
+}

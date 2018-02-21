@@ -1,0 +1,41 @@
+{
+  "slug": "fado-lele",
+  "name": "Fado Lelé",
+  "genre": "As canções que existem no fado pelos ukuleles do mundo",
+  "bio": [
+    "“É, mais uma vez, Portugal aberto ao mundo. E sim, isso é algo que esta personagem que é também um país sabe mesmo muito bem o que é.” Esta frase termina o texto sobre Fado Lelé, assinado por António Pires n'O Fado E Outras  Músicas do Mundo, a propósito da edição do álbum de estreia da banda.",
+    "FADO LELÉ define-se como uma banda de fortes raízes lusófonas e abre no seu vasto leque de referências musicais uma janela para o mundo. As suas melodias são inspiradas e revisitadas num fado intemporal e vestidas a seu próprio gosto, dançante, com as sonoridades peculiares do ukulele e do bandolim.  Convivem, e vivem, com muitos ritmos e estéticas  e como tal, o jazz manouche, o afro, o reggae, e até mesmo o rockabilly ou o deltablues são seus convidados de honra.",
+    "Para além de alguns originais do grupo - Amor Limão (o primeiro single), Mal de Amor e O Fado Lelé, o disco de estreia de FADO LELÉ - Portugal Sabe o Que É! - inclui também algumas versões bem renovadas de clássicos como Vou Dar de Beber á Dor (faz parte da BSO da novela Espelho d`Água da SIC), Bairro Alto, Noites da Madeira, Rua do Capelão, Tudo isto é Fado, Foi na Travessa da Palha, Aldeia da Roupa Branca e Uma Casa Portuguesa (presente na BSO da novela Amor Maior da SIC)."
+  ],
+  "composition": [
+    {
+      "name": "Ana Castelo",
+      "role": "voz"
+    },
+    {
+      "name": "Miguel Castro",
+      "role": "ukulele baritono e tenor"
+    },
+    {
+      "name": "Filipe Silva",
+      "role": "bandolim e trompete"
+    },
+    {
+      "name": "Luís Gaspar",
+      "role": "bateria"
+    },
+    {
+      "name": "Luciano Barros",
+      "role": "baixo",
+      "invited": true
+    }
+  ],
+  "images": {
+    "featured": "data/images/grupos/fado_lele.jpg"
+  },
+  "scheduele": [{
+    "date": "2018-03-31 22:00:00",
+    "place": "Armazém8",
+    "local": "Évora"
+  }]
+}

@@ -1,0 +1,40 @@
+{
+      "slug": "nana-sousa-dias",
+      "name": "Nanã Sousa Dias",
+      "genre": "Música Tradicional em Jazz",
+      "bio": [
+        "Este quinteto apresenta um reportório composto por música portuguesa com arranjos de forte influencia jazzística.",
+        "Todos os seus elementos sempre estiveram de algum modo ligados ao jazz, a música da sua preferencia."
+      ],
+      "composition": [
+        {
+          "name": "Nanã Sousa Dias",
+          "role": "Saxofones"
+        },
+        {
+          "name": "Gonçalo Filipe de Sousa",
+          "role": "Harmónica"
+        },
+        {
+          "name": "Óscar Graça",
+          "role": "Piano"
+        },
+        {
+          "name": "Nuno Oliveira",
+          "role": "Baixo"
+        },
+        {
+          "name": "Alexandre Alves",
+          "role": "Bateria"
+        }
+      ],
+      "url": "https://www.artfestpatrimonios.pt",
+      "images": {
+        "featured": "data/images/grupos/Nana.jpg"
+      },
+      "scheduele": [{
+        "date": "2018-03-24 22:00:00",
+        "place": "Armazém8",
+        "local": "Évora"
+      }]
+    }

@@ -1,0 +1,49 @@
+{
+  "slug": "o-luar-da-namorosa",
+  "name": "O Luar da Namorosa",
+  "genre": "Música tradicional do Alentejo e cante",
+  "bio": ["A música, o cante, este povo que canta, em busca de outros e novos caminhos na cultura alentejana, que transformem o cante de hoje na tradição de amanhã."],
+  "composition": [
+    {
+      "name": "António Santos", "role": "Voz"
+    },
+    {
+      "name": "Rui Gomes", "role": "Voz"
+    },
+    {
+      "name": "David Pereira", "role": "Voz"
+    },
+    {
+      "name": "Filipe Pratas", "role": "Voz"
+    },
+    {
+      "name": "António Caço", "role": "Acordeão/Voz"
+    },
+    {
+      "name": "Ricardo Prezado", "role": "Baixo Elétrico"
+    },
+    {
+      "name": "Manuel Ferraz", "role": "Guitarras"
+    },
+    {
+      "name": "Paulo Bandeira", "role": "Bateria"
+    },
+    {
+      "name": "Nuno do Ó", "role": "Direção de Vozes/Produção Executiva/Vozes Piano/Orquestração"
+    },
+    {
+      "name": "Sérgio Rodrigues", "role": "Direção Musical"
+    }
+  ],
+  "images": {
+    "featured": "data/images/grupos/luar_da_namorosa.jpg"
+  },
+  "links": {
+    "facebook": "luardanamorosa"
+  },
+  "scheduele": [{
+    "date": "2018-03-30 22:00:00",
+    "place": "Armazém8",
+    "local": "Évora"
+  }]
+}
