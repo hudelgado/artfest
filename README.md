@@ -6,7 +6,7 @@ ArtFest Patrimonios festival WebApp, built with [polymer](https://www.npmjs.com/
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
 
-## Viewing Your Element
+## Launch development server
 
 ```
 $ polymer serve
