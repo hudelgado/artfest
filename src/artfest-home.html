@@ -86,11 +86,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         right: 1em;
       }
 
+      .expositionsContainer {
+        background-color: var(--app-color-exhibitions);
+        padding: 10em 5em;
+        position: relative;
+        color: white;
+      }
+
+      .expositionsContainer .title {
+        color: white;
+      }
+
+      .expositionsContainer > p:last-of-type {
+        margin-bottom: 3em;
+      }
+
       .festInfoContainer {
         background-color: var(--info-color);
         padding: 10em 5em;
         position: relative;
       }
+
 
       .movie .card-content {
         background-color: var(--app-first-color);
@@ -137,13 +153,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </paper-card>
       <paper-card heading="Exposições" image="images/home/exposicoes.jpg" alt="Exposições" class="item exhibition">
         <div class="card-content">
-          <h3>Exposição de fotografia sobre o Alentejo Itenerante.</h3>
+          <h3>Exposição Itenerante de fotografia sobre o Alentejo Itenerante.</h3>
           <p>Uma proposta que engloba a realização de uma exposição de Fotografia sobre o Alentejo, que pretende colocar em
-            evidência a ligação entre o Património Material e Imaterial do Alto, Baixo, Litoral e Alentejo Central. Trata-se
-            de uma exposição única que circulará por 6 cidades adaptada às galerias municipais existentes, a espaços expositivos
-            próprios em unidades hoteleiras e ao espaço urbano onde serão afixadas em mobiliário urbano pré-existente ou
-            em telas colocadas no exterior.</p>
-          <p>A mostra conta com uma publicação que compilará uma seleção das imagens expostas mais ilustrativas.</p>
+            evidência a ligação entre o Património Material e Imaterial do Alto, Baixo, Litoral e Alentejo Central.</p>
           <p>Estas ações contam com o envolvimento dos fotógrafos Rui Diogo Castela, Carlos Gasparinho e Telmo Rocha.</p>
         </div>
       </paper-card>
@@ -157,7 +169,35 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </div>
 
     <artfest-movies-list movies="[[movies]]"></artfest-movies-list>
+    <section id="expositions" class="expositionsContainer">
+      <h1 class="title is-1">Exposições</h1>
+      <p>Exposição Itenerante de fotografia sobre o Alentejo.</p>
+      <p>Uma proposta que engloba a realização de uma exposição de Fotografia sobre o Alentejo, que pretende colocar em evidência a ligação entre o Património Material e Imaterial do Alto, Baixo, Litoral e Alentejo Central. Trata-se de uma exposição única que circulará por 6 cidades adaptada às galerias municipais existentes, a espaços expositivos próprios em unidades hoteleiras e ao espaço urbano onde serão afixadas em mobiliário urbano pré-existente ou em telas colocadas no exterior.</p>
+      <p>A mostra conta com uma publicação que compilará uma seleção das imagens expostas mais ilustrativas.</p>
+      <p>Estas ações contam com o envolvimento dos fotógrafos Rui Diogo Castela, Carlos Gasparinho e Telmo Rocha.</p>
+      <div class="columns">
+          <div class="column">
+              <div>
+                <img src="data/images/exposicoes/rui_castela.jpg" />
+                <p class="heading">Rui Castela</p>
+              </div>
+            </div>
+            <div class="column">
+              <div>
+                <img src="data/images/exposicoes/carlos_gasparinho.jpg" />
+                <p class="heading">Carlos Gasparinho</p>
+              </div>
+            </div>
+            <div class="column">
+              <div>
+                <img src="data/images/exposicoes/telmo_rocha.jpg" />
+                <p class="heading">Telmo Rocha</p>
+              </div>
+            </div>
+      </div>
+    </section>
     <artfest-shows-list shows="[[shows]]"></artfest-shows-list>
+
 
     <section id="festInfo">
       <div class="festInfoContainer">

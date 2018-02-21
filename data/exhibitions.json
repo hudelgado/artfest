@@ -1,0 +1,16 @@
+[{
+  "artist": "Carlos Gasparinho",
+  "images": {
+    "featured": "data/images/exposicoes/carlos_gasparinho.jpg"
+  }
+}, {
+  "artist": "Rui Castela",
+  "images": {
+    "featured": "data/images/exposicoes/rui_castela.jpg"
+  }
+}, {
+  "artist": "Telmo Rocha",
+  "images": {
+    "featured": "data/images/exposicoes/telmo_rocha.jpg"
+  }
+}]

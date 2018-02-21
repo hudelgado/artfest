@@ -99,6 +99,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </iron-ajax>
     <iron-ajax auto url="data/groups.json" handle-as="json" last-response="{{groups}}" debounce-duration="300">
     </iron-ajax>
+    <iron-ajax auto url="data/exhibitions.json" handle-as="json" last-response="{{exhibitions}}" debounce-duration="300">
+    </iron-ajax>
     <iron-ajax auto url="data/partners.json" handle-as="json" last-response="{{partners}}" debounce-duration="300">
     </iron-ajax>
 
@@ -106,7 +108,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="appContainer hero is-fullheight">
       <artfest-header></artfest-header>  
       <iron-pages selected="[[page]]" attr-for-selected="name" fallback-selection="view404" role="main" class="hero-body">
-        <artfest-home name="home" movies={{movies}} shows={{shows}}></artfest-home>
+        <artfest-home name="home" movies={{movies}} shows={{shows}} exhibitions={{exhibitions}}></artfest-home>
         <artfest-detalhes name="detalhes" route="[[subroute]]" movies={{movies}} groups={{groups}}></artfest-detalhes>
         <artfest-view404 name="view404"></artfest-view404>
       </iron-pages>
@@ -169,6 +171,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           movies: Array,
           shows: Array,
+          exhibitions: Array,
           partners: Array
         };
       }
