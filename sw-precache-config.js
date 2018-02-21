@@ -20,8 +20,7 @@ module.exports = {
     '/': ['index.html']
   },
   navigateFallback: '/',
-  runtimeCaching: [
-    {
+  runtimeCaching: [{
       urlPattern: /\/bower_components\/webcomponentsjs\/.*.js/,
       handler: 'fastest',
       options: {
@@ -29,17 +28,16 @@ module.exports = {
           name: 'webcomponentsjs-polyfills-cache',
         },
       },
-    },{
-      urlPattern: /https:\/\/cdn.ampproject.org\/.*\.js/,
+    }, {
+      urlPattern: /\/bower_components\/bulma-carousel\/dist\/.*.min.(js,css)/,
       handler: 'fastest',
       options: {
         cache: {
           maxEntries: 100,
-          name: 'amp-scripts-cache'
+          name: 'bulma-cache'
         }
       }
-    },
-    {
+    }, {
       urlPattern: /.*\.(png|jpg|gif|svg)/i,
       handler: 'fastest',
       options: {
@@ -48,8 +46,7 @@ module.exports = {
           name: 'data-images-cache'
         }
       }
-    },
-    {
+    }, {
       urlPattern: /\/data\/filmes\/.*/,
       handler: 'fastest',
       options: {
@@ -58,8 +55,7 @@ module.exports = {
           name: 'movies-articles-cache'
         }
       }
-    },
-    {
+    }, {
       urlPattern: /\/data\/.*json/,
       handler: 'fastest',
       options: {
@@ -69,5 +65,5 @@ module.exports = {
         }
       }
     }
-  ],
+  ]
 };
