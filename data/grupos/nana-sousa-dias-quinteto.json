@@ -35,6 +35,7 @@
       "scheduele": [{
         "date": "2018-03-24 22:00:00",
         "place": "Armazém8",
-        "local": "Évora"
+        "local": "Évora",
+        "address": "Rua do Eletricista 8 - P.I.T.E, Évora"
       }]
     }
