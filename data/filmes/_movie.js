@@ -14,10 +14,10 @@ movieTemplateHelper.register = function (Handlebars) {
           ret += `"${baseUrlPath}${images.featured}"\n`;
         }
         if (images.estreia) {
-          ret += images.estreia.map(e => `"${baseUrlPath}${e}"`).join(',\n');
+          ret += ',' + images.estreia.map(e => `"${baseUrlPath}${e}"`).join(',\n');
         }
         if (images.filmagens) {
-          ret += images.filmagens.map(e => `"${baseUrlPath}${e}"`).join(',\n');
+          ret += ',' + images.filmagens.map(e => `"${baseUrlPath}${e}"`).join(',\n');
         }
         return `${ret}]`;
     });
