@@ -28,7 +28,7 @@
     "@type": "PerformingGroup",
     "id": "https://www.artfestpatrimonios.pt/detalhes/grupo/{{slug}}",
     "name": "{{name}}",
-    "description": "{{description}}"
+    "description": "{{name}} - {{genre}}"
     {{#if scheduele}}
     ,"events": [
     {{#each scheduele}}
@@ -36,7 +36,18 @@
     {{/ifNotFirst}}
     {
       "@type": "Event",
-      "location": "{{place}} - {{local}}",
+      "name": "ArtFestPatrimonios",
+      "description": "Guitarra Portuguesa",
+      "image": "{{buildUrl ../images.featured}}",
+      "location": {
+        "@type": "Place",
+         "name": "{{place}}",
+         "address": "{{address}}"
+      },
+      "performer": {
+	      "@type": "PerformingGroup",
+          "name": "{{../name}}"
+      },
       "startDate": "{{date}}"
     }
     {{/each}}
