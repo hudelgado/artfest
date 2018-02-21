@@ -11,7 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/app-route/app-route.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
-<link rel="import" href="../bower_components/amp-viewer/amp-viewer.html">
+<link rel="import" href="../node_modules/bulma-carousel/bulma-carousel.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="artfest-detalhes">
@@ -34,9 +34,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       pattern="/:category/:item"
       data="{{routeData}}"></app-route>
       
-      <article >
-        <amp-viewer id="ampViewer" src="[[__getMovieDetailsFile(movie)]]"></amp-viewer>
-      </article>
+      <article id="container"></article>
   </template>
 
   <script>
@@ -46,26 +44,102 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         return {
           routeData: Object,
           subroute: String,
-          movies: {
-            type: Array
-          },
+          movies: Array,
+          groups: Array,
           movie: {
             type: Object,
             computed: '_computeMovie(movies, routeData.item)'
+          },
+          group: {
+            type: Object,
+            computed: '_computeGroup(groups.items, routeData.item)'
+          },
+          category: {
+            type: String,
+            computed: '_computeCategory(routeData.category)'
+          },
+          loading: {
+            type: Boolean,
+            readOnly: true,
+            notify: true
+          },
+          failure: {
+            type: Boolean,
+            readOnly: true,
+            notify: true
           }
         }
       }
-      _computeMovie(movies, itemSlug) {
-        if (!movies || !itemSlug) {
+
+      _computeCategory(category) {
+        if (!category) {
           return;
         }
-        var result = movies.filter(function(item) {
-          return item.slug.toLowerCase() == itemSlug.toLowerCase()
-        });
+        if (this.movie || this.group) {
+          this._loadEntry(category)
+        }
+        return category;
+      }
+      _computeMovie(movies, slug) {
+        if (!movies || !slug) {
+          return;
+        }
+        var result = this._filterEntries(movies, 'slug', slug);
         return result.length > 0 ? result[0] : null;
       }
-      __getMovieDetailsFile(movie) {
-        return `data/filmes/${movie.slug}.html`;
+      _computeGroup(groups, slug) {
+        if (!groups || !slug) {
+          return;
+        }
+        var result = this._filterEntries(groups, 'slug', slug);
+        return result.length > 0 ? result[0] : null;
+      }
+      _filterEntries(entries, key, value) {
+        return entries.filter(
+          (item)  => item[key].toLowerCase() == value.toLowerCase()
+        );
+      }
+      _loadEntry(category) {
+        var entry = this.movie || this.group;
+        var url = `data/${category}s/${entry.slug}.html`;
+        this._fetch(url, (response) => {
+          this.$.container.innerHTML = this._formatHTML(response);
+          this._initCarouselImages();
+        }, 1, true);
+      }
+      _initCarouselImages() {
+        var carousels = this.$.container.querySelectorAll('.carousel, .hero-carousel');
+          [].forEach.call(carousels, function(carousel) {
+            new bulmaCarousel(carousel);
+          });
+      }
+      _fetch(url, callback, attempts, isRaw) {
+        let xhr = new XMLHttpRequest();
+        xhr.addEventListener('load', (e) => {
+          this._setLoading(false);
+          if (isRaw) {
+            callback(e.target.responseText);
+          } else {
+            callback(JSON.parse(e.target.responseText));
+          }
+        });
+        xhr.addEventListener('error', (e) => {
+          // Flaky connections might fail fetching resources
+          if (attempts > 1) {
+            this._fetchDebouncer = Polymer.Debouncer.debounce(this._fetchDebouncer,
+              Polymer.Async.timeOut.after(200), this._fetch.bind(this, url, callback, attempts - 1));
+          } else {
+            this._setLoading(false);
+            this._setFailure(true);
+          }
+        });
+        this._setLoading(true);
+        this._setFailure(false);
+        xhr.open('GET', url);
+        xhr.send();
+      }
+      _formatHTML(html) {
+        return html;
       }
     }
 

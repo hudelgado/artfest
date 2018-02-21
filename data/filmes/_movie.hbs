@@ -1,36 +1,36 @@
 <html lang="pt">
 <head>
   <meta charset="utf-8">
-  <title>Muralhas que Unem</title>
-  <link rel="canonical" href="https://www.artfestpatrimonios.pt/detalhes/filme/muralhas-que-unem">
+  <title>{{name}}</title>
+  <link rel="canonical" href="https://www.artfestpatrimonios.pt/detalhes/filme/{{slug}}">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
     "@type": "Movie",
-    "id": "https://www.artfestpatrimonios.pt/detalhes/filme/muralhas-que-unem",
+    "id": "https://www.artfestpatrimonios.pt/detalhes/filme/{{slug}}",
     "productionCompany": {
       "@type": "Organization",
-      "name": ""
+      "name": "{{production_company}}"
     },
     "countryOfOrigin": {
       "@type": "Country",
       "name": "Portugal"
     },
-    "director": "",
-    "dateCreated": "",
-    "datePublished": "",
-    "name": "Muralhas que Unem",
-    "headline": "",
-    "description": "As fortificações abaluartadas de Elvas, que se encontram inscritas na lista do Património Mundial da UNESCO, perderam a sua função militar e são hoje ponto de encontro entre culturas dos dois lados da raia. Este património serve de pano de fundo para o encontro de gente dos dois lados de uma fronteira que não separa, mas une, dois povos que hoje caminham lado a lado. Morada de muitas civilizações e reinados.",
-    "image": "{}",
+    "director": "{{director}}",
+    "dateCreated": "{{date_created}}",
+    "datePublished": "{{date_published}}",
+    "name": "{{name}}",
+    "headline": "{{headline}}",
+    "description": "{{joinMovieDesc description}}",
+    "image": {{{getImagesObj images}}},
     "trailer": {
       "@type": "VideoObject",
-      "name": "",
-      "description": "",
-      "embedUrl": "",
-      "thumbnailUrl": "https://www.artfestpatrimonios.pt/undefined",
-      "uploadDate": ""
+      "name": "{{videos.trailer.name}}",
+      "description": "{{videos.trailer.description}}",
+      "embedUrl": "{{{videos.trailer.url}}}",
+      "thumbnailUrl": "{{{buildUrl videos.trailer.thumbnail_url}}}",
+      "uploadDate": "{{{videos.trailer.upload_date}}}"
     }
   }
   </script>
@@ -85,17 +85,33 @@ var bulmaCarousel=function(){'use strict';class a{constructor(a){if(this._clickE
 <body>
   <link rel="stylesheet" href="/node_modules/bulma-carousel/dist/bulma-carousel.min.css">
   <script defer type="text/javascript" src="/node_modules/bulma-carousel/dist/bulma-carousel.min.js"></script>
-  <div class="main-title title is-1">Muralhas que Unem</div>
+  <div class="main-title title is-1">{{name}}</div>
   <div class="content-wrap">
+    {{#images.featured}}
+    <div class="content-image">
+      <img src="{{{buildUrl .}}}" />
+    </div>
+    {{/images.featured}}
     <div class="content-descriptor">
-      <div class="description">
-<p>As fortificações abaluartadas de Elvas, que se encontram inscritas na lista do Património Mundial da UNESCO, perderam a sua função militar e são hoje ponto de encontro entre culturas dos dois lados da raia.</p>
-<p>Este património serve de pano de fundo para o encontro de gente dos dois lados de uma fronteira que não separa, mas une, dois povos que hoje caminham lado a lado.</p>
-<p>Morada de muitas civilizações e reinados.</p>
-</div>
+      <div class="description">{{{getMovieDescInHTML description}}}</div>
+      {{#videos.trailer}}
+      <section class="section">
+        <div class="content contentWrapper">
+          <iframe 
+            src="https://player.vimeo.com/video/{{getVimeoVideoID url}}"
+            frameborder="0"
+            width= "16"
+            height= "9"
+            webkitallowfullscreen mozallowfullscreen allowfullscreen
+            >
+          </iframe>
+        </div>
+      </section>
+      {{/videos.trailer}}
     </div>
   </div>
 
+  {{#if images.filmagens}}
   <section class="section">
     <div class="container">
       <h1 class="title is-3">Filmagens</h1>
@@ -105,19 +121,41 @@ var bulmaCarousel=function(){'use strict';class a{constructor(a){if(this._clickE
     <div class="content contentWrapper">
       <div class='carousel carousel-animated carousel-animate-slide' data-autoplay="true">
         <div class='carousel-container'>
+          {{#images.filmagens}}
           <div class='carousel-item has-background is-active'>
-            <img class="is-background" src="/data/images/filmes/muralhas_que_unem/filmagens/1.png"/>
+            <img class="is-background" src="/{{{.}}}"/>
+            {{#if caption}}
+            <div class="title">{{caption}}</div>
+            {{/if}}
           </div>
-          <div class='carousel-item has-background is-active'>
-            <img class="is-background" src="/data/images/filmes/muralhas_que_unem/filmagens/2.png"/>
-          </div>
-          <div class='carousel-item has-background is-active'>
-            <img class="is-background" src="/data/images/filmes/muralhas_que_unem/filmagens/3.png"/>
-          </div>
+          {{/images.filmagens}}
       </div>
     </div>
   </section>
+  {{/if}}
 
+  {{#if images.estreia}}
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-3">Estreia</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="content contentWrapper">
+      <div class='carousel carousel-animated carousel-animate-slide' data-autoplay="true">
+        <div class='carousel-container'>
+          {{#images.estreia}}
+          <div class='carousel-item has-background is-active'>
+            <img class="is-background" src="/{{{.}}}" alt="" />
+            {{#if caption}}
+            <div class="title">{{caption}}</div>
+            {{/if}}
+          </div>
+          {{/images.estreia}}
+      </div>
+    </div>
+  </section>
+  {{/if}}
 
 </body>
 
