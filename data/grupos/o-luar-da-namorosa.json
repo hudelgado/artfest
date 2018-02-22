@@ -38,6 +38,11 @@
   "images": {
     "featured": "data/images/grupos/luar_da_namorosa.jpg"
   },
+  "videos": [{
+    "url": "https://youtu.be/C3a7E58vUDE",
+    "width": "16",
+    "height": "9"
+  }],
   "links": {
     "facebook": "luardanamorosa"
   },

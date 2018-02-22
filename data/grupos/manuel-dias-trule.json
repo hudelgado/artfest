@@ -16,6 +16,11 @@
         "images": {
                 "featured": "data/images/grupos/trule_manuel_dias.jpg"
         },
+        "videos": [{
+                "url": "https://youtu.be/XDQo8TaBEcc",
+                "width": "16",
+                "height": "9"
+        }],
         "scheduele": [{
                 "date": "2018-03-10 22:00:00",
                 "place": "Armazém8",

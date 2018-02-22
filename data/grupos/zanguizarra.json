@@ -55,6 +55,11 @@
       "height": 600
     }]
   },
+  "videos": [{
+    "url": "https://youtu.be/i69ZCQAGGIU",
+    "width": "16",
+    "height": "9"
+  }],
   "scheduele": [{
     "date": "2018-03-15 22:00:00",
     "place": "Armazém8",

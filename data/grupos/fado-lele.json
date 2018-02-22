@@ -33,6 +33,11 @@
   "images": {
     "featured": "data/images/grupos/fado_lele.jpg"
   },
+  "videos": [{
+    "url": "https://youtu.be/qjh3Qub56pA",
+    "width": "16",
+    "height": "9"
+  }],
   "scheduele": [{
     "date": "2018-03-31 22:00:00",
     "place": "Armazém8",
