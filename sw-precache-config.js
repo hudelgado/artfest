@@ -13,7 +13,7 @@
 module.exports = {
   staticFileGlobs: [
     'manifest.json',
-    'bower_components/webcomponentsjs/webcomponents-loader.js',
+    'bower_components/webcomponentsjs/webcomponents-lite.js',
     'images/*',
   ],
   dynamicUrlToDependencies: {
@@ -43,16 +43,25 @@ module.exports = {
       options: {
         cache: {
           maxEntries: 200,
-          name: 'data-images-cache'
+          name: 'data-images-cache-v1'
         }
       }
     }, {
-      urlPattern: /\/data\/filmes\/.*/,
+      urlPattern: /\/data\/filmes\/.*\.(html|json)/,
       handler: 'fastest',
       options: {
         cache: {
           maxEntries: 100,
-          name: 'movies-articles-cache'
+          name: 'movies-cache-v1'
+        }
+      }
+    }, {
+      urlPattern: /\/data\/grupos\/.*\.(html|json)/,
+      handler: 'fastest',
+      options: {
+        cache: {
+          maxEntries: 100,
+          name: 'groups-cache-v1'
         }
       }
     }, {
@@ -61,7 +70,7 @@ module.exports = {
       options: {
         cache: {
           maxEntries: 10,
-          name: 'data-json-cache'
+          name: 'data-json-cache-v1'
         }
       }
     }
