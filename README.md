@@ -1,10 +1,16 @@
-# ArtFest Patrimonios - Web App
+# Polymer WebApp
 
-ArtFest Patrimonios festival WebApp, built with [polymer](https://www.npmjs.com/package/@polymer/polymer)
+This WebApp was built with [polymer](https://www.npmjs.com/package/@polymer/polymer)
 
-## Install the Polymer-CLI
+## Requirements
+- [polymer](https://www.npmjs.com/package/@polymer/polymer)
+- [polymer-cli](https://www.npmjs.com/package/polymer-cli)
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
+## Installation
+clone the repo and install packages with
+```
+bower install
+```
 
 ## Launch development server
 
@@ -12,13 +18,17 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 $ polymer serve
 ```
 
+## Build for production
+
+```
+$ polymer build
+```
+
 ## Running Tests
 
 ```
 $ polymer test
 ```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
 
 ## License
 
