@@ -1,10 +1,6 @@
 # Artfest Patrimonios webapp
 
-Progressive web app created with customElements using hyperhtml, redux and workbox.
-
-## Description
-
-A fast and responsive web application with full offline support
+A web application created to support the Artfest Patrimónios festival, implemented as a pwa with offline support.
 
 ## Install packages
 
