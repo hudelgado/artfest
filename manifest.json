@@ -1,7 +1,11 @@
 {
-  "name": "ArtFest Patrimonios App",
-  "short_name": "ArtFest App",
-  "description": "An app created for the artfest patrimonios cultural program",
+  "name": "ArtFest App",
+  "short_name": "artfest",
+  "description": "ArtfestPatrimonios webapp",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#c60013",
+  "background_color": "#c60013",
   "icons": [
     {
       "src": "images/manifest/icon-192x192.png",
@@ -13,9 +17,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#3f51b5",
-  "background_color": "#3f51b5"
+  ]
 }

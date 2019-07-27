@@ -1,85 +1,1011 @@
-[{
-    "scheduele": {
-      "evora": {
-        "date": "2018-03-3 22:00:00",
-        "place": "Armazém8"
+[
+  {
+    "slug": "travessias",
+    "name": "Travessias",
+    "genre": "Fado e música popular brasileira",
+    "bio": [
+      "Do cruzamento entre o fado e a musica popular brasileira nasceu, em 2017, o projecto Travessias. Os clássicos que marcaram a história dos dois países e influenciaram muitas das gerações actuais.",
+      "Dois países e muitas histórias em comum entre a voz de Joana Capela Pires, a guitarra de João Fernandes, o Violino de Ricardo Alberto e o Violoncelo e percussão de Vicente Limafortes",
+      "Uma abordagem diferente marcada pela partilha da língua e dos géneros musicais. Uma ponte entre dois países e duas culturas irmãs que  partilham a mesma raiz."
+    ],
+    "composition": [
+      {
+        "name": "Joana Capela Pires",
+        "role": "Voz"
+      },
+      {
+        "name": "Ricardo Alberto",
+        "role": ""
+      },
+      {
+        "name": "Vicente Limafortes",
+        "role": ""
+      },
+      {
+        "name": "João Garrido",
+        "role": ""
       }
-    },
-    "date": "2018-3-3 22:00:00",
-    "artist": "Ricardo Martins",
-    "slug": "ricardo-martins",
-    "genre": "Guitarra Portuguesa",
+    ],
     "images": {
-      "featured": "data/images/grupos/ricardo_martins.jpg"
-    }
-  }, {
-    "scheduele": {
-      "evora": {
-        "date": "2018-03-10 22:00:00",
-        "place": "Armazém8"
-      }
+      "featured": {
+        "url": "data/images/grupos/travessias.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAMABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQb/xAAkEAABAwMEAQUAAAAAAAAAAAADAQIEBREhAAYSMSIHFUFxgf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGREAAwADAAAAAAAAAAAAAAAAAAECESEi/9oADAMBAAIRAxEAPwAHdc6fWqXHLNmRpAhtUQzNshXuYjskXtcL31+31XelFbodAoBEJMasx8vhKuzk5o0Z4/KcUvfOc6jK0IfscqCo2KKIIiBcrU5plyZd2uETvSewKPTZdFGQ0ILivQaqS3llt+/vUatLpjUZej//2Q=="
+      },
+      "group": [
+        {
+          "url": "data/images/grupos/travessias_1.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgIE/8QAJRAAAgIBAQcFAAAAAAAAAAAAAQIDBBEABRIhIkFRcRMygZGh/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAaEQACAwEBAAAAAAAAAAAAAAABEQACBCFB/9oADAMBAAIRAxEAPwAts+tFf3zZuIGB3HPDlYAkn5x07azCpBHtFYCknpzoFZGjwCGPuz4P7oTFangKNFIylQQMeMfeOuqnuWrIQzWZpCF3eZyeHbSK6CLvyWDtsmuz/9k=",
+          "width": 1920,
+          "height": 1280,
+          "name": ""
+        },
+        {
+          "url": "data/images/grupos/travessias_beja_cartaz.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EACgQAAEDAwEGBwAAAAAAAAAAAAECAwQABhEFBxITQVFxITEyQpGhwf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAHhEAAgEDBQAAAAAAAAAAAAAAAQIAAwQREjFxgsH/2gAMAwEAAhEDEQA/AMQzP0JElLsbRWN1hBLYZmtlY6n1Ak4z80C9Zt1xe89akxa+alKOccvd0xVmDaV9JicE6DFeawD4rSCR3Hf6pdGzu+VJyLdjqHlnig/tA9nSqNksw4J8lWtVG+es/9k=",
+          "width": 1095,
+          "height": 1607,
+          "name": "Beja - Cartaz"
+        },
+        {
+          "url": "data/images/grupos/travessias_beja_1.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECB//EACEQAAEDBAEFAAAAAAAAAAAAAAECAxEABBIhIjFBYfDx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oADAMBAAIRAxEAPwDD2bUTi6NIMkt7VEgH3zUuMIQ6CcyiMjPWPtM8rckgSFaNCSUWzkd1QZ3qKF5UG3//2Q==",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo"
+        },
+        {
+          "url": "data/images/grupos/travessias_beja_2.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgUGB//EACQQAAICAQIFBQAAAAAAAAAAAAECAxEEAAUGEhMhQRQVMZGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAQEBAAAAAAAAAAAAAAAAACEAEv/aAAwDAQACEQMRAD8Axnb8OD3bBTK5RjzTIXZxSiMn5u/Pf60z4s2THwd29Pt2RjZMHQVxJCVILW1ra+f2tTqTOAQG7KCQK0RmliRXjkZWLGyDWiaZuS//2Q==",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo"
+        },
+        {
+          "url": "data/images/grupos/travessias_beja_3.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIH/8QAIxAAAgICAQIHAAAAAAAAAAAAAQIDEQAEIQUGIiMxQUJhkf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIRAP/aAAwDAQACEQMRAD8Aw1AfLGyxEYFJ70Dzx+3iDzdKPb8GsIGTfSR3ecURIPitVYrnDtskziyT4U9T9DJ2kWKSkFC6wBrLrFAtm//Z",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo"
+        },
+        {
+          "url": "data/images/grupos/travessias_cuba_cartaz.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EACgQAAIBAgQDCQAAAAAAAAAAAAEDAgQRAAUGIQdBURMUFSIjMUKR4f/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAHhEAAgIABwAAAAAAAAAAAAAAAQIAAwQREiGBkbH/2gAMAwEAAhEDEQA/AMPSZpp+LRUeB09OtMPIGPANzzBAJP7hh+faWa6U35LSMZKxMpVErnbb4dMUBozV78ppaZWnEiaVgSb20fUta1+W33vga/Q3ETN6rvdRk62MK4LMosiLiEBAex6RGJXwldjamJ4YjwxRawGW3Qn/2Q==",
+          "width": 1095,
+          "height": 1607,
+          "name": "Cuba - Cartaz"
+        },
+        {
+          "url": "data/images/grupos/travessias_cuba_1.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFB//EACQQAAEDAQcFAAAAAAAAAAAAAAECAwQABQYREyFCURIzQXKh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgT/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgAEQf/aAAwDAQACEQMRAD8AyawHZEeQJkdhpaGAnNS4CQcTwPOApu0r3uy0rSiDFbKsTmJJJ6Tt14oF2H3Go04IUAFIAOgO1VQW+y96AfRVE9Fks+YsTSLv/9k=",
+          "width": 1920,
+          "height": 1280,
+          "name": "Cuba - Espectáculo"
+        },
+        {
+          "url": "data/images/grupos/travessias_cuba_2.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABAUGB//EACIQAAIBAwQCAwAAAAAAAAAAAAECEQADBAUGITESFGFxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAbEQACAQUAAAAAAAAAAAAAAAABAgADBCExQf/aAAwDAQACEQMRAD8Ay7buWMDLbKXBF9EsiVa4FUMW7M/E9Ux1PeCu02NNx1ZwGS4rk+Ak8dd0LspVb3QwBEJwf2pywA2WoYAiGMH6NILioqleRSEc6zP/2Q==",
+          "width": 1920,
+          "height": 1280,
+          "name": "Cuba - Espectáculo"
+        },
+        {
+          "url": "data/images/grupos/travessias_elvas_cartaz.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAG/8QAJhAAAQMDAwIHAAAAAAAAAAAAAQIDBgQRIQAFEyJBEhQxU3GBof/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAcEQACAgIDAAAAAAAAAAAAAAABAwACETEEcYH/2gAMAwEAAhEDEQA/AMW5uMdFnDH210iWyQ204w4vqtnwhV8fmpEkiLCA2Yo5ce5StlX3nQJg0lWhARHqw2GDx5I7/OdK1EP3dLxTRRXc/LgAJ5W+r0ze1+99Cdwlttmxt4SNRK2nGwOxP//Z",
+          "width": 1095,
+          "height": 1607,
+          "name": "Elvas - Cartaz"
+        },
+        {
+          "url": "data/images/grupos/travessias_portel_cartaz.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIG/8QAJBAAAgEDBAAHAAAAAAAAAAAAAQIDBAYRAAUhQRIiIzFhcYH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQMAAgQxgRH/2gAMAwEAAhEDEQA/AMVLuluKVdrfjakCELHE8Ej5bvwhsj761Md2WZAgiNsElcj1KeIt+5OgzY9zSIgS3azAHlzHyR31zzpaotLeRMRRWluK04ACiVct7c5x850F2EttvbG3LEailtIGwOT/2Q==",
+          "width": 1095,
+          "height": 1607,
+          "name": "Portel - Cartaz"
+        }
+      ]
     },
-    "date": "2018-03-10 22:00:00",
-    "artist": "Manuel Dias",
+    "links": {
+      "facebook": "travessiasmusica"
+    },
+    "schedule": {
+      "portel": {
+        "place": "Portel",
+        "date": "2018-05-30T19:30:00",
+        "location": "Serões dos Claustros"
+      },
+      "vidigueira": {
+        "place": "Vidigueira",
+        "date": "2018-07-26"
+      },
+      "cuba": {
+        "place": "Cuba",
+        "date": "2018-08-30T21:30:00",
+        "location": "Espaço da Feira"
+      },
+      "beja": {
+        "place": "Beja",
+        "date": "2018-09-06T21:30:00",
+        "location": "Jardim Público"
+      },
+      "elvas": {
+        "place": "Elvas",
+        "date": "2019-01-26T21:30:00",
+        "location": "Cineteatro Municipal"
+      }
+    }
+  },
+  {
     "slug": "manuel-dias-trule",
+    "name": "Manuel Dias Trulé",
     "genre": "Marionetas e Robertos",
+    "bio": [
+      "Manuel Fernando da Costa Dias nasceu em 1949. Pintou, esculpiu, no teatro cenografou acabando por se dedicar por inteiro à criação e realização de espetáculos de marionetas como marionetista solista.",
+      "Em Évora iniciou o projeto profissional TRULÉ – Investigação de Formas Animadas.",
+      "No teatro Manuel Costa Dias colaborou como cenógrafo em várias companhias de teatro: Centro Cultural de Évora (25 cenografias), CENDREV, Cena, Bonifrates, TEUC, Bonecreiros, Cornucópia, Jangada Teatro e Imaginário.",
+      "Em 1982 foi-lhe atribuído o prémio para o melhor espaço cénico, pela Associação Portuguesa de Críticos.",
+      "Manuel Costa Dias, para o projeto TRULÉ, estreou-se com um espetáculo na técnica de Robertos na Bienal Internacional das Marionetas de Évora em 1987.",
+      "Nos últimos 20 anos, participou em mais de 87 Festivais Internacionais. Aos espetáculos Variações de Marionetas em Redor da Música, Amores e Humores da Bonecada, Robertos e outras Marionetas e As minhas MAIS… Marionetas foram atribuídos 17 prémios em Festivais Internacionais.",
+      "ASSOCI’ARTE atribuiu o prémio José Melo a Manuel Costa Dias cujo lema é “Coragem de Ficar”.",
+      "Na 1ª edição de ÉVORAINOVA foi homenageado com o galardão Valorização Cultural e foi-lhe atribuída a medalha de Mérito Municipal – Classe Prata pela Câmara Municipal de Évora."
+    ],
+    "url": "http://www.trule.pt/",
     "images": {
-      "featured": "data/images/grupos/trule_manuel_dias.jpg"
-    }
-  }, {
-    "scheduele": {
-      "evora": {
-        "date": "2018-03-15 22:00:00",
-        "place": "Armazém8"
-      }
+      "featured": {
+        "url": "data/images/grupos/trule_manuel_dias.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABwj/xAAkEAABAwMEAQUAAAAAAAAAAAABAgMEAAURBhIxQQcTUWGRsv/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAYEQADAQEAAAAAAAAAAAAAAAAAAkESAf/aAAwDAQACEQMRAD8Aarm7PTdLaiI+2hlTh9dBSCVJx7njvjvFGHkHVkmDqZ5pMoxHIJSts8bgQMAHvJJOPilC4Ei4w8HHP6TUfzJkidqSe5KeW6t6Y464VHJUrcQD9Eih1NUavmQ//9k="
+      },
+      "group": [
+        {
+          "url": "data/images/grupos/manuel_dias_beja_cartaz.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwIF/8QAJBAAAQMEAQMFAAAAAAAAAAAAAwECEQQFBiEAEkJhExQxMlH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EAB0RAAICAQUAAAAAAAAAAAAAAAECAAMEERKCseH/2gAMAwEAAhEDEQA/AM8GIVoK5iiw4YXCF1I33bGODPc6U+NKkryWWaiqG+obG7a4n1cpLuJrtaiOnxxCvV0u1bZbiGx4pVCqamnQI3neNGsRV2qq186lY8xw0XB88qHKVbYXa9hBwka/eSWYi2NqSRyYdGMLtq+Cf//Z",
+          "width": 1095,
+          "height": 1607,
+          "name": "Beja - Cartaz"
+        },
+        {
+          "url": "data/images/grupos/manuel_dias_beja_1.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUH/8QAIhAAAgIBBAEFAAAAAAAAAAAAAQIDEQQABSExURITMkFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAZEQEAAgMAAAAAAAAAAAAAAAABAAIRIkH/2gAMAwEAAhEDEQA/ADGxy7ciGKJZjmTVJBXxWMdhieL6/NWY1zcjaxHNiQssIZ0MsYMiAEcLxfmjrNtt3DKxt0MSSsyGQwgOb9K1dDxyBpNhzSSku7k+zTIL4u75H33qTS3GNAyk/9k=",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo"
+        },
+        {
+          "url": "data/images/grupos/manuel_dias_beja_2.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAMABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABAUGB//EACEQAAEEAgICAwAAAAAAAAAAAAECAwQRBRIAIUFRE0Jh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIhQf/aAAwDAQACEQMRAD8AnsTMhQ8QzCRF+WXMl6JeQK1tBIBPrq64bipWRiZNS22izs6lB2KtaKhZFHugL8+OZu1k5kZxQS+pQbeQEBX1tJBqvzjqNMfW8hIcKRv1XddeLv0OFDWSj//Z",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo"
+        },
+        {
+          "url": "data/images/grupos/manuel_dias_beja_3.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAIxAAAgEDAwQDAAAAAAAAAAAAAQIDBAURABIhEzFBgQYjQv/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIAAxIhQWH/2gAMAwEAAhEDEQA/AILx81mQWyDqSoXmNO6EbC4blZVPkDIHPfOnbLTSpRuKiZmk6rfkvj3rFXq52673W01KOJ6Va6DYVJywwFb2MDx40yWuULsTVbuoxf6p3ULzjGBwO2pLqWKYqe+xAynU/9k=",
+          "width": 1095,
+          "height": 1460,
+          "name": "Beja - Espectáculo"
+        },
+        {
+          "url": "data/images/grupos/manuel_dias_cuba_cartaz.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAIhAAAgICAQMFAAAAAAAAAAAAAQMCBgQRACFBcQUSFjFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAeEQACAQMFAAAAAAAAAAAAAAABAgMABBEhMXGBkf/aAAwDAQACEQMRAD8Aw+J6xXc95CKw1uMuBHsgtZIMu+iennifKaZhE4zKtITUTGQahRkDvud8iQptomuAnX8lpCzGO1zGvrqNdxrxwn0K0Nexi6/mKhKRIXFciIj82RvkUtjHM2WLdMRtxTidlGmPK//Z",
+          "width": 1095,
+          "height": 1607,
+          "name": "Cuba - Cartaz"
+        },
+        {
+          "url": "data/images/grupos/manuel_dias_elvas_cartaz.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMFBv/EACUQAAIBAwIFBQAAAAAAAAAAAAECAwQGEQAxBRIWIUEjUWFx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAHBEAAgICAwAAAAAAAAAAAAAAAQIDEQAEgZGx/9oADAMBAAIRAxEAPwDFy8Qt9Ckht1HpMFUSJoZGJb2UNnxv40EN22VFEE6W5sZ7vBGTv96jxWbca0UUcNtVi1HOXeoMbFmHgKMdhvnfPxpHQV1HJPAa/JPf0j+ail0Y5mti3DEeY4nZRQrrP//Z",
+          "width": 1095,
+          "height": 1607,
+          "name": "Elvas - Cartaz"
+        },
+        {
+          "url": "data/images/grupos/manuel_dias_portel_cartaz.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAJRAAAgEDAwIHAAAAAAAAAAAAAQIDBAYRACFBBTESFiNRYYHR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAcEQACAgIDAAAAAAAAAAAAAAABAgMRAASBkbH/2gAMAwEAAhEDEQA/AMZL1C30KO1uq9JgqiQtDIxLewDE8HfjRxXbZcUQjFsFgvL08RP2c6kRWZcS0MUcNuVa1HjLtUFGLMOAoxsO+e+fjQeQbpOSehVxJO/pN+ail0Y5mti3DEeY6zsooV1n/9k=",
+          "width": 1095,
+          "height": 1607,
+          "name": "Portel - Cartaz"
+        },
+        {
+          "url": "data/images/grupos/manuel_dias_vidigueira_cartaz.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBv/EACcQAAEDAwIEBwAAAAAAAAAAAAECAwYABDEFIRESExQiUVJhYrHB/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABwRAAICAgMAAAAAAAAAAAAAAAECAxEABHGBsf/aAAwDAQACEQMRAD8AwT+uRhPTW7HlJsyg8gSGyfFvxztj8oNyWEpQAI66R8m2yfuo0ROXtONu2mjXTKumAAloke+xByc0yozOnDzL0m7Ksce18tvTQ5NJJTbE9MR5iDMVNLVcZ//Z",
+          "width": 1095,
+          "height": 1607,
+          "name": "Vidigueira - Cartaz"
+        }
+      ]
     },
-    "date": "2018-03-15 22:00:00",
-    "artist": "Zanguizarra",
+    "videos": [
+      {
+        "url": "https://youtu.be/XDQo8TaBEcc",
+        "width": "16",
+        "height": "9"
+      },
+      {
+        "url": "https://vimeo.com/262003563",
+        "width": "16",
+        "height": "9"
+      }
+    ],
+    "schedule": {
+      "evora": {
+        "date": "2018-03-10T22:00:00",
+        "location": "Armazém8",
+        "place": "Évora"
+      },
+      "portel": {
+        "date": "2018-06-03T19:30:00",
+        "place": "Portel",
+        "location": "Serões dos Claustros"
+      },
+      "beja": {
+        "place": "Beja",
+        "date": "2018-08-25T19:00:00",
+        "location": "Jardim Público - Auditório"
+      },
+      "elvas": {
+        "place": "Elvas",
+        "date": "2018-12-16T11:00:00",
+        "location": "Biblioteca Municipal"
+      },
+      "vidigueira": {
+        "place": "Vidigueira",
+        "date": "2018-12-22T11:30:00",
+        "location": "Largo Frei Antº das Chagas"
+      },
+      "cuba": {
+        "place": "Cuba",
+        "date": "2018-12-22T15:30:00",
+        "location": "Praça Cristovão Colon"
+      }
+    }
+  },
+  {
     "slug": "zanguizarra",
+    "name": "Zanguizarra",
     "genre": "Música tradicional e baile popular",
-    "images": {
-      "featured": "data/images/grupos/zanguizarra.jpg"
-    }
-  }, {
-    "scheduele": {
-      "evora": {
-        "date": "2018-03-24 22:00:00",
-        "place": "Armazém8"
+    "bio": [
+      "O Grupo ZANGUIZARRA, nasce de uma sonoridade de incontornável atualização da música popular portuguesa pela fusão com a música lusófona.",
+      "Neste processo não perde, no entanto, o carácter muito próprio da melodiosa alma lusa, com marcas, tanto do universo rural português, como bebendo de um sensual aroma das culturas Brasileira e Africana.",
+      "É a relação destes elementos que conserva a essência da musica portuguesa.",
+      "“A interação rítmica e vocal que se estabelece com o público em movimento nos mais variados espaços, contagia o Público com a boa disposição e faz com que este se torne no oitavo elemento... do septeto...”"
+    ],
+    "composition": [
+      {
+        "name": "Joana Ricardo",
+        "role": "Voz/Ambientes"
+      },
+      {
+        "name": "Andreia do Carmo",
+        "role": "Voz/Ambientes"
+      },
+      {
+        "name": "António Candeias",
+        "role": "Guitarra Clássica/Voz"
+      },
+      {
+        "name": "António Valente",
+        "role": "Cavaquinho Brasileiro/Viola Beiroa/Voz"
+      },
+      {
+        "name": "Paulo Parreira",
+        "role": "Contrabaixo"
+      },
+      {
+        "name": "Paulo Silva",
+        "role": "Acordeão/Trompete"
+      },
+      {
+        "name": "Ricardo",
+        "role": "Bateria/Percurssões"
       }
+    ],
+    "links": {
+      "facebook": "zanguizarra"
     },
-    "date": "2018-03-24 22:00:00",
-    "artist": "Nanã Sousa Dias Quinteto",
-    "slug": "nana-sousa-dias-quinteto",
+    "images": {
+      "featured": {
+        "url": "data/images/grupos/zanguizarra.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABgf/xAAhEAACAgEEAgMAAAAAAAAAAAABAgMRBAUGEiEAMQdhof/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQADAQAAAAAAAAAAAAAAAAABAhIA/9oADAMBAAIRAxEAPwAxoesajtJ8iGF2GY0ccZuTjHC8sYYFgbBcBK7Hs/Xb/bsb7pyps/VMFJosg2rzzKwj48QQi1fE9sKAHq79+TfcWPE2x9bzGS8iXVVZ5CTZIZ1H545+OYIpU0zKeNWnixHRJK7AYLY8Ks1UDmZmSN//2Q=="
+      },
+      "group": [
+        {
+          "url": "data/images/grupos/zanguizarra_1.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAJhAAAgIABAQHAAAAAAAAAAAAAQMCBAAGMUEFERIhBxNRYXGB8P/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAHREBAAIBBQEAAAAAAAAAAAAAAQIDAAQRMYGRsf/aAAwDAQACEQMRAD8Ay3DKnDLj4Tr5YsoWgEQgwGDCTv3133OLm1uFlh6svuYdDIN5/vTCVer4jldliaNtbXQJjNToDyydSO/bb3wtVhnuCpdeV3WJzaxkmyesGRlMyOnzy+sS2aWFjuyl1JPmKXIcHmf/2Q==\n",
+          "width": 960,
+          "height": 600
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_2.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIG/8QAIxAAAgICAQIHAAAAAAAAAAAAAQIDEQAEBQYSFCJxgZGhsf/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAHREAAgEEAwAAAAAAAAAAAAAAAgMAAQQRMRLR8P/aAAwDAQACEQMRAD8Ax21xKb6knSjiBchGWvMKu/3B06Qhnil7ZWWRbK3VFQLJH38YNNyO4ZBH4mTsCmlv1yY+Q20gkVZ3AaEg+woYcFGA7llt4hh15Lzv3U//2Q==",
+          "width": 960,
+          "height": 638
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_3.jpg",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAKABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgUGB//EACEQAAMAAgEEAwEAAAAAAAAAAAECAwQRMQAFEiEUUWFS/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQQREzH/2gAMAwEAAhEDEQA/AMqxMkVzsHGlJpq58aFEUtzvyG9j1ocj76Z9x7mjTpFu1/EYzK0naSq+/wCgdDQ546kY2rHIqJUeYYoD4sRv2D0Obk3ObYG9CFZkUeZ9Lvgfn50OZWpFLh//2Q==",
+          "width": 960,
+          "height": 600
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_beja_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Beja - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBv/EACYQAAEDAgYBBQEAAAAAAAAAAAECAwQFEQAGEiExQSITFDJCgbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAHBEBAAEEAwAAAAAAAAAAAAAAAQIAAxGBBCGx/9oADAMBAAIRAxEAPwDPikxYHsJr+XEU9p7wherJSlbhNtxYm/Nrk94qlUKntSnG5VAiqfQdKyagm4I2t8uuPzAhZHzO022GYctbLaVFKHFNkAn7Dy6/uGqOSM9VKoyJiYD+l1wqA1tbb8c9cYFPjxuOVkbTylsiPWR0V//Z\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_beja_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQb/xAAkEAACAgEDBAIDAAAAAAAAAAABAgMEEQAFIRITIjEGQTJRkf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACESIx/9oADAMBAAIRAxEAPwCBn+P141aysc1hxMD3FHgijk5AzjlgB9HGjdwiN2pXqU9v7b1gweZh5vljgn79Y/mlxuNujtN2vWnaOK2gWdQAesB8gc+uf1qdsXbUcjPHPIjdH5K2DwdGzZ5K6hhn/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_beja_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACMQAAIBAwMEAwAAAAAAAAAAAAECAwQFEQATIQYSIlEUMXH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAMBAQAAAAAAAAAAAAAAAAACEQED/9oADAMBAAIRAxEAPwDBr0zTvUsZDtVbvtrEPEEKmXkBY8ZbH5nSN7sNRQUEPyKcpVFizqYmR1QqCC2fsHOePR1Xu1PHDf5YEB20LdoZixHHs86B1HeLhcJ46irqpJZtsR9x48QMAcadLjQokZaf/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_beja_3.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwUGB//EACMQAAICAQMDBQAAAAAAAAAAAAEDAgQhABETEiKBBRZBUXH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAHBEAAQMFAAAAAAAAAAAAAAAAAAECEQMFFCIx/9oADAMBAAIRAxEAPwDLfa8rVu1FcTVklXPND5dMox232yASfGdAFSq29UrVOVlkql1weO2MxuR+gjO3wdVnGHubYcZMezE2SkTKXb9+NMl1q/qCostV0sYBDv4wDkZyNEdcUpbQIx5Xp//Z\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_cuba_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Cuba - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAJRAAAgECBgAHAAAAAAAAAAAAAQMCBAYABRESIUEHExQxcbHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAdEQEAAgEFAQAAAAAAAAAAAAABAgMABBExgZGx/9oADAMBAAIRAxEAPwDG5ZUW9VOi2nyYU60AxhFrguZJ759++8Un1mQSdIty2LJnTWXrIc8fOHlaVyPrxWItt3lBUQEzZDbuGmsiQex94GXh/dTpFkLadtJ6bA/uJbNJGyW7J6knzGLUODwz/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_cuba_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Cuba - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgMF/8QAJhAAAQMDAwIHAAAAAAAAAAAAAgEDBAAGEQUSMRMhFBUiMnGBsf/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAGxEBAQABBQAAAAAAAAAAAAAAAQIAEhMhMYH/2gAMAwEAAhEDEQA/ACuqWg1HsVrWm2zJxxlwjJXuybT2+34oXEgb23FzhzgUz9960Ys6T5bPh9VfDqJkoYTlOP2oWyRHcEVlSXpnncKLjPpWitumnLchuSPPZ7n/2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_cuba_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Cuba - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgQF/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBBIABREGEyExQVGB/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAcEQABBQADAAAAAAAAAAAAAAACAAEDESEUIlH/2gAMAwEAAhEDEQA/AMHb+htsEMVK8pjuhBnIkwxbkeCP3RvdujbG3XMXjfsyIJYQCGZ0JIHr2fGj9ezNJIZHfJ29kgfOrbu6352WxLcmaZWzV8jyCT54+tHLH6qzyhkGpBxvGpf/2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_cuba_3.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Cuba - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgIE/8QAJRAAAQMDBAAHAAAAAAAAAAAAAgEDBAURIQAGEjEiI0FRkaHx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EAB0RAAEDBQEAAAAAAAAAAAAAAAIAAREDISIxUfD/2gAMAwEAAhEDEQA/ABFA2sDYRxn05t4zbCShK6vEm1v3lPrVbt2I9TwjT40VtqG6aAAo5yI8It/xdFmqnNY5PtyXEcZTyyVb8e8Jf0yuOtb5lTnOvwxOU7bgZ4K3iIrkuPeyfGjIr4sjEYqS+n91f//Z\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_evora_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Évora - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAf/xAAjEAACAQMDBAMAAAAAAAAAAAABAgMEBREABiESMUGRIlFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAdEQACAgEFAAAAAAAAAAAAAAABAgADBBExgZGx/9oADAMBAAIRAxEAPwCexXradfUxUibemaBVYRorKrFj+lufZ09JdpRIEfaFW7DuzSjJ9PjSq+xV0tbFJbtm3daZQxMcyKWfn48g+OxONPorIEpEWs2JfZJwT1MmMHk48/WNSW4a2tqWbhiPIwuIGw6n/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_evora_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Évora - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAIxAAAgEDBAEFAAAAAAAAAAAAAQIDBAURABITFEEhMTJy8P/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAIRMf/aAAwDAQACEQMRAD8AwFmrLskFI0VZclrTO5PHKAnEFABB8HJ9fHtq19lr+p26y4TywcyQsRVlnKqctgfUgfjoCkd1tdfUB3EyykB9xzjbpCCKNrDVyFF3xtGUOPiS+DjRpdVuH//Z\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_evora_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Évora - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgIF/8QAJRAAAgEDAwIHAAAAAAAAAAAAAQIDBAURABIhIjEGFCNRYZGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAS/9oADAMBAAIRAxEAPwAFbb1ckmZqWslHrp5dQkexo8HcTu5B7furu12rJJad665yPBM5VmpCjOFUEZ2hR3OPo++gKTy5HWekHHxrc8QVU0dNbIUfZG1KsrBQBlieSSOT2Gjyyagku//Z\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_evora_3.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Évora - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgQF/8QAIxAAAgIBAgYDAAAAAAAAAAAAAQMCBBEAEgUGITFBYRMUcf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEBAQEBAQAAAAAAAAAAAAAAAREAAiH/2gAMAwEAAhEDEQA/ABtHmtlV7R9Wm2CJqiBOUhJol324HXHnVXG+auJPmlDk16S2TC4lkZ7AcgE5PgZJz696DVLdhVpmxsoiMRgDsMx1osXGyinF+5sfjbLE5E9QRjv+nQqEuqcj7N//2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/zanguizarra_vidigueira_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Vidigueira - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAJhAAAgIABAQHAAAAAAAAAAAAAQMCBAAGMUEFERIhBxNRYXGB8P/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAHREBAAIBBQEAAAAAAAAAAAAAAQIDAAQRMYGRsf/aAAwDAQACEQMRAD8Ay3DKnDLj4Tr5YsoWgEQgwGDCTv3133OLm1uFlh6svuYdDIN5/vTCVer4jldliaNtbXQJjNToDyydSO/bb3wtVhnuCpdeV3WJzaxkmyesGRlMyOnzy+sS2aWFjuyl1JPmKXIcHmf/2Q==\n"
+        }
+      ]
+    },
+    "videos": [
+      {
+        "url": "https://youtu.be/i69ZCQAGGIU",
+        "width": "16",
+        "height": "9"
+      }
+    ],
+    "schedule": {
+      "evora": {
+        "date": "2018-03-17T22:00:00",
+        "location": "Armazém8",
+        "place": "Évora"
+      },
+      "vidigueira": {
+        "place": "Vidigueira",
+        "date": "2018-08-16T21:30:00",
+        "location": "Jardim Frei Antº Chagas"
+      },
+      "cuba": {
+        "date": "2018-09-01T21:30:00",
+        "place": "Cuba",
+        "location": "Espaço da Feira"
+      },
+      "beja": {
+        "date": "2018-09-16T21:30:00",
+        "place": "Beja",
+        "location": "Jardim Público"
+      }
+    }
+  },
+  {
+    "slug": "nana-sousa-dias",
+    "name": "Nanã Sousa Dias",
     "genre": "Música Tradicional em Jazz",
-    "images": {
-      "featured": "data/images/grupos/Nana.jpg"
-    }
-  }, {
-    "scheduele": {
-      "evora": {
-        "date": "2018-03-30 22:00:00",
-        "place": "Armazém8"
+    "bio": [
+      "Este quinteto apresenta um reportório composto por música portuguesa com arranjos de forte influencia jazzística.",
+      "Todos os seus elementos sempre estiveram de algum modo ligados ao jazz, a música da sua preferencia."
+    ],
+    "composition": [
+      {
+        "name": "Nanã Sousa Dias",
+        "role": "Saxofones"
+      },
+      {
+        "name": "Gonçalo Filipe de Sousa",
+        "role": "Harmónica"
+      },
+      {
+        "name": "Óscar Graça",
+        "role": "Piano"
+      },
+      {
+        "name": "Nuno Oliveira",
+        "role": "Baixo"
+      },
+      {
+        "name": "Alexandre Alves",
+        "role": "Bateria"
       }
+    ],
+    "url": "https://www.artfestpatrimonios.pt",
+    "images": {
+      "featured": {
+        "url": "data/images/grupos/Nana.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUH/8QAIxAAAQQBAwQDAAAAAAAAAAAAAQIDBBEFABIhBhUiMTJBUf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDIenxLlZCBF7ilhqQ4G9yk7ggXyTQvSPO5AiUteWKG2luJbB+ThSL9AWAa9nUeJOfiELZISsEUr7Fc6XIZaVNccLuwIKjTYT4pv8vnQf/Z"
+      },
+      "group": [
+        {
+          "url": "data/images/grupos/nana_sousa_dias_beja_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Beja - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQGB//EACAQAAICAQQDAQAAAAAAAAAAAAECAxEEAAUhQRIUMSL/xAAVAQEBAAAAAAAAAAAAAAAAAAACBP/EAB0RAAIBBAMAAAAAAAAAAAAAAAECAAMSFCExQdH/2gAMAwEAAhEDEQA/AMd2rOx45iuZk5axeHCo3jbV3XV6Z3PL2OYz+pG4sMqCQlq/dhrPdcVqdBIJIPzRZlAZaH3k6vyqjJY2+uT7CEA2J//Z\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_beja_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABAUGB//EACQQAAIBBAECBwAAAAAAAAAAAAIDAQAEESESBTEGExRBUXGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAcEQACAgIDAAAAAAAAAAAAAAABAwACESESYYH/2gAMAwEAAhEDEQA/AMeRLDQtPqAW9XmRkpmCESjcTnWMzO43ujej3l6DbtZEw0sVCSkC4yHbBa+t/PvSdLCJrDKcliN1Q2SxT4fZdLji87uVEee4wIzEfu6JluFT3KlLDbDQ1nPk/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_beja_2.jpg",
+          "width": 1095,
+          "height": 1643,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACIQAQABBAICAgMAAAAAAAAAAAECAwQFEQASIWEGMRMVUf/EABUBAQEAAAAAAAAAAAAAAAAAAAIF/8QAGREAAwEBAQAAAAAAAAAAAAAAAQIRAAMS/9oADAMBAAIRAxEAPwDCYT45TzPS4bWFaCxDvPqMO3mX9NB9++TPkFxbOdu/1FpVt7AkFGkTUAAdLvwu09PC4LL1MXiKl1+VAGFKnJ3ue/L6NPGMvdxyOVr3tG/olOulQJQYpsHSBrx9corz9kwzLq8UELd//9k=\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_beja_3.jpg",
+          "width": 1095,
+          "height": 1643,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQH/8QAJRAAAgEDAwIHAAAAAAAAAAAAAQIEAAMRBRMhBhIiJDFBUZHh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQT/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIREhP/2gAMAwEAAhEDEQA/AMc6ZjQpOpMk9e63tkoCcAsPzP1RkmztyrqKpKq5Ax8ZqmCPMp7LkYNIyRprSHZWlgN4gFNsjnn1PNWc45SsNNqj/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_beja_4.jpg",
+          "width": 1095,
+          "height": 1643,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAYH/8QAJhAAAQMEAQEJAAAAAAAAAAAAAQIDBAAFESESBgcTFBUxQYGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAGhEAAgIDAAAAAAAAAAAAAAAAAQIAERRhgf/aAAwDAQACEQMRAD8AWO1ZqU7FZj2NOXnw3haiohJIHLWs5JGPn3xSLvIvjV2lNx4MIspcISVDZFZrd7siMmJBhyO6UlaC7ILYaWvBBA1v1+qk5PU97dkuuedTzyUTnxC/2ibbUlw0D0630z//2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_cuba_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Cuba - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQQFBv/EACMQAAIABQQCAwAAAAAAAAAAAAECAAMEBhEFEhMxIWEiI3H/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABwRAAICAgMAAAAAAAAAAAAAAAECAxEABIGRsf/aAAwDAQACEQMRAD8Axb1eh0/DPmWxUJRSBlCOM5LeBnLee/cLT7gsebPd59uVRmk/LDKoz+KcRGkWJdy7WTQa7duDA8eej3BawbvZ2Y6BXEkkn6vcSSaiyNZZuGI8xhMQKodZ/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_elvas_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Elvas - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACUQAAIBAgQGAwAAAAAAAAAAAAECAwURAAQGFhITISJBUTGBgv/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAiEQABAwALAAAAAAAAAAAAAAABAAIDBBESISIxQVFhkbH/2gAMAwEAAhEDEQA/AMiJaQ88S7SlOVIKxqFjNy36+74BHqnRkCcraobhJF3hjJ+ffFiRkdEaljlWV6FVQV7k5KAG/u5wzsquv3HS1VQ+QqKwv56kXwCahslfW61pkSPCmMkwC8A87dL/2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_evora_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Évora - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQQFBv/EACMQAAIABQQCAwAAAAAAAAAAAAECAAMEBhEFEiExEyNRYaH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EAB0RAAICAQUAAAAAAAAAAAAAAAECAAMEETGBkbH/2gAMAwEAAhEDEQA/AMRUT9AWSjT7WqVoJa4QqyA5bgHO7nv5MLLrdiSV8b2xUsykglpnP4+IkyLEu5drJoNdu3BgfHno9wWsG72dmOgVxJJJ9X3EluGlralm4YjyMLiBsOp//9k=\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_evora_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Évora - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABwj/xAAjEAABAwMEAgMAAAAAAAAAAAABAgMRAAQFBhIhQQdxJDEz/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQT/xAAaEQEAAgMBAAAAAAAAAAAAAAABABECAwQh/9oADAMBAAIRAxEAPwA+0/kcaLopvnUJZDm0EMqJKeIMg++uqRMv4k1JcXSBZsY82yt24l4pUBAj7nuaDbc/LbnmDwDyKuxv80+hV+fbuoBjQez/2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_evora_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Évora - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQcI/8QAIRAAAgIBAwUBAAAAAAAAAAAAAQIDEQQABSEGEhMxURf/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABoRAAICAwAAAAAAAAAAAAAAAAACARIDESH/2gAMAwEAAhEDEQA/ABI+tt4EkodYHihlVC5je+0iy3Hr5qtfsXSgpe/ONGiRhvQ4vWZ8CeZt5wY2lcoHChS1ijditPGZ8fbsWWJu2SfyeVq5fk+/uh2rELoquO3T/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/nana_sousa_dias_evora_3.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Évora - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQGB//EACAQAAICAQQDAQAAAAAAAAAAAAECAxEEAAUhQRIUMSL/xAAVAQEBAAAAAAAAAAAAAAAAAAACBP/EAB0RAAIBBAMAAAAAAAAAAAAAAAECAAMSFCExQdH/2gAMAwEAAhEDEQA/AMd2rOx45iuZk5axeHCo3jbV3XV6Z3PL2OYz+pG4sMqCQlq/dhrPdcVqdBIJIPzRZlAZaH3k6vyqjJY2+uT7CEA2J//Z\n"
+        }
+      ]
     },
-    "date": "2018-03-30 22:00:00",
-    "artist": "O Luar da Namorosa",
+    "videos": [
+      {
+        "url": "https://youtu.be/gxjYKEHg0-8",
+        "width": "16",
+        "height": "9"
+      }
+    ],
+    "schedule": {
+      "evora": {
+        "date": "2018-03-24T22:00:00",
+        "location": "Armazém8",
+        "place": "Évora"
+      },
+      "vidigueira": {
+        "place": "Vidigueira",
+        "date": "2018-07-19"
+      },
+      "beja": {
+        "place": "Beja",
+        "date": "2018-11-15T21:30:00",
+        "location": "Pax Júlia Cafetaria"
+      },
+      "cuba": {
+        "place": "Cuba",
+        "date": "2018-12-23T17:00:00",
+        "location": "Auditório do Centro Cultural"
+      },
+      "elvas": {
+        "place": "Elvas",
+        "date": "2010-01-05T21:30:00",
+        "location": "Cineteatro Municipal"
+      }
+    }
+  },
+  {
     "slug": "o-luar-da-namorosa",
+    "name": "O Luar da Namorosa",
     "genre": "Música tradicional do Alentejo e cante",
-    "images": {
-      "featured": "data/images/grupos/luar_da_namorosa.jpg"
-    }
-  }, {
-    "scheduele": {
-      "evora": {
-        "date": "2018-03-31 22:00:00",
-        "place": "Armazém8"
+    "bio": [
+      "A música, o cante, este povo que canta, em busca de outros e novos caminhos na cultura alentejana, que transformem o cante de hoje na tradição de amanhã."
+    ],
+    "composition": [
+      {
+        "name": "António Santos",
+        "role": "Voz"
+      },
+      {
+        "name": "Rui Gomes",
+        "role": "Voz"
+      },
+      {
+        "name": "David Pereira",
+        "role": "Voz"
+      },
+      {
+        "name": "Filipe Pratas",
+        "role": "Voz"
+      },
+      {
+        "name": "António Caço",
+        "role": "Acordeão/Voz"
+      },
+      {
+        "name": "Ricardo Prezado",
+        "role": "Baixo Elétrico"
+      },
+      {
+        "name": "Manuel Ferraz",
+        "role": "Guitarras"
+      },
+      {
+        "name": "Paulo Bandeira",
+        "role": "Bateria"
+      },
+      {
+        "name": "Nuno do Ó",
+        "role": "Direção de Vozes/Produção Executiva/Vozes Piano/Orquestração"
+      },
+      {
+        "name": "Sérgio Rodrigues",
+        "role": "Direção Musical"
       }
-    },
-    "date": "2018-03-31 22:00:00",
-    "artist": "Fado Lélé",
-    "slug": "fado-lele",
-    "genre": "As canções que existem no fado pelos ukuleles do mundo",
+    ],
     "images": {
-      "featured": "data/images/grupos/fado_lele.jpg"
+      "featured": {
+        "url": "data/images/grupos/luar_da_namorosa.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAANABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDB//EACIQAAIBAwIHAAAAAAAAAAAAAAECEQADEiExBBNBQmFx8P/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8Aw9CpUg2wbndKzr09T9NI3DlyeWNtSNo1qK3HScWInegzu2WTE5GT5NSpMf/Z"
+      },
+      "group": [
+        {
+          "url": "data/images/grupos/luar_da_namorosa_beja_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Beja - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACMQAAICAQQCAgMAAAAAAAAAAAECAxEEAAUTIRIxBkEkYbH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EAB0RAAIBBAMAAAAAAAAAAAAAAAECIQADERIyUfD/2gAMAwEAAhEDEQA/AMHW2x/E9vfCjxsvcJ2/LjkiLGAg2oBIrsVdevv3pTdETOwWZ8RRuonIeOCELEqUKojq7NeP7vUONmbM4izcfJXiCR1oySO2Hmzl25Y5B4PfY+v5qy1qy7BRmZx7umLNxJiv/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/luar_da_namorosa_elvas_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Elvas - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgUG/8QAJxAAAQMDAgQHAAAAAAAAAAAAAQIDBgAEEQUSFCEiQTEyUXGBobH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EAB4RAAICAAcAAAAAAAAAAAAAAAECAAMEERIhgZGx/9oADAMBAAIRAxEAPwDFr1TRE3J3RK64ZCFck2yFYJ7+gx9eFFqXQ5toJTGdwHddq0SfnNTreHTJtvpjt6VEdOEjGNpSffzUHIPNXnFOLjt8VKPPCSPw4qO7AVWnUxPDEeR1uZRlt1P/2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/luar_da_namorosa_evora_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Évora - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EACUQAAIBAgQGAwAAAAAAAAAAAAECAwUGAAQREhMWITFBkVJxsf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAHREAAgIBBQAAAAAAAAAAAAAAAQIAAwQRQYGRsf/aAAwDAQACEQMRAD8Aws2aoDOsUlpZ85SFDoI4+oJHckHx9nCIq5YaxgG2M05+TSEE+mxBDY91hg/L1RY7TptXTrp394JrGu/ceHQKmq+AVJP7iW3CS06lm4YjyOLSo26n/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/luar_da_namorosa_vidigueira_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Vidigueira - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAJBAAAgEDAwMFAAAAAAAAAAAAAQIDBAYRAAUhEjFBFBYiYZH/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBf/EAB4RAAIBAwUAAAAAAAAAAAAAAAECAwAEERIhgZGx/9oADAMBAAIRAxEAPwDExbzsM8ySratUaMKSrLSowGfPIIxx350nuyzICYmttnZSQW9PA2efBAwRp6K2q2KNc2du7OF+HTHDgY4Pdcnn71JUWnv8tQ7xWnuKITwvT2/NTZbNJmywbhseUsSaRsw6r//Z\n"
+        },
+        {
+          "url": "data/images/grupos/luar_da_namorosa_vidigueira_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Vidigueira - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAH/8QAIxAAAgEDAwQDAAAAAAAAAAAAAQIDAAQRBRJBExQhMSJRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQEAAwAAAAAAAAAAAAAAAAAAASFB/9oADAMBAAIRAxEAPwDEUtysYa4hlMbeBt+OSP0irtn3OIonUOMoreyM/fNLrVzOb+4tmmkaCKZ+mjOSF88ZpNUdhiJcLGvpVGOKOQVP/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/luar_da_namorosa_vidigueira_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Vidigueira - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFB//EACUQAAICAQMBCQAAAAAAAAAAAAEDAgQRABIhQQUGFCIxMlFxkf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEREgL/2gAMAwEAAhEDEQA/AMpXUpV+7Su0EyqWLbWSTOo3Mpqic4mRx8cfehLXUu03wclNKaFZTIjaGeY5Ej1lk46emNSFvatgMZnIwOedM+KexE97ZHfujLn3AAEA/g0Y5bpWnIf/2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/luar_da_namorosa_vidigueira_3.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Vidigueira - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACMQAAICAQQCAgMAAAAAAAAAAAECAxEEAAUTIRIxBkEkYbH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EAB0RAAIBBAMAAAAAAAAAAAAAAAECIQADERIyUfD/2gAMAwEAAhEDEQA/AMHW2x/E9vfCjxsvcJ2/LjkiLGAg2oBIrsVdevv3pTdETOwWZ8RRuonIeOCELEqUKojq7NeP7vUONmbM4izcfJXiCR1oySO2Hmzl25Y5B4PfY+v5qy1qy7BRmZx7umLNxJiv/9k=\n"
+        }
+      ]
+    },
+    "videos": [
+      {
+        "url": "https://youtu.be/C3a7E58vUDE",
+        "width": "16",
+        "height": "9"
+      }
+    ],
+    "links": {
+      "facebook": "luardanamorosa"
+    },
+    "schedule": {
+      "evora": {
+        "date": "2018-03-30T22:00:00",
+        "location": "Armazém8",
+        "place": "Évora"
+      },
+      "beja": {
+        "date": "2018-06-28T21:30:00",
+        "place": "Beja",
+        "location": "Pax Júlia Cafetaria"
+      },
+      "vidigueira": {
+        "place": "Vidigueira",
+        "date": "2018-08-09T22:00:00"
+      },
+      "elvas": {
+        "place": "Elvas",
+        "date": "2018-12-08T21:30:00",
+        "location": "Cineteatro Municipal"
+      }
     }
-  }]
+  },
+  {
+    "slug": "fado-lele",
+    "name": "Fado Lelé",
+    "genre": "As canções que existem no fado pelos ukuleles do mundo",
+    "bio": [
+      "“É, mais uma vez, Portugal aberto ao mundo. E sim, isso é algo que esta personagem que é também um país sabe mesmo muito bem o que é.” Esta frase termina o texto sobre Fado Lelé, assinado por António Pires n'O Fado E Outras  Músicas do Mundo, a propósito da edição do álbum de estreia da banda.",
+      "FADO LELÉ define-se como uma banda de fortes raízes lusófonas e abre no seu vasto leque de referências musicais uma janela para o mundo. As suas melodias são inspiradas e revisitadas num fado intemporal e vestidas a seu próprio gosto, dançante, com as sonoridades peculiares do ukulele e do bandolim.  Convivem, e vivem, com muitos ritmos e estéticas  e como tal, o jazz manouche, o afro, o reggae, e até mesmo o rockabilly ou o deltablues são seus convidados de honra.",
+      "Para além de alguns originais do grupo - Amor Limão (o primeiro single), Mal de Amor e O Fado Lelé, o disco de estreia de FADO LELÉ - Portugal Sabe o Que É! - inclui também algumas versões bem renovadas de clássicos como Vou Dar de Beber á Dor (faz parte da BSO da novela Espelho d`Água da SIC), Bairro Alto, Noites da Madeira, Rua do Capelão, Tudo isto é Fado, Foi na Travessa da Palha, Aldeia da Roupa Branca e Uma Casa Portuguesa (presente na BSO da novela Amor Maior da SIC)."
+    ],
+    "composition": [
+      {
+        "name": "Ana Castelo",
+        "role": "voz"
+      },
+      {
+        "name": "Miguel Castro",
+        "role": "ukulele baritono e tenor"
+      },
+      {
+        "name": "Filipe Silva",
+        "role": "bandolim e trompete"
+      },
+      {
+        "name": "Luís Gaspar",
+        "role": "bateria"
+      },
+      {
+        "name": "Luciano Barros",
+        "role": "baixo",
+        "invited": true
+      }
+    ],
+    "images": {
+      "featured": {
+        "url": "data/images/grupos/fado_lele.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAANABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAIxAAAgEEAgICAwAAAAAAAAAAAQIDBAURIQASBjEHE0FRcf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECMUH/2gAMAwEAAhEDEQA/AG/K/kOvtc9PBah97O8quZwwx0VWGAvvIJ/mv3y9V5PdzP4o0bwGC6pEapCSzKzHBC70BsbzvmZktVvqwi1C1Z6yM6FKjr1ZgOx0N5wNeuJrbaV5qOdfvV6VmNPmQERk7yNfjHrkjpPEPNT0/9k="
+      },
+      "group": [
+        {
+          "url": "data/images/grupos/fado_lele_beja_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Beja - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwQG/8QAJRAAAQQBAwIHAAAAAAAAAAAAAgEDBBEFACExBhMSFCJBUWFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAbEQEBAAIDAQAAAAAAAAAAAAABAgADETFxof/aAAwDAQACEQMRAD8AvlYCC1AnOMFkXVhoThAqNbCi0qpYc87fWshl5MzFZN2HEec8uIgQdxoEKiFC3oa99JcLHZWQMlchHruuOh6TvxNqq1e/FLt+Jo36radZ6jkNGKIQNtCqX8NCmoatrdVNSnH3zHUACPef/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_beja_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEH/8QAIhAAAgEEAQQDAAAAAAAAAAAAAQIDAAQREjEFFEFhEyHR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAZEQACAwEAAAAAAAAAAAAAAAAAEQESITH/2gAMAwEAAhEDEQA/AMWt+nQrIneNJ8bqjbQ4Ou3g54I/aO4s4AZZbaYtAspjTfG7fXOB49+xR9xO8kaNM5CtkZPFQySKpIdgc4pKZTK8P//Z\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_beja_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgQF/8QAIxAAAgEDBAEFAAAAAAAAAAAAAQIRAwQFABIhQQYTMTJRYf/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAHBEAAQUAAwAAAAAAAAAAAAAAAQACAxESBDHw/9oADAMBAAIRAxEAPwAJSwGOtbdnu7l69QojKts6iNzQZDCSAOZHB9tQDHLTvzb06quo5FWYRlmA34NJLHEWVzhFDUgrqq1PUX5NL7Np6iB9TPet7MeLYzD+JVcrZI9O6as6A7pCqHCwBHYOhJy2Fuc0fBViE92v/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_beja_3.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Beja - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUH/8QAIhAAAgEEAgEFAAAAAAAAAAAAAQIDAAQRIRIxBSIkQUJR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAgAD/9oADAMBAAIRAxEAPwDH18B7Z2lvI45wVWOIqSJST9XGtfP5U+S2eLAZCCQcEbDYPYpyh3UOZZeSDC+s6GM0q2t1lu44WZuCwOwGj0M42OqL6QGoQ7//2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_cuba_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Cuba - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EACcQAAIBAgQEBwAAAAAAAAAAAAECBAMRAAYhMQUHEmEUFSIjQVGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAdEQEAAgAHAAAAAAAAAAAAAAABAAIEERMxgZGx/9oADAMBAAIRAxEAPwDFpF4fHcyFybKpJRW3uVRTZW0J330NtfsYomNSkE1WybKqEmxbxKnbT4HbAmT8/SJiTfKgzL1tYyxb1AA/gwu/LrmHIqvWPDajF2JJE0b37HE18LS9s1eLJ5F1UNjon//Z\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_cuba_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Cuba - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwMG/8QAIhAAAgEDBAIDAAAAAAAAAAAAAQIDAAQRBQYSITFRFGGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAYEQEAAwEAAAAAAAAAAAAAAAARAAEDIf/aAAwDAQACEQMRAD8AO9ovaaZOl5d/FeKZjFwkXkVPv6PXmtDu/WNO1K2eOO9sjJCTKscMQUEnGRkAD10KNonZRyXAOfOBU5HZh2fyqVpwI2rP/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_cuba_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Cuba - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABgL/xAAhEAACAQMEAwEAAAAAAAAAAAABAgMEBREAITFhEhSBof/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGhEBAAMAAwAAAAAAAAAAAAAAAQACEQMSIf/aAAwDAQACEQMRAD8APC4WqYLL7tIHXiRkweccA9fuj92oqC6W6rr4a3JWUiIysEVj4jbGOtGU2tA6lO/waq5IIZRFHlYzEjFQTgkjc6O3L2tmSz0NVRJ//9k=\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_cuba_3.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Cuba - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFB//EACMQAAIBBAEDBQAAAAAAAAAAAAECAwAEBRFBEhMhMTJxkfD/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAAMBAQAAAAAAAAAAAAAAAAABIQIR/9oADAMBAAIRAxEAPwDIMfjI1kcyhCVHSUcc+v1xTk5t7K4WDsosksW3EaDag78/NSsZcTMWRpCVTfSDx+1Q5WaSPLPIjsrqF0wPn2iq5i6N6kP/2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_evora_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Évora - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABgD/xAAkEAABBAEDBAMBAAAAAAAAAAABAgMEBREABhITMUFhIUJRkf/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAeEQABBAEFAAAAAAAAAAAAAAABAAIDEQQSMYGRsf/aAAwDAQACEQMRAD8ADrl7Xd6aDRhcVtslDbTyeZUfHfJV6+dTc7ZzbYSrZ89ZH2USCf4rTC5F3MsDIq6ayjsLQR00x1g+yM57n9zgjSetvp8SsjRlbctuTTaUEmHyJIGCSfOgS4zZDZ1cOI8SQ+huOl//2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_evora_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Évora - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUH/8QAIxAAAgECBgIDAAAAAAAAAAAAAQIEAwUAERITIVEUIhVxkf/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQARAgMx4f/aAAwDAQACEQMRAD8AzCDGhybjJkSaaLGe31EXjLSy0wA2R70k/eJV0p21rdS+PGW3KrAtU4ZkOjQD3l7YNRmyvHShvvtKrhUz4AYe37gAYhQQe8F1liMpz2YpVd8n/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_portel_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Portel - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAJhAAAgECBQMFAQAAAAAAAAAAAQIEAxEABQYSIRMUUQcWIjFBwv/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAHREAAgEEAwAAAAAAAAAAAAAAAQIABBETQZGSsf/aAAwDAQACEQMRAD8AzNHLclhvFkUcrjIatJemndkOpZd/Jtz8bjnyMRZjOyGNNanWyHuH2o3VSVuDAqCLGw/CMOe09UTYManU0vuejTA6qzFBNlC3+vHFsHzvTnW2YSzIp6fCJsSmqiQpsEUL/OJnpkdrkt2I8MbIQNcT/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_portel_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Portel - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgEF/8QAIxAAAQMDAwUBAAAAAAAAAAAAAQIDBAAFBhEiMRJBQ2Gx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREAAgMBAAAAAAAAAAAAAAAAAQIAAxES/9oADAMBAAIRAxEAPwAvh2WYnacacizWHzcXPKg6p6f3tQC6iC9IeejydpXsbUgk6ezxWQPlXk0j2FhhlDX9LhUT/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_portel_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Portel - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQQFB//EACIQAAICAQQBBQAAAAAAAAAAAAECAxEABAUSIVEiQWFxof/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwDINLsTamVY0mi7K8mD2qAgWWPsByF/OLptMkpITVaYMGC+uQd8iQD+d+MkiRwpAdgPF4ORqrNfeGm4f//Z\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_portel_3.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Portel - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABgf/xAAhEAACAQQCAgMAAAAAAAAAAAABAgMEBRESAAYicUFRgf/EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAHBEAAQUAAwAAAAAAAAAAAAAAAgABBBEhA2Hw/9oADAMBAAIRAxEAPwAPcbDbjTq8UskE2gJWTDBz9gj44YktapIytKAwODgcqfYKOkpeuNDDphX0jeoA2Gx2JVh6wPZ5OZKCNpHZ7vQxsWPizEkfoHCo/KRDd4rCU8c30N92v//Z\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_vidigueira_cartaz.jpg",
+          "width": 1095,
+          "height": 1607,
+          "name": "Vidigueira - Cartaz",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABgX/xAAgEAABBAIDAQEBAAAAAAAAAAABAgMEBQYRABIhMVET/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAdEQACAgEFAAAAAAAAAAAAAAABAgADBBFBgZGx/9oADAMBAAIRAxEAPwA41SQ7KK09Gw2ZJrQ0SyqKAoqJ82CD6Qdn6eS3peFVjy4U3GJLcllRS4h53qtJ/COw0eMMbVmFVR18OMJcVDUcpU0YbijsEnrsAjRPmx6NngXLMNyu4yuysWaOe6iQ8Vhz+BT2/To/OSWYaWnUs3DEeRhcVG3U/9k=\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_vidigueira_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Vidigueira - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwUGB//EACIQAAEDAwQDAQAAAAAAAAAAAAECAwQAEiEiMUFRBRETFf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGREAAwADAAAAAAAAAAAAAAAAAAEREyEx/9oADAMBAAIRAxEAPwDF2Y8NfjyrAfQvX9FegU8Ednumjn5EWTDRES04HYdslVtwQ4Rqtu2PR4qdaF8d5SskbGhKWrOTSyXULtxcP//Z\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_vidigueira_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Vidigueira - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEH/8QAHhABAAEEAwEBAAAAAAAAAAAAAQIAAwQREiFBMRX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABkRAQACAwAAAAAAAAAAAAAAAAEAEQITQf/aAAwDAQACEQMRAD8AxHHw8ZutvIzCEGCjA5bfCkj8fElFsFy/xAGcNd7+vb9KHsrLirvW9b78ase52Tye2Qeu2r21jQEQ7P/Z\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_vidigueira_3.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Vidigueira - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFB//EACAQAAIBBQACAwAAAAAAAAAAAAECAwAEERIhBVExM3H/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABkRAAIDAQAAAAAAAAAAAAAAAAABAxEhIv/aAAwDAQACEQMRAD8AxG3lijgeJ0G+Q26/IGOrTo8nHDbWgiiZZYgVd9vsUnoPPRI/Kj25JnVCTqxww90S7URTlUGAOAUqRrkpeH//2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/fado_lele_vidigueira_mupi.jpg",
+          "width": 1095,
+          "height": 1643,
+          "name": "Vidigueira - Mupi",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwQG/8QAJRAAAQQBAwIHAAAAAAAAAAAAAgEDBBEFACExBhMSFCJBUWFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAbEQEBAAIDAQAAAAAAAAAAAAABAgADETFxof/aAAwDAQACEQMRAD8AvlYCC1AnOMFkXVhoThAqNbCi0qpYc87fWshl5MzFZN2HEec8uIgQdxoEKiFC3oa99JcLHZWQMlchHruuOh6TvxNqq1e/FLt+Jo36radZ6jkNGKIQNtCqX8NCmoatrdVNSnH3zHUACPef/9k=\n"
+        }
+      ]
+    },
+    "videos": [
+      {
+        "url": "https://youtu.be/qjh3Qub56pA",
+        "width": "16",
+        "height": "9"
+      }
+    ],
+    "schedule": {
+      "evora": {
+        "date": "2018-03-31T22:00:00",
+        "location": "Armazém8",
+        "place": "Évora"
+      },
+      "vidigueira": {
+        "place": "Vidigueira",
+        "date": "2018-08-02T21:00:00"
+      },
+      "portel": {
+        "place": "Portel",
+        "date": "2018-08-15T22:00:00",
+        "location": "Cerca de S.Paulo"
+      },
+      "beja": {
+        "place": "Beja",
+        "date": "2018-08-16T21:30:00",
+        "location": "Jardim Público"
+      },
+      "cuba": {
+        "place": "Cuba",
+        "date": "2018-09-02T21:30:00",
+        "location": "Espaço da Feira"
+      }
+    }
+  },
+  {
+    "slug": "ricardo-martins",
+    "name": "Ricardo Martins",
+    "genre": "Guitarra Portuguesa",
+    "bio": [
+      "Ricardo J. Martins nasceu em Faro em 3 de fevereiro de 1984. Sempre influenciado por vários gêneros musicais, ele encontrou na guitarra portuguesa como expressar seus sentimentos sonoros.",
+      "Desde a primeira audiência das músicas de Carlos Paredes, o som desse instrumento mostrou-lhe o caminho musical a seguir.",
+      "Apesar de se dedicar principalmente ao Fado, ele vê na Guitarra portuguesa uma enorme capacidade como instrumento solo, tocando a Guitarra de Lisboa e a Guitarra de Coimbra.",
+      "Gravou no ano de 2014 o seu primeiro álbum instrumental chamado “Ricardo J. Martins”, essencialmente feito de adaptações de temas fora do ambiente musical da Guitarra Portuguesa e versões de canções típicas do instrumento com arranjos próprios. A partir deste disco destaca-se o tema original e único “Danças na Eira”.",
+      "Constantemente em busca de novas formas para o instrumento, compor e tocar, mas sempre sem esquecer as suas raízes ele editou em 2017 o seu segundo álbum a que chamou “Danças e Lamentos”.",
+      "Este trabalho conta com várias participações especiais de músicos e a introdução de alguns instrumentos fora do Fado. Uma experiência musical que dá a este trabalho um selo pessoal único que vai da música tradicional portuguesa à música clássica.",
+      "Ricardo Martins já apresentou a sua música em países tão diferentes como: Portugal, Espanha, França, Bélgica, Holanda, Luxemburgo, Sérvia, Inglaterra, Alemanha e Cabo Verde.",
+      "Considera-se privilegiado por ter tocado ao lado de nomes como: Viviane, Marco Rodrigues, Filipa Cardoso, Ana Sofia Varela ou Ilda Maria. Agora aposta numa carreira a solo e as suas interpretações são já reconhecidas nacional e internacionalmente."
+    ],
+    "curriculum": [
+      "Ricardo J. Martins acabou de lançar o seu segundo disco de Guitarra Portuguesa instrumental intitulado “Cantos e Lamentos” editado através da editora Espanhola “Música Fundamental”.",
+      "Faz parte da nova geração de músicos de Guitarra Portuguesa que têm raízes noutros mundos musicais e também dos poucos guitarristas que compõe peças para este instrumento tão Português.",
+      "Este CD conta apenas com composições próprias e mistura um pouco das suas influências musicais em composições feitas para Guitarra Portuguesa de Lisboa e Guitarra Portuguesa de Coimbra, destacando-se os singles, “Corre Corre Corridinho”, “Danças na Eira”, “Tocar-te” e “A Guerra Parte 1 - Amanhecer”.",
+      "Ao longo dos 11 temas encontram-se raízes da música tradicional, folclore, música clássica e do fado, contando o disco com participações de instrumentos fora do ambiente da guitarra portuguesa como é o exemplo do acordeão, flauta, percussão e contrabaixo com arco.",
+      "Já teve o privilégio de partilhar o palco com grandes nomes da poesia, teatro como por exemplo:  ngela Pinto, Maria do Céu Guerra, José Fanha, Irene Flunser Pimentel (Prémio Pessoa 2007), e também da música, como Marco Rodrigues, Pedro Moutinho, Diamantina, Filipa Cardoso, Isabel de Noronha, Ilda Maria, Ana Sofia Varela e Viviane. Com Viviane participou também nas sessões de gravação dos discos “Dia Novo” e “Confidências”, nos temas: “Do Chiado Até ao Cais”, “Era a Voz que Salvava” e “Fado do Beijo”, sendo que dois destes temas foram singles.",
+      "Pôde apresentar também a sua música além fronteiras: Espanha, França, Bélgica, Holanda, Inglaterra, Alemanha, Luxemburgo, Sérvia, Canadá, Estados Unidos e Cabo Verde.",
+      "Neste concerto estarão, além de Ricardo J. Martins na Guitarra Portuguesa de Lisboa e Coimbra, Cláudio Sousa na Viola e Luís Trindade no Baixo e percussões."
+    ],
+    "videos": [
+      {
+        "url": "https://youtu.be/y-1IjghyFgI",
+        "width": "16",
+        "height": "9"
+      },
+      {
+        "url": "https://youtu.be/RhLY2QWHnck",
+        "width": "16",
+        "height": "9"
+      }
+    ],
+    "images": {
+      "featured": {
+        "url": "data/images/grupos/ricardo_martins.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABAUGB//EACUQAAIBAgUDBQAAAAAAAAAAAAECAwQRAAUGEiEHQXETFjFRgf/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAXEQEBAQEAAAAAAAAAAAAAAAABACFB/9oADAMBAAIRAxEAPwCv1nqOPT+QwvslY1c6wBojYoLFifNha3e+HmXyRTZaGRmJDsH3gghr3IIPI5Px2xl/VmeX2XRjeea9L/itgvpPX1dVlmapUVU0winQJ6rlioK/Z8DBUwZB0v/Z"
+      },
+      "group": [
+        {
+          "url": "data/images/grupos/ricardo_martins_evora_1.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Évora - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgUH/8QAIRAAAgAFBQEBAAAAAAAAAAAAAQIAAwQRIQUiMVFxEpH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABkRAAIDAQAAAAAAAAAAAAAAAAECABFRIf/aAAwDAQACEQMRAD8Ax6gpaM1GmI7pN+6hTO5FlNtueswwtBKOnkmW6oJwmG1i+8hb9YsfIjnCAi4PsE8DJ/YuHKMDlRwoV2f/2Q==\n"
+        },
+        {
+          "url": "data/images/grupos/ricardo_martins_evora_2.jpg",
+          "width": 1920,
+          "height": 1280,
+          "name": "Évora - Espectáculo",
+          "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgUH/8QAIRAAAgAFBQEBAAAAAAAAAAAAAQIAAwQRIQUiMVFxEpH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABkRAAIDAQAAAAAAAAAAAAAAAAECABFRIf/aAAwDAQACEQMRAD8Ax6gpaM1GmI7pN+6hTO5FlNtueswwtBKOnkmW6oJwmG1i+8hb9YsfIjnCAi4PsE8DJ/YuHKMDlRwoV2f/2Q==\n"
+        }
+      ]
+    },
+    "schedule": {
+      "evora": {
+        "date": "2018-03-03T22:00:00",
+        "location": "Armazém8",
+        "place": "Évora"
+      }
+    }
+  }
+]

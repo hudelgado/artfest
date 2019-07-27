@@ -1,25 +1,58 @@
-[{
+[
+  {
     "name": "Beja",
-    "url": "http://www.cm-beja.pt/",
-    "logo": "images/logos/Beja.png"
-  }, {
+    "url": "//www.cm-beja.pt/",
+    "logo": {
+      "url": "images/logos/Beja.png",
+      "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAABmJLR0QA/wD/AP+gvaeTAAABmUlEQVQoz32QvWsTcRzGP9/L7+7y2qukWFuIFtr6QiwiODj4guCW2hZBrIsd6iT9E/oPiIOLdOskTqLQUpEKHXQQgqJLQURMs6TUpjVNrr1LLpf7OXiIkw88PJ/leYZHgudDftQxba8yTKNcFHdztBa6qTk77W2U7jzjYnVMAM0/Wnm99pfFf3rm7s7q1UW/MnyeUGnT6oqdaX/oP3Y0dTtd1RltnAUi4BcgQB9wBBgAqv3m2kNHJwrO2A5dC1xbsWeZg53ItBNNTIRkXNwDTgBJoBUPDKjQkPKLYmHkUz7vVLNZapk0gWG82nowsz1dmrwB3AT2Y8/GQy+By8AV9fnxR6oHPep+SDMI8QMII4XWmpnSrRZCBTgEPGAzzgIQAGV5/3XiXdfNXYgM7fTMSHuixIvsH5bqXV9eONlwjnczQFJrGiKSBY3WICI9ETHUvfUnS6X6/uJ4eOD0JVtYOZdUvv6z//T3tpUjIUbC5M8JEn8hAmHMlvDoi29F2j7lt7nUdOXcoVdLdWQuNbi7sft2nm/F+/xPvwEZcJfJ3cxtPAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAASUVORK5CYII="
+    }
+  },
+  {
     "name": "Cuba",
-    "url": "https://www.cm-cuba.pt/",
-    "logo": "images/logos/Cuba.png"
-  }, {
+    "url": "//www.cm-cuba.pt/",
+    "logo": {
+      "url": "images/logos/Cuba.png",
+      "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAGCAYAAADKfB7nAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA9hAAAPYQGoP6dpAAABWElEQVQY023BzSsEYRwH8O/vmWd2Zhg73tm8bNHWbriRcnBVLu4c3JXkr5CLUi6O/gcHrjgoioNQmGSVtTtryRrzzD4v/gGfD50dnIDZbOqj0li/Pb/vrlcaTTBTzY3lnoPe7JFOEXp5G8ubK/gPh4URmcq9l7vyfPUlwm8iQGRQK0fSa/euuMPXtve3LouFArIdWUilkCQJbM4BAAwGC1rqua/oGyJtodUykBJofjZ5mqQzMNjwnLYcgYaJsUEiKhDQQ0R9zLKIA3At27I6un3o8A39A59IEgdKB7C4BWO08yOaSwbw4zjuNVoXtdbXQggPwA43MEfE6DRfGpl7L1f49OwFwoc8fsS4zLiZGyLaJU61wA8CpZSrlDr0HUcLIaSSMuZQeATHatdA52Jppjgcho1Ysv62vtGeV8bpOI1bT6WJSe46rp1xMpoxpn3fp3oUmdzQkPwDGqmYVzLtqj8AAAAASUVORK5CYII="
+    }
+  },
+  {
     "name": "Elvas",
-    "url": "http://www.cm-elvas.pt/",
-    "logo": "images/logos/elvas.png"
-  }, {
+    "url": "//www.cm-elvas.pt/",
+    "logo": {
+      "url": "images/logos/elvas.png",
+      "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAAdTAAAHUwAd0zcs0AAAHWSURBVCjPhc9NS1RhAMXx/3nuM47KpI4OmpZvhZEEQQshhCBatahdUBDtq2UfJ/oSLQtaFLV2IxIIY1GYb6Ojps3Mvfc5LVoPnf3h/I74T74sXEMI5yVAZnEB+EORunGwQuxX/Dy/hADyhIMyRA0YVFBuU0UMAe3Qd7q0MAME1YEGkDm5Z9N1mZ4Y5hD9BQphyPYIyRG7dHIDmJW8BhwJxbJIoa8g5eUlF2nCZVqwPSPRk2ilvLziIr00TopZ6n8BTwJDQA2jZNedXFPQPvAeO0+9PEaAVy9gd/cuUkACG8Kn5rSDthLUBT+VhR645cIriEWb64LN7Nmje5ydLSIJRANYABrn1Sy2h6vNiyedm0g7JM8g7WEv2zwM0huFsBeBYYmrNgEzBp5EOlufHsmC0K3vh+cxuZVidlCiwxJFBd4BqwRtR9sV2zeAhLSP3RT0ZE8ke+X16vxWHjRXZDp6vHm43fh1ct/2A6SnYXywHVNKS//YOgWPYj7Yvg0MA51uphXBUUje6BTlD+MpTBWIacwE0AGwJ/iKfQKeBcaBNjAgaAFN4PJpJavJ7AMbQPfOx3ViebzzLRudemscgHOghljDdIA6UAAVpO7y7u9jw3MgA44B/gK9Wu1+fyfLCAAAAABJRU5ErkJggg=="
+    }
+  },
+  {
     "name": "Evora",
-    "url": "http://www.cm-evora.pt/",
-    "logo": "images/logos/Evora.png"
-  }, {
+    "url": "//www.cm-evora.pt/",
+    "logo": {
+      "url": "images/logos/Evora.png",
+      "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAFCAYAAABM6GxJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABNUlEQVQY0wXByy5DURQA0L3vOff2VK+rHkVHmhgJKqkYNZEOGv/AzF8Y+Qd+QUzEiBBjMyEhRp6Rlqq+NH057Xlta+Fpfitw2gToeYqs4VoIuXN9RZ8HhRwgq/RFqnMY24VOx7kgPqJURLDaL4NsNb1ACM3R0QIptU0A30D055R7vdwv9pbCzh4iVoRVIs9uB2e44o8kqDk+DKwa1JVSGW30OUeACjlnmYhF4WLmrv1WzvpStzGkNfLipvnB0+Ho8SddmJmWXU+ArErOTWMswYtDaVvcWZsExAen9Maw1ogjWfPUjUphKjr67U2WGs/1UEaqxdzLrBhKfK/W/HB8/iudmDhmPr/Bk9xmlqzLAkIFCKYsw/uL9eW+z0SKg2HM9wJwjkgq7ceCHhElldFMG2s85tX+AfUJpeAw7ToqAAAAAElFTkSuQmCC"
+    }
+  },
+  {
     "name": "Portel",
-    "url": "http://www.cm-portel.pt/",
-    "logo": "images/logos/Portel.png"
-  }, {
+    "url": "//www.cm-portel.pt/",
+    "logo": {
+      "url": "images/logos/Portel.png",
+      "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACHDwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAABZUlEQVQoz4WSPU9UYRCFn/Ped7kmaFxIdik0ERITjcaeaG9BRyGN9WpnyS/wH9CxbGdva2KviYkUFgQSCcZi+Yqw+LV7ubz3WLgYQpB9ypk5J3Mmo6W157I9h1kE7gMl8B7xkorVFw+WuYyI/RCzBMycqc9jmgp6AmxfZhAMT8+JT5kFP2IEAbj5n14Gao4yiLX9xsFJY/8NsA66Y3sLaP01995og61b38OPqyvl7S8fsa7bXgAi8AH0rt1uAyCJlBIhBABardYwQspeZ9tTvfj1Rv/X3U+7iGnEK4KfXVm71wWoqgrb/8RnUafTuWYbQGRWqvca6udH8WgC8nIspZSAKUnVcM7AJtAHiJIe265L6lGpmX2b7ILrHjtGqAscAjO2K0DDPxkHfgK/o+0S2ABObO8Au0DDdiHpEAiSMtvHkqLtYrhFACYj8Bbo53lOURSnWT+XZalareaUErY3L7rFYDDgD+4ppXy1anJUAAAAAElFTkSuQmCC"
+    }
+  },
+  {
     "name": "Vidigueira",
-    "url": "http://www.cm-vidigueira.pt/",
-    "logo": "images/logos/Vidigueira.png"
-  }]
+    "url": "//www.cm-vidigueira.pt/",
+    "logo": {
+      "url": "images/logos/Vidigueira.png",
+      "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAANBJREFUGNMFwTEuBFEAxvH/994bs7O2YCMUGh0SkSidwQWcwR2w0TiEisYxFBxCJRGdyNpkY8zYN+/z++n64fD89a1cpZC2Tw58f3q8Mbu52/wd1Y5Asr2SlBArTAQHANAAlPQ1z7d9nuz9ZPPx2V0ctfkJ8Q7sAgFJQMG0wDqoA6aGhWCUQmRNGFRYtiWsclEK5btOORjVNr1wY1SATqIHzzHZaJx2ptUs98vLMrDVjONjU8fns/2XZc9kYQfX6S/3uaokG/BQoqqYseUUB/4B2XxfSNTeRvgAAAAASUVORK5CYII="
+    }
+  },
+  {
+    "name": "Armazém8",
+    "url": "//armazem8.associarte.pt",
+    "logo": {
+      "url": "images/logos/armazem8.png",
+      "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAABcSAAAXEgFnn9JSAAADNElEQVQozy3Qy2tcVRwA4N/5nXPuvXPnZh6dmc4kzCQ2k0drJKZIEENNFxoUAxZqEXHlShEUQRddVRFEEHGh4kJU1JWuxEW7EV3U+kBwWm1ag1PbxKiTZjKZO3fm3pn7OA8X+v0JHzn7aAG29uPVF9cLH7mBdNxAJqChORipJ5758Hb9qZPZd59dyx+bOMRuu4F8/3zDf6eUoTHrDAT0AlVOpK5JpduDofIpwuCzH/qZu6fMV55/OL+8OGmCAphxLDy3tpjenCzyC+gGCvxQiVZX9KJEK0qJopSEGzvR0uox+8RCzYT9gfS29pLI4iRTytDT5advINbL/KGFqhlr0BtIiNH2RJCzETglM/Wy4SAB2Pwnfvv1Lw++DyIFFidzbzxZSrOdjphkFGoEoM4Z6ONHrHxxjGYtg9gmI0QqkJySq7fa8bQfKkgZyG0TKWZs/MAbqosGw1hr+K3ZihtS6Uhp+PvAlzEiUD9U99YKvJ42EYTU+41b4QgJAABA1jaJ7Axkt1pgyybD+dmKcf3KdrjZCxQsTpnPnTtdXLZNhP5IffvxezMROhaCwYgvlfanD/NpyyByfyCGRyeM1i/b0cbNvRgqWZaaHTdYLHR/zxM//XqhCyiVBqk0DWMNPzZHnlKgcjZ1v74WrKwt2ut31UzY80SvuRuHJiOZWoE/vnR2C7E3VBBEyuWMeCvzqUGKkx0/Ur97Q3Xf6lE7b3Kim7vxm6990fmmP1KQSeHJz1+YqCBHACSkesihJ/JpWjQ58YTQkDJIrZJjkAgYpQy8tLETXW33BRiMFCs5VsJYAkilIRbak0pHGoBpAERCEPG/Oa01KK0paABCgJqMMPb/qnIDua01fNUbyrbW4A5C+WB/pIBTSLmBemB+3Fw+nGUgpA66geyzIFKQSDiIE02AwCmDkURI+AsJ+fmP3Th5ZMnhd1aNl15+rGjm0ghdX9689udwF6sFDjkbS5aBxUTocUZJ2bFwdrZiXLq4OWy0XAETeeYs1AwuhBZbfvGyvufV++n68TREQjsrc6m5Ziu5XM6ykmOht3SH+clb57tXxvPsyFSJj0UJhJ1+/GmDnvluLF8+8y/qCZDvvk85LQAAAABJRU5ErkJggg=="
+    }
+  }
+]

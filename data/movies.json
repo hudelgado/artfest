@@ -2,64 +2,88 @@
   {
     "name": "Marfim",
     "slug": "marfim",
-    "headline": "Évora Património da Humanidade",
+    "title": "Évora Património da Humanidade",
     "description": [
       "Filme que assinala os 30 anos da classificação de Évora como Património da Humanidade.",
       "Memórias e artistas numa cidade que surpreende a cada esquina.",
       "Morada de muitas civilizações e reinados."
     ],
     "images": {
-      "featured": "data/images/filmes/marfim/cartaz.jpg",
+      "featured": {
+        "url": "data/images/filmes/marfim/cartaz.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQGB//EACIQAAICAgICAgMAAAAAAAAAAAECAwQFEQAhEjEGE1Fhcf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAZEQACAwEAAAAAAAAAAAAAAAAAARESITH/2gAMAwEAAhEDEQA/ANHy9oY+JbCwxMplAlLSEaQnTMOu279cdr20krxvB4NEVBUjsEf0cls5RtfJo4Kt6l5V4ZPtSOuzKS49bP4HfXBxcOWxOOio11lWGHaopTehsnXQ/fBTdohjZXp//9k="
+      },
       "filmagens": [
-        "data/images/filmes/marfim/filmagens/1.png",
-        "data/images/filmes/marfim/filmagens/2.png",
-        "data/images/filmes/marfim/filmagens/3.png",
-        "data/images/filmes/marfim/filmagens/4.png",
-        "data/images/filmes/marfim/filmagens/5.png",
-        "data/images/filmes/marfim/filmagens/6.png"
+        {"url": "data/images/filmes/marfim/filmagens/6.png", "width": "1536", "height": "1024", "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAABzUlEQVQozz2SS07DMBiEPzuO1Ydq8YigEnTJlgWsegckbsUd2SKqIgpVH7Gc2LF/Fkg5wIzmmxn19vYm3nuur68REbbbLTlnmqahqiqGYSDnTEqJnDOTyYQYI8fjkbZtMQ8PD3x8fCAi3N7e4pzjfD4jIpRSMMZgraVtW0op3NzcEGNkGAaapsGICJeXl4QQSClR1zVXV1ejoK5rYow455jNZiilmM1mzOdzjDGY9/d3AA6HA1prRIScMzFGuq6jqiq6rhvNUkqklCilAKDW67VYaxERYowsFgtCCIQQcM4RQsB7T13XGGOYTqf8/v6itSalhPbeY63l6emJqqr4/v5mv99TSqHve0QErTV1XaO1ZrFYjIUqpdDDMIzxlFK0bYtzDoD9fj/24r1HKUUphYuLC0op5JzRp9OJzWbD5+fniPD6+sr9/f2IknNGa81yuRzNnXP0fY+6u7uTYRgIITCZTFiv17y8vLDb7fj5+SHGiLUWpRTT6RQR4XA4sNvtOB6PqOfnZ/He8/X1RdM0OOcQEUQEay1aa1arFY+Pj3RdR9/3GGPouu7/SCLCfD5ntVr9z6IU3nuAMf7pdGK5XNL3Pd57qqoipcT5fOYPCMso06B0Ui0AAAAASUVORK5CYII="},
+        {"url": "data/images/filmes/marfim/filmagens/5.png", "width": "1365", "height": "2045", "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAYAAADAvYV+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAACPElEQVQozwXBy0tUUQDA4d8951znoaM2OqaOpCJZRkWmYZoW4TIIohZt2vo/tW9jbVpELVxoFgliWAhaFoyZj9GchzqPe++cR9/nPZ+bc4XyOSascamngxvDAwz0tDOYzVA7+M3rN++YvnOT2cePUC+ePeHlq3lCHIWKZmVzn7XtPM2xX+S+f+Hj+habh6ek+q8i7k/NMHvvLlprlJTEfB8pFdrzSaR7GerrxTR38XZ1F2Gc4sHUFMJGZJIhI1lBRyLABiVS6U5uT0ySHbxMtV5HVSODRWJMiFYXyfYP0zsgOfpX5PCoQLlUwpgItEHt5Au4yODHkhyfR+SjFFPjE4w3x/CVRHkWiUFgUdu7B/RcSNLW3sb6xjeCeoVsyqdvcppUW5qYFPjSIjxQub19OtPX6Om9xNitUZpMjdX385wd7TEyPkNLcwu2UeX68BVE8TjPWaVCa2cfYxMPSToPfZBn5+cPiqUzdvIldsuWrXwVlUi2IlQcrTUylaY7M0TXnyLDTydp6+4HP47RcFJziCAK0efHmEaAkgqnPcoHJ6xt5Kg0QKk4QiqUlKiNjTVq+18JSbC4vExjaYGwckptaYEP6U6E34RzDikVSuqAvycSITTlT4ukVz4Tc5bYySGF3RyRVDjn0Mag2uMKT0iEkDQZg6hXqfo+TUGNjrBCmOkmigKM8VBh1MCTDqUEBkFjdIx6uUhrOkNUr5AMA7TWWGtQeB7OWoxu4ITAplrxEwlsPEGjXsdaDTisc/wHUR0QoeiN+DEAAAAASUVORK5CYII="},
+        {"url": "data/images/filmes/marfim/filmagens/4.png", "width": "1536", "height": "1040", "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAACFUlEQVQ4y2WTS07rQBBFT3fbbTuOTXBIGAQJJEYwYw8sB7EFdsQOWA8DhBQpAX/6UwwiW/F7NazB6Vv33maz2cjLy4tcXl6K1lqUUqKUEkCurq7k7e1Nbm5uBJj2Dw8P8vr6KtZa0SEErLWkaQqAUgqlFABd1xFjpKoqzkdE0FqjlEIDZFmGMQaAu7s7mqYBoO972radAZRSOOcwxmCMQYcQ8N6jtaYoChaLBYfDAYAYIzHGSd04zjnyPCdJEhLnHF3XYYxhtVrhvWcYBqy1NE1DVVVorWfyvfdkWUaapiTj63Vd45yjrmu22y273Y71ek1VVcQYZwqGYQDAWksyyszznK+vL7bbLY+PjyyXS5RSeO8Rkf8AIkJRFCeAc440Tfn+/ubz85P9fs9ms+H5+Zksy1gulzMTQwiM5iciMt2slOJ4PHI8HrHW0rYtWmuur6+naEcfYoynGEdT0jSdOnDuS1mWlGU5Ayil6PueYRhOPfj5+aEoCrIsQ2s9AcZoR/i5ghACxhgSgLZtsdaS5zl1XXNxccFut6NpGvb7PSGEGSCEgHPulMK48N4DsFgseHp6Is9z3t/fWa/X3N7ezlKIMTIMw6lI48J7j1KKruv4+PiY3F6tVvR9P+vCeXLJ+ecYbyvLEu89xhjquqbv+1kXRGRqbwLw+/tLmqbEGOm6jrZt8d6TJAn39/f8OyLC4XAgxsgfyd4fW8kwC10AAAAASUVORK5CYII="},
+        {"url": "data/images/filmes/marfim/filmagens/3.png", "width": "1536", "height": "1520", "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAB6ElEQVQozz2SS07zOgBGj19JbNIaKlUIhKCVKmDEAhArYDXsp7uCKQMQUhGiPKqU4MQ2uYNftwv4BuecT1xdXQ1KKaqqIsbIer3m4+OD2WzG2dkZ3nvKskRKiRCCoiiw1jIej0kpod/e3vDe45zDGEPOGe89x8fHXFxcUBQFm80GrTVfX18AdF2HUorRaIQOIVCWJSEEUkoIIbi+vubg4IDT01PatiXGiHOO7XaLtRbnHDlnttstYj6fDwAxRgDu7u64vb3l4eGB5XLJ7+8vs9mMyWSCtZbX11fKstwhSOcco9EI5xyLxYKbmxtCCCwWC3LOPD4+YoxhvV6z2WwIIdD3PSEEPj8/0YeHh2it6boOrTXL5ZKqqtBak1Li/Pyctm35+fkh57wTqpSirmvkZDJhOp1ydHSE957VasXz8zNPT09Ya8k5c3l5yf39PU3ToJSiLEtSSuSc0UII+r4nxkiMkWEY6LqOoijw3tN1HS8vLzRNw2q1wjmH1prxeIwx5l8FrTX/ixRCkHOmaRqapmEYBt7f35nP5+zv7yOl3BUB0NbaXSaA7+9v+r6nqiqstezt7eGcYzqdUtc1f39/ABhj/h1JKYWUEikl3ntOTk5IKaGUwhiDUoqiKGjbdjcehoG6rmnblv8AxhPiVQPnFdQAAAAASUVORK5CYII="},
+        {"url": "data/images/filmes/marfim/filmagens/2.png", "width": "1536", "height": "1020", "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAB5klEQVQozz2RvU7zMABFT2zXSmKlBRWhDEiAgJfowMjA2CfiaXgcJiQkFoqKVIaWNj/FiV0734C+zle6uueepCzLoSgK8jzHOcdms8FaC4Axhul0ihCCEAJXV1ecnZ2hlMJ7j3MOJaWk6zq22y2HwwFjDJeXl9zd3bHb7UjTlKIo6PseIQT7/R7vPUIIhmFAJUlCjJHpdMr/Jbe3t9zc3PD+/k5VVQBkWcZ2u6Wua/I8J8aIUgppjHnKsowYI8YYYozUdc339zdfX19kWcbj4yPGGF5fX4kxIqUkhID3HnV/f89sNuP5+ZmqqnDOsd/vARiGgbIsOT09ZbVaMQwDo9GIw+Fw/EXN53O01gghSJIEay3WWrTWx7NWqxUfHx/UdU3TNEgpGY/Hf0Vt29K2LdZa+r6nLMvjRKUUwzDw8vLCer0mTVOstfz8/LDZbP4QFosF4/EYIQTOObTWSCmx1uK95+3tjaZp6LoO7/0xf3h4YDabIfM8f1oul0e2399fRqMRUkrSND1qbNuWEAJaa7TWTCYTrLUo5xzr9ZqTkxPyPGe323F9ff3nWCkWiwV93x/dxxiJMfL5+clyuUQVRYFSislkQoyRqqrouo4kSciyjBAC1lqapkEpRQiBi4sLzs/PaZqGf19oFANth0ZaAAAAAElFTkSuQmCC"},
+        {"url": "data/images/filmes/marfim/filmagens/1.png", "width": "1536", "height": "1020", "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAB30lEQVQozz3SsU4qQRjF8f9+M7Ow7gJB4oJGEgshkcZIywtY0vo29+WMiU9gZ2VMJNGAi/DtMjO3uFdOeYrfaU4iIpH/SZIEEUFECCEgInjvAYgx4pyj1+shImw2G+q6JrHWxhACAMYYjDFYa+l2u6RpysfHxxF0ztFqtfDec3JyQtM02N9FYwwhBEIIFEXBdDolhMB6vT4CrVaLuq4ZjUaMx2NUFQEQEbIsQ0Qoy5LpdMpwOKSuazqdDv1+nzzPcc6RJAnOOQaDAZ+fn9jT01NUlTzPSdOUoih4e3vj7u6OGCNlWfLy8gJAmqYcDgcGgwG3t7dUVYWUZcl4PMYYw+XlJcPhkBACz8/PjEYjHh4eyLIM5xz39/csFgvm8znf398A2KZpOBwOXF9fc3V1hTEGEWEymTCfzxERiqJgMplgraWqKp6envDe8/PzgzHG/FmtVhhjmM1mZFkGwM3NDapKVVU0TcPFxQWvr698fX0hIgCoKkm73Y4x/rvCcrlERHh8fKTX62Gt5ezsjPf3d87Pz3/vQozxiMuvJiLs93vW6zUA+/0eVUVVmc1mbDabY7/b7dhut+x2O2yMkRACxhhWqxWqSl3XxBjx3uOcI89zvPdUVcV2u0VV8d6jqvwFtVHewSjZRdMAAAAASUVORK5CYII="}
       ],
       "estreia": [
-        "data/images/filmes/marfim/estreia/1.png",
-        "data/images/filmes/marfim/estreia/2.png",
-        "data/images/filmes/marfim/estreia/3.png"
+        { "url": "data/images/filmes/marfim/estreia/1.png", "width": "2048", "height": "1365", "placeholder": "data:image/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAJhAAAgIBAgUEAwAAAAAAAAAAAQIDBBEAEgUHEyFRIjFBUmGRof/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAZEQEAAwEBAAAAAAAAAAAAAAABAAIRA1H/2gAMAwEAAhEDEQA/AGH5kJUaOpLw+5LZmG8uq4DN77ckeB/RqCLmNwS84Ete1CxBz1guB57g6xFm7Za9bnMzdSJpth+u1O360Bbijn4xAkkalWjbIxgH0g57fP50bkN9X2JulcCf/9k="},
+        { "url": "data/images/filmes/marfim/estreia/2.png", "width": "2048", "height": "1365", "placeholder": "data:image/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgID/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIDBBEhAAUSMRNhceH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGREAAQUAAAAAAAAAAAAAAAAAAgABAwQh/9oADAMBAAIRAxEAPwAjHW0e403lQqyoArc8cb/cH81lXNR7XLxk3OpaxUyJTMoAXF8hcnPXrQbbQGrolYArcmx6uAdXLNLNIxkkZrlnNz2b96MNSMdZLK3IWOv/2Q=="},
+        { "url": "data/images/filmes/marfim/estreia/3.png", "width": "320", "height": "287", "placeholder": "data:image/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAOABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQQFB//EACEQAAIBAwQDAQAAAAAAAAAAAAECAwARMQQFBhITMmFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADITH/2gAMAwEAAhEDEQA/AENw2LjkOgZo+XbVJIukdlUBBchcG0nsTa1ZjE8U2mWSaYljlb1GI6sR1XNsUPJ1BFvz5QtSDzJUlhXuz//Z"}
       ]
     },
     "videos": {
-      "trailer": {
+      "trailer": [{
         "url": "https://player.vimeo.com/video/240681059",
         "name": "Documentário Marfim",
         "description": "Trailer do documentário Marfim",
-        "thumbnail_url": "data/images/filmes/marfim/cartaz.jpg",
-        "uploade_date": "2017-11-07"
-      }
+        "uploadDate": "2017-11-07"
+      }]
     },
-    "production_company": "GMT Produções",
-    "director": "Luís Godinho",
     "date_created": "2017-10",
     "date_published": "2017-11-08T21:00:00"
   }
   ,{
-    "name": "Terra do Pão",
-    "slug": "terra-do-pao",
-    "title": "",
+    "name": "Pão Nosso",
+    "slug": "pao-nosso",
+    "title": "O ciclo do pão",
     "description": [
       "O ponto de partida é a Dieta Mediterrânica, classificada Património Imaterial da UNESCO e um dos seus elementos centrais, o pão.",
-      "O documentário evoca o ciclo do pão, explica a história do alimento e toda a carga simbólica (até litúrgica) a ele associada."
-    ]
+      "PÃO NOSSO evoca o ciclo do pão, explica a história do alimento e toda a carga simbólica (até litúrgica) a ele associada, entrando em moinhos e em casas particulares onde ainda se faz pão em fornos de lenha, mas também no receituário tradicional como açordas (herança milenar) no concelho de Portel."
+    ],
+    "to_be_released": true,
+    "videos": {
+      "trailer": [{
+        "url": "https://player.vimeo.com/video/313153088",
+        "name": "Pão Nosso - Trailer",
+        "description": "Trailer do documentário Pão Nosso",
+        "uploadDate": "2019-15-02"
+      }]
+    }
   },
   {
-    "name": "Cante Alentejano",
-    "slug": "cante-alentejano",
-    "title": "",
+    "name": "Talha",
+    "slug": "talha",
+    "title": "Danças e Cante",
     "description": [
-      "O Cante tradicional do Alentejo – igualmente classificado pela UNESCO – contem história, tradição, alegria ou lamento.",
-      "Fala de lugares, coloca questões, relata a vida e o viver de um povo que canta “o que lhe vai na alma”.",
-      "Modas que passam de geração em geração, tornando longínqua a sua origem."
-    ]
+      "Guardião dos vinhos da talha, o Alentejo tem sabido preservar este processo de vinificação desenvolvido pelos romanos, há mais de 2 mil anos, e que será candidatado a Património Imaterial da UNESCO. No âmbito de uma série documental sobre o Alentejo, este documentário de 52 minutos acompanha todo o processo de fabrico, do tratamento das vinhas à abertura das talhas, sem esquecer a cultura do vinho profundamente enraizada nas populações locais: da gastronomia ao Cante, passando pelo convívio à volta da mesa, pelo vinho do trabalho.",
+      "Ao longo do documentário cruzam-se as histórias e as vivências de quem mantém viva a arte de fazer vinho em talhas de barro, com o depoimento de especialistas e historiadores que nos ajudam a compreender a singularidade deste produto único, descrito pela Comissão Vitivinícola Regional Alentejana como “sublime representante da milenar cultura do vinho no Alentejo“."
+    ],
+    "videos": {
+      "trailer": [{
+        "url": "https://player.vimeo.com/video/297924701",
+        "name": "Documentário Talha#2",
+        "description": "2º Trailer do documentário TALHA, “Este Trabalho Não é Fácil”"
+      }, {
+        "url": "https://player.vimeo.com/video/296415672",
+        "name": "Documentário Talha",
+        "description": "Trailer do documentário -TALHA"
+      }, {
+        "url": "https://player.vimeo.com/video/302084177",
+        "name": "Documentário Talha",
+        "description": "Documentário - TALHA"
+      }]
+    },
+    "to_be_released": true
   },
   {
-    "name": "Muralhas que Unem",
-    "slug": "muralhas-que-unem",
+    "name": "Cellula",
+    "slug": "cellula",
     "title": "Elvas",
     "description": [
       "As fortificações abaluartadas de Elvas, que se encontram inscritas na lista do Património Mundial da UNESCO, perderam a sua função militar e são hoje ponto de encontro entre culturas dos dois lados da raia.",
@@ -67,20 +91,58 @@
       "Morada de muitas civilizações e reinados."
     ],
     "images": {
+      "featured": {
+        "url": "data/images/filmes/cellula/cartaz.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMH/8QAIhAAAQMEAAcAAAAAAAAAAAAAAQIDEQASEzEEIiMkQYGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAVEQEBAAAAAAAAAAAAAAAAAAAAE//aAAwDAQACEQMRAD8Azdstz1Q5HiyJn3U7hQWHeFKe6zKVoWnQ+0d1bReXjuCJ5QrcVRUU3//Z"
+      },
       "filmagens": [
-        "data/images/filmes/muralhas_que_unem/filmagens/1.png",
-        "data/images/filmes/muralhas_que_unem/filmagens/2.png",
-        "data/images/filmes/muralhas_que_unem/filmagens/3.png"
-      ]
-    }
+        {"url": "data/images/filmes/cellula/filmagens/1.png", "placeholder": "data:image/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAJhAAAQQBAgUFAQAAAAAAAAAAAQIDBBEFABIGBxMxURQhIzJhof/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAyH/2gAMAwEAAhEDEQA/AH5zm5Ox8hIGKbWyoVbkg3upR8dvr/dXG5kSfWIZyHD7DZU11AkuFW4EAggi/wBFaG9hcdLyCxIjJdG26WSRd12vWbwpEYEvL/GD05igi/faPAvtoWrnCnmrGf/Z"},
+        {"url": "data/images/filmes/cellula/filmagens/2.png", "placeholder": "data:image/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAoEAABAwMCAwkAAAAAAAAAAAABAgMEBRESACETMXEGFCIyQVFhgbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEBAQEBAAAAAAAAAAAAAAAAAgABMf/aAAwDAQACEQMRAD8AYvtdSlwnFpU8p5poPFnE5C5KRcev4LjUjXW4FRhuSl095txc7FwqWLnwAkn439/vSFwo8iq4OtBaeA6mxJ2GI26bDQpkCN3cnh8jl5jzA66Mg5KlvL//2Q=="},
+        {"url": "data/images/filmes/cellula/filmagens/3.png", "placeholder": "data:image/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEG/8QAJRAAAgIBAgUFAQAAAAAAAAAAAQIDBBEABQYSITGhIiNCUmFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAaEQACAgMAAAAAAAAAAAAAAAABAgARAyHh/9oADAMBAAIRAxEAPwAmDijZrZaGnC8jqYwWPx+5HXH886K3fiWvVqkVZ/fCAIQnMMk4bmB8du+s1QjVLe7FVAK84X86HU3CrAvDNScRKJmsKjPj1FSuSM6mXEheq1yMSQtz/9k="}
+      ],
+      "exibicao": [{
+        "url": "data/images/filmes/cellula/exibicao_elvas_cartaz.jpg",
+        "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAnEAABAgQEBgMAAAAAAAAAAAABAgMABAYRBQcSExUhIjFB0VFScf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAHREAAgIBBQAAAAAAAAAAAAAAAQIAAxEEMYGRsf/aAAwDAQACEQMRAD8Ahm5+m2ZqXdawVUujSohTukAKI7XN7/EMXUFNajuYc2tX2DjfqBry9rV5hpKcAmenzuCx8crdoMrK+t1KJ4E+P1we4mt0ldjZy3BI8iLcwGw6n//Z"
+      }]
+    },
+    "videos": {
+      "trailer": [{
+        "url": "https://player.vimeo.com/video/263149165",
+        "name": "Documentário Cellula",
+        "description": "Trailer do documentário “Cellula”",
+        "uploadDate": "2017-11-07"
+      }]
+    },
+    "schedule": {
+      "elvas": {
+        "place": "Elvas",
+        "location": "Autidório de S.Mateus",
+        "date": "2019-01-13T18:00:00"
+      }
+    },
+    "type": "movie"
   },
   {
-    "name": "Saias",
-    "slug": "saias",
-    "title": "Danças e Cante",
+    "name": "Cantadores",
+    "slug": "cantadores",
+    "title": "O Cante tradicional do Alentejo",
     "description": [
-      "Modas coreográficas do Alto Alentejo, as saias cantam-se ao despique durante as fainas agrícolas (apanha da azeitona, p. ex.) ou cantam-se e dançam-se em dias festivos como o de São João ou nas Festas do Povo, de Campo Maior (recentemente candidatas a Património Cultural Imaterial da UNESCO)."
-    ]
+      "O filme mostra-nos o dia-a-dia de homens e mulheres que se reúnem para cantar “modas antigas”, mantendo toda a fidelidade ao cancioneiro tradicional da região.",
+      "Mais do que um trabalho sobre o Cante – igualmente classificado pela UNESCO – este será um trabalho que nos mostra o povo que canta, acompanhando o quotidiano de um conjunto de cantadores tendo como pano de fundo a cidade de Beja."
+    ],
+    "images": {
+      "featured": {
+        "url": "data/images/filmes/cantadores/cartaz.jpg"
+      }
+    },
+    "videos": {
+      "trailer": [{
+        "url": "https://player.vimeo.com/video/309283887",
+        "name": "Documentário Cantadores",
+        "description": "Cantadores - Trailer #1"
+      }]
+    },
+    "to_be_released": true
   },
   {
     "name": "Minas com História",
@@ -89,6 +151,14 @@
     "description": [
       "A Faixa Piritosa Ibérica constitui uma vasta área geográfica do sul da Península, com cerca de 250 quilómetros de comprimento, entre Alcácer do Sal, a Noroeste, e Sevilha (Espanha), a Sudoeste.",
       "Este filme centra-se essencialmente no património histórico, paisagístico e humano de duas das principais minas desta faixa – Lousal (Grândola) e São Domingos (Mértola)."
-    ]
+    ],
+    "videos": {
+      "trailer": [{
+        "url": "https://player.vimeo.com/video/314267582",
+        "name": "Documentário Minas",
+        "description": "Minas - Trailer #1"
+      }]
+    },
+    "to_be_released": true
   }
 ]

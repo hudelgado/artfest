@@ -1,35 +1,43 @@
-# Polymer WebApp
+# Artfest Patrimonios webapp
 
-This WebApp was built with [polymer](https://www.npmjs.com/package/@polymer/polymer)
+Progressive web app created with customElements using hyperhtml, redux and workbox.
 
-## Requirements
-- [polymer](https://www.npmjs.com/package/@polymer/polymer)
-- [polymer-cli](https://www.npmjs.com/package/polymer-cli)
+## Description
 
-## Installation
-clone the repo and install packages with
-```
-bower install
-```
+A fast and responsive web application with full offline support
 
-## Launch development server
+## Install packages
 
 ```
-$ polymer serve
+npm i
 ```
 
-## Build for production
+## Build targets
+The default build targets browsers supporting ES Modules, and the legacy build targets old browsers.
+
+The multi build creates a build with the two build targets where modules are loaded for newer browsers and an old version is created for older browsers.
+
+## Develop locally
 
 ```
-$ polymer build
+$ npm run start
+$ npm run start:legacy
 ```
+
+Start will run webpack-dev-server locally, and start:legacy will run with legacy code.
+
+## Building Your Application
+
+```
+$ npm run build
+$ npm run build:legacy
+$ npm run build:multi
+```
+
+This will create a build of your application in the `dist/` directory, optimized to be served in production.
 
 ## Running Tests
 
 ```
-$ polymer test
+$ npm run test
 ```
-
-## License
-
-[AGPL-3.0+](https://opensource.org/licenses/AGPL-3.0+)

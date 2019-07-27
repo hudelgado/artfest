@@ -1,7 +1,9 @@
-bower_components/
-build/
+dist/
 node_modules/
-gh-pages/
 .netlify
 _redirects
 /google*.html
+.DS_Store
+.vscode
+package-lock.json
+TODO.md

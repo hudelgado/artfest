@@ -1,35 +1,22 @@
-<!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-
 <!doctype html>
 <html lang="pt">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>Artfest Patrimónios</title>
+    <meta name="description" content="Artfest Patrimónios">
     <base href="/">
-
-    <title>Arfest Patrimónios</title>
-    <meta name="description" content="ArtFest PATRIMÓNIOS inclui trinta e seis espetáculos, seis filmes Documentais e duas exposições fotográficas">
-    <meta name="theme-color" content="#3f51b5">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
 
-
+    <meta name="theme-color" content="#c60013">
     <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="ArtFest Patrimonios">
+    <meta name="application-name" content="Artfest Patrimónios">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="ArtFest Patrimonios">
-
+    <meta name="apple-mobile-web-app-title" content="Artfest Patrimónios">
     <!-- Homescreen icons -->
     <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/icon-72x72.png">
@@ -38,55 +25,107 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-192x192.png">
     <!-- Tile icon for Windows 8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/manifest/icon-144x144.png">
-    <meta name="msapplication-TileColor" content="#3f51b5">
+    <meta name="msapplication-TileColor" content="#c60013">
     <meta name="msapplication-tap-highlight" content="no">
-
-    <script>
-      window.Polymer = {rootPath: '/'};
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('service-worker.js', {
-            scope: Polymer.rootPath,
-          });
-        });
-      }
-    </script>
-
-    <script> //Force all polyfills on 
-      if (window.customElements) {
-        window.customElements.forcePolyfill = true;
-      }
-      ShadyDOM = { force: true };
-      ShadyCSS = { shimcssproperties: true };
-    </script>
-
+    <!-- Default twitter cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@username">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Artfest Patrimónios">
+    <meta property="og:image" content="images/manifest/icon-144x144.png" />
     <style>
-      body {
+      body, html {
         margin: 0;
-        line-height: 1.5;
-        min-height: 100vh;
-        background-color: #eeeeee;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
       }
-      artfest-app[unresolved] {
-        display: block;
-        min-height: 101vh;
-        line-height: 68px;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 0.3em;
-        color: #202020;
-        padding: 0 16px;
-        overflow: visible;
+      * {
+          box-sizing: inherit;
+      }
+      body {
+        color: #a2a2a2;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16pt;
+        font-weight: 400;
+        line-height: 1.75em;
+      }
+      body.loading #splash {
+        animation: animatedInitial 800ms linear forwards;
+      }
+      body:not(.loading) #splash {
+        animation: animatedFinal 800ms linear forwards,
+                   animatedBackground 3000ms linear forwards;;
+      }
+      body:not(.loading) artfest-app {
+        animation: animatedInitial 800ms linear forwards;
+      }
+      h1 {
+        font-size: 2em;
+        color: #787878;
+        font-weight: 400;
+        line-height: 1.5em;
+      }
+      #splash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: opacity 800ms cubic-bezier(0,0,0.2,1);
+        opacity: 0;
+        will-change: opacity;
+        z-index: 1;
+        background: url('images/manifest/icon-192x192.png') no-repeat;
+        background-color: black;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-origin: center center;
+      }
+      #splash .headline {
+        color: white;
+        margin-top: 240px;
+      }
+      @keyframes animatedInitial {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes animatedFinal {
+        from { opacity: 1; }
+        to { opacity: 0; }
+      }
+      @keyframes animatedBackground {
+        from { background-position: 50% 50%; bottom: 0; }
+        to { background-position: 0 0; bottom: 100%; }
       }
     </style>
+    <link rel="preload" href="ttf/material-icons.ttf" as="font" type="font/ttf" crossorigin/>
+    <style>
+      @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: local('Material-Icons'),
+          url('ttf/material-icons.ttf') format('truetype');
+      }
+    </style>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => 
+          navigator.serviceWorker.register('/service-worker.js'));
+      }
+    </script>
   </head>
-  <body>
-    <artfest-app unresolved></artfest-app>
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="src/artfest-app.html">
-    <noscript>
-      Please enable JavaScript to view this website.
-    </noscript>
+  <body class="loading">
+    <div id="splash">
+      <div class="headline">O património cultural do Alentejo através das expressões artísticas locais</div>
+    </div>
+    <artfest-app app-title="Artfest Patrimónios"></artfest-app>
+    <noscript>Please enable JavaScript to view this website</noscript>
   </body>
 </html>

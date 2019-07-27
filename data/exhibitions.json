@@ -1,16 +1,25 @@
 [{
-  "artist": "Carlos Gasparinho",
-  "images": {
-    "featured": "data/images/exposicoes/carlos_gasparinho.jpg"
-  }
-}, {
   "artist": "Rui Castela",
   "images": {
-    "featured": "data/images/exposicoes/rui_castela.jpg"
+    "featured": {
+      "url": "data/images/exposicoes/rui_castela.jpg",
+      "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIRAAMhMRIiE5Gh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABoRAAICAwAAAAAAAAAAAAAAAAADARQVUWH/2gAMAwEAAhEDEQA/ANXd8fJjbtqI03YSPVA911niqLo9Zk/KofBYDVEcnNDkHcEoKnZ//9k="
+    }
+  }
+}, {
+  "artist": "Carlos Gasparinho",
+  "images": {
+    "featured": {
+      "url": "data/images/exposicoes/carlos_gasparinho.jpg",
+      "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAKABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFB//EACIQAAICAgEDBQAAAAAAAAAAAAECAxEABBIFE5IGISIjMf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAcEQABBAMBAAAAAAAAAAAAAAABAAIDoRESE0H/2gAMAwEAAhEDEQA/AEtX0z05hGz7qtIGBPc5m1s8gfjV0aFZfSKCPYWJYtU6qQgKRI4YMPYCq/KGZtFNKAPsfyOGM8tEd1/I4HKQHIfQS7R+ttf/2Q=="
+    }
   }
 }, {
   "artist": "Telmo Rocha",
   "images": {
-    "featured": "data/images/exposicoes/telmo_rocha.jpg"
+    "featured": {
+      "url": "data/images/exposicoes/telmo_rocha.jpg",
+      "placeholder": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBv/EACIQAAIBAwQCAwAAAAAAAAAAAAECAwQFIQAGETESFDJBof/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAwDAQACEQMRAD8Ax9g2gK8LV19bDQW/6mK+byYPwXGMdnSNx2Cmt6pPb7j7cJPDrJH4SITznGCMfupIJ5ZVQySMxGASedGd3WMkM3PXeghn/9k="
+    }
   }
 }]

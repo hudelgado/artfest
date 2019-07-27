@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>artfest-app test</title>
+
+    <script src="../../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../../node_modules/wct-browser-legacy/browser.js"></script>
+
+    <script type="module" src="../../src/artfest-app/artfest-app.js"></script>
+  </head>
+  <body>
+
+    <test-fixture id="BasicTestFixture">
+      <template>
+        <artfest-app appTitle="Artfest Patrimónios"></artfest-app>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('artfest-app', function() {
+
+        test('instantiating the app with a title works', function() {
+          var element = fixture('BasicTestFixture');
+          assert.equal(element.appTitle, 'Artfest Patrimónios');
+          // var elementShadowRoot = element.shadowRoot;
+          // var elementHeader = elementShadowRoot.querySelector('main');
+          // assert.equal(elementHeader.innerHTML, 'Hello artfest-app!');
+        });
+
+      });
+    </script>
+
+
+  </body>
+</html>
